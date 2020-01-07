@@ -18,9 +18,10 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+
+        primarySwatch: Colors.amber,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Romuald Barbe'),
     );
   }
 }
@@ -67,14 +68,17 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
+        flexibleSpace: Container(
+          decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.amber, Colors.amber[200]])),
+        ),
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        title: Text(widget.title, style: TextStyle(color: Colors.black87),),
       ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
+        child: ListView(
+
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
@@ -89,8 +93,23 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Row(
+              children: <Widget>[
+                Container(
+//              height: 50,
+                  width: 100.0,
+                  child: ClipOval(
+                    child: Align(
+                      alignment: Alignment.topCenter,
+                      widthFactor: 1,
+                        heightFactor: 2,
+                        child: Image.asset('assets/profil_online.jpg')),
+                  ),
+                ),
+                Spacer(),
+              ],
+            ),
             Text(
               'You have pushed the button this many times:',
             ),
