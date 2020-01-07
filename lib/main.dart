@@ -30,6 +30,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    bool _isPortrait =
+    MediaQuery.of(context).orientation == Orientation.portrait
+        ? true
+        : false;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -79,70 +83,74 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
-            Flex(
-              direction: Axis.horizontal,
-              children: [
-                FlatButton.icon(
-                  icon: SizedBox(
-                      width: 20,
-                      height: 20,
-                      child: Image.asset('assets/mail.png')),
-                  label: Text('Mail'),
-                  onPressed: () async {
-                    const url = 'mailto:barbe.romuald@gmail.com';
-                    if (await canLaunch(url)) {
-                      await launch(url);
-                    } else {
-                      throw 'Could not launch $url';
-                    }
-                  }
-                ),
-                FlatButton.icon(
+            Center(
+              child: Flex(
+                direction: _isPortrait ? Axis.vertical : Axis.horizontal,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  FlatButton.icon(
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset('assets/github_logo.png')),
-                    label: Text('Github'),
+                        child: Image.asset('assets/mail.png')),
+                    label: Text('Mail'),
                     onPressed: () async {
-                      const url = 'https://github.com/hawkbee1';
+                      const url = 'mailto:barbe.romuald@gmail.com';
                       if (await canLaunch(url)) {
                         await launch(url);
                       } else {
                         throw 'Could not launch $url';
                       }
                     }
-                ),
-                FlatButton.icon(
-                    icon: SizedBox(
-                        width: 20,
-                        height: 20,
-                        child: Image.asset('assets/twitter.png')),
-                    label: Text('Github'),
-                    onPressed: () async {
-                      const url = 'https://twitter.com/WhereAssistant';
-                      if (await canLaunch(url)) {
-                        await launch(url);
-                      } else {
-                        throw 'Could not launch $url';
+                  ),
+                  FlatButton.icon(
+                      icon: SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: Image.asset('assets/github_logo.png')),
+                      label: Text('Github'),
+                      onPressed: () async {
+                        const url = 'https://github.com/hawkbee1';
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
                       }
-                    }
-                ),
-                FlatButton.icon(
-                    icon: SizedBox(
-                        width: 20,
-                        height: 20,
-                        child: Image.asset('assets/linkedin_logo.png')),
-                    label: Text('Github'),
-                    onPressed: () async {
-                      const url = 'https://www.linkedin.com/in/hawkbee/?locale=en_US';
-                      if (await canLaunch(url)) {
-                        await launch(url);
-                      } else {
-                        throw 'Could not launch $url';
+                  ),
+                  FlatButton.icon(
+                      icon: SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: Image.asset('assets/twitter.png')),
+                      label: Text('Twitter'),
+                      onPressed: () async {
+                        const url = 'https://twitter.com/WhereAssistant';
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
                       }
-                    }
-                ),
-              ],
+                  ),
+                  FlatButton.icon(
+                      icon: SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: Image.asset('assets/linkedin_logo.png')),
+                      label: Text('LinkedIn'),
+                      onPressed: () async {
+                        const url = 'https://www.linkedin.com/in/hawkbee/?locale=en_US';
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
+                      }
+                  ),
+                ],
+              ),
             )
           ],
         ),
