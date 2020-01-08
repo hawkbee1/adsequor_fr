@@ -33,8 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     const kHtml = '<H1>soidjsoidjfoidsjf</H1></H1><iframe width="280" height="163" src="https://www.youtube.com/embed/7PxCys_X4GY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><H1>va pas ?</H1>';
-    bool webView = true;
-    bool webViewJs = true;
 
     final textColor = TextStyle(color: Colors.black87);
     final textBold = TextStyle(fontWeight: FontWeight.bold);
@@ -217,28 +215,28 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-              CheckboxListTile(
-                value: webView,
-                onChanged: (v) => setState(() => webView = v),
-                title: HtmlWidget('<var>.webView</var>'),
-                subtitle: const Text('Renders web view, default ❌'),
-              ),
-              CheckboxListTile(
-                value: webViewJs,
-                onChanged: (v) => setState(() {
-                  if (v) webView = true;
-                  webViewJs = v;
-                }),
-                title: HtmlWidget('<var>.webViewJs</var>'),
-                subtitle: const Text('Allows JavaScript execution, default ✅'),
-              ),
-              HtmlWidget(
-                kHtml,
-                key: Key("$webView$webViewJs"),
-                unsupportedWebViewWorkaroundForIssue37: true,
-                webView: webView,
-                webViewJs: webViewJs,
-              ),
+//              CheckboxListTile(
+//                value: webView,
+//                onChanged: (v) => setState(() => webView = v),
+//                title: HtmlWidget('<var>.webView</var>'),
+//                subtitle: const Text('Renders web view, default ❌'),
+//              ),
+//              CheckboxListTile(
+//                value: webViewJs,
+//                onChanged: (v) => setState(() {
+//                  if (v) webView = true;
+//                  webViewJs = v;
+//                }),
+//                title: HtmlWidget('<var>.webViewJs</var>'),
+//                subtitle: const Text('Allows JavaScript execution, default ✅'),
+//              ),
+//              HtmlWidget(
+//                kHtml,
+////                key: Key("$webView$webViewJs"),
+//                unsupportedWebViewWorkaroundForIssue37: true,
+//                webView: true,
+//                webViewJs: true,
+//              ),
             ],
           ),
         ),
