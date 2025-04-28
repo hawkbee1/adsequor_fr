@@ -7,11 +7,11 @@ class ServiceCard extends StatelessWidget {
   final bool isExpanded;
 
   const ServiceCard({
-    Key? key,
+    super.key,
     required this.service,
     this.onTap,
     this.isExpanded = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

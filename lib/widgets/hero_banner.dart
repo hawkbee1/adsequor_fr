@@ -11,14 +11,14 @@ class HeroBanner extends StatelessWidget {
   final VoidCallback? onCtaPressed;
 
   const HeroBanner({
-    Key? key,
+    super.key,
     required this.title,
     required this.subtitle,
     this.description,
     this.backgroundImage,
     this.ctaText,
     this.onCtaPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +61,9 @@ class HeroBanner extends StatelessWidget {
                 child: Text(
                   subtitle,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withAlpha(
+                        230,
+                      ),
                     height: 1.5,
                   ),
                   textAlign: TextAlign.center,

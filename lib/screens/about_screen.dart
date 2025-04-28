@@ -33,7 +33,9 @@ class AboutScreen extends StatelessWidget {
                   Text(
                     'Learn more about our company, our values, and our expertise.',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withAlpha(
+                        230,
+                      ), // 0.9 opacity is approximately 230 in 0-255 scale
                     ),
                   ),
                 ],
@@ -207,7 +209,7 @@ class AboutScreen extends StatelessWidget {
                   const SizedBox(height: 24),
                   ...adsequorProfile.team
                       .map((member) => _buildTeamMemberCard(context, member))
-                      .toList(),
+                      ,
                 ],
               ),
             ),

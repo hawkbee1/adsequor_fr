@@ -5,7 +5,7 @@ import 'package:adsequor_fr/widgets/app_nav_bar.dart';
 import 'package:adsequor_fr/widgets/app_footer.dart';
 
 class ProjectsScreen extends StatelessWidget {
-  const ProjectsScreen({Key? key}) : super(key: key);
+  const ProjectsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,9 @@ class ProjectsScreen extends StatelessWidget {
                   Text(
                     'Discover our successful implementations and technology solutions.',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withAlpha(
+                        230,
+                      ),
                     ),
                   ),
                 ],
@@ -49,7 +51,7 @@ class ProjectsScreen extends StatelessWidget {
                 children: [
                   ...adsequorProjects
                       .map((project) => _buildProjectCard(context, project))
-                      .toList(),
+                      ,
                 ],
               ),
             ),

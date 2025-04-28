@@ -3,7 +3,7 @@ import 'package:adsequor_fr/models/company.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AppFooter extends StatelessWidget {
-  const AppFooter({Key? key}) : super(key: key);
+  const AppFooter({super.key});
 
   @override
   Widget build(BuildContext context) {

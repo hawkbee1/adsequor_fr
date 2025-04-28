@@ -9,7 +9,7 @@ import 'package:adsequor_fr/screens/services_screen.dart';
 class AppNavBar extends StatelessWidget implements PreferredSizeWidget {
   final String currentPage;
 
-  const AppNavBar({Key? key, required this.currentPage}) : super(key: key);
+  const AppNavBar({super.key, required this.currentPage});
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);

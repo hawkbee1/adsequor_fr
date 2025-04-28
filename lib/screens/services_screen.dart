@@ -7,7 +7,7 @@ import 'package:adsequor_fr/widgets/app_footer.dart';
 class ServicesScreen extends StatefulWidget {
   final int initialIndex;
 
-  const ServicesScreen({Key? key, this.initialIndex = 0}) : super(key: key);
+  const ServicesScreen({super.key, this.initialIndex = 0});
 
   @override
   State<ServicesScreen> createState() => _ServicesScreenState();
@@ -56,7 +56,9 @@ class _ServicesScreenState extends State<ServicesScreen> {
                 Text(
                   'Adsequor provides expert technology services to help your business succeed.',
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withAlpha(
+                        230,
+                      ),
                   ),
                 ),
               ],

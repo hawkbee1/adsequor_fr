@@ -11,7 +11,7 @@ import 'package:adsequor_fr/screens/about_screen.dart';
 import 'package:adsequor_fr/screens/contact_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

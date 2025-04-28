@@ -40,7 +40,7 @@ final List<FAQ> adsequorFaqs = [
 ];
 
 class ContactScreen extends StatefulWidget {
-  const ContactScreen({Key? key}) : super(key: key);
+  const ContactScreen({super.key});
 
   @override
   State<ContactScreen> createState() => _ContactScreenState();
@@ -93,7 +93,9 @@ class _ContactScreenState extends State<ContactScreen> {
                   Text(
                     'We\'d love to hear from you. Get in touch with our team.',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withAlpha(
+                        230,
+                      ),
                     ),
                   ),
                 ],
@@ -134,7 +136,7 @@ class _ContactScreenState extends State<ContactScreen> {
 
             // FAQs Section
             Container(
-              color: Theme.of(context).colorScheme.surfaceVariant,
+              color: Theme.of(context).colorScheme.surfaceContainerHighest,
               padding: const EdgeInsets.all(32),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -149,7 +151,7 @@ class _ContactScreenState extends State<ContactScreen> {
                   const SizedBox(height: 24),
                   ...adsequorFaqs
                       .map((faq) => _buildFaqItem(context, faq))
-                      .toList(),
+                      ,
                 ],
               ),
             ),
@@ -273,7 +275,7 @@ class _ContactScreenState extends State<ContactScreen> {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                  color: Theme.of(context).colorScheme.primary.withValues(opacity: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(
