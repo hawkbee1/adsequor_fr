@@ -4,7 +4,7 @@ import 'package:adsequor_fr/widgets/app_nav_bar.dart';
 import 'package:adsequor_fr/widgets/app_footer.dart';
 
 class AboutScreen extends StatelessWidget {
-  const AboutScreen({Key? key}) : super(key: key);
+  const AboutScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,16 +25,16 @@ class AboutScreen extends StatelessWidget {
                   Text(
                     'About Adsequor',
                     style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   const SizedBox(height: 16),
                   Text(
                     'Learn more about our company, our values, and our expertise.',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          color: Colors.white.withOpacity(0.9),
-                        ),
+                      color: Colors.white.withOpacity(0.9),
+                    ),
                   ),
                 ],
               ),
@@ -49,9 +49,9 @@ class AboutScreen extends StatelessWidget {
                   Text(
                     'Our Story',
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: Theme.of(context).colorScheme.primary,
-                        ),
+                      fontWeight: FontWeight.bold,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
                   ),
                   const SizedBox(height: 24),
                   Row(
@@ -83,43 +83,48 @@ class AboutScreen extends StatelessWidget {
                             _buildInfoRow(
                               context: context,
                               title: 'Focus',
-                              value: 'Flutter Development, Business Intelligence, Team Leadership',
+                              value:
+                                  'Flutter Development, Business Intelligence, Team Leadership',
                               icon: Icons.lightbulb,
                             ),
                           ],
-                        },
-                      ),
-                      
-                      const SizedBox(width: 32),
-                      
-                      // Founder image
-                      if (MediaQuery.of(context).size.width >= 800)
-                        Expanded(
-                          flex: 2,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(12),
-                            child: Image.asset(
-                              'assets/profil_online.jpg',
-                              fit: BoxFit.cover,
-                              errorBuilder: (context, error, stackTrace) {
-                                return Container(
-                                  height: 300,
-                                  decoration: BoxDecoration(
-                                    color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                  child: Center(
-                                    child: Icon(
-                                      Icons.business,
-                                      size: 64,
-                                      color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
-                                    ),
-                                  ),
-                                );
-                              },
-                            ),
-                          ),
                         ),
+                      ),
+                      const SizedBox(width: 32),
+
+                      // Founder image
+                      (MediaQuery.of(context).size.width >= 800)
+                          ? Expanded(
+                            flex: 2,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: Image.asset(
+                                'assets/profil_online.jpg',
+                                fit: BoxFit.cover,
+                                errorBuilder: (context, error, stackTrace) {
+                                  return Container(
+                                    height: 300,
+                                    decoration: BoxDecoration(
+                                      color: Theme.of(
+                                        context,
+                                      ).colorScheme.primary.withOpacity(0.1),
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    child: Center(
+                                      child: Icon(
+                                        Icons.business,
+                                        size: 64,
+                                        color: Theme.of(
+                                          context,
+                                        ).colorScheme.primary.withOpacity(0.5),
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                          )
+                          : SizedBox.shrink(),
                     ],
                   ),
                 ],
@@ -136,20 +141,21 @@ class AboutScreen extends StatelessWidget {
                   Text(
                     'Our Values',
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: Theme.of(context).colorScheme.primary,
-                        ),
+                      fontWeight: FontWeight.bold,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
                   ),
                   const SizedBox(height: 24),
                   GridView.builder(
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      childAspectRatio: 2.5,
-                      crossAxisSpacing: 16,
-                      mainAxisSpacing: 16,
-                    ),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          childAspectRatio: 2.5,
+                          crossAxisSpacing: 16,
+                          mainAxisSpacing: 16,
+                        ),
                     itemCount: adsequorProfile.values.length,
                     itemBuilder: (context, index) {
                       return Card(
@@ -189,9 +195,9 @@ class AboutScreen extends StatelessWidget {
                   Text(
                     'Our Team',
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: Theme.of(context).colorScheme.primary,
-                        ),
+                      fontWeight: FontWeight.bold,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
                   ),
                   const SizedBox(height: 16),
                   Text(
@@ -199,7 +205,9 @@ class AboutScreen extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   const SizedBox(height: 24),
-                  ...adsequorProfile.team.map((member) => _buildTeamMemberCard(context, member)).toList(),
+                  ...adsequorProfile.team
+                      .map((member) => _buildTeamMemberCard(context, member))
+                      .toList(),
                 ],
               ),
             ),
@@ -225,7 +233,9 @@ class AboutScreen extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 16,
-            backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+            backgroundColor: Theme.of(
+              context,
+            ).colorScheme.primary.withOpacity(0.1),
             child: Icon(
               icon,
               size: 16,
@@ -240,14 +250,11 @@ class AboutScreen extends StatelessWidget {
                 Text(
                   title,
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 const SizedBox(height: 4),
-                Text(
-                  value,
-                  style: Theme.of(context).textTheme.bodyMedium,
-                ),
+                Text(value, style: Theme.of(context).textTheme.bodyMedium),
               ],
             ),
           ),
@@ -270,23 +277,25 @@ class AboutScreen extends StatelessWidget {
                 // Member photo
                 CircleAvatar(
                   radius: 40,
-                  backgroundImage: member.imageAsset != null
-                      ? AssetImage(member.imageAsset!) as ImageProvider
-                      : null,
+                  backgroundImage:
+                      member.imageAsset != null
+                          ? AssetImage(member.imageAsset!) as ImageProvider
+                          : null,
                   backgroundColor: Theme.of(context).colorScheme.primary,
-                  child: member.imageAsset == null
-                      ? Text(
-                          member.name.substring(0, 1),
-                          style: const TextStyle(
-                            fontSize: 32,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        )
-                      : null,
+                  child:
+                      member.imageAsset == null
+                          ? Text(
+                            member.name.substring(0, 1),
+                            style: const TextStyle(
+                              fontSize: 32,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                          : null,
                 ),
                 const SizedBox(width: 24),
-                
+
                 // Member info
                 Expanded(
                   child: Column(
@@ -295,14 +304,16 @@ class AboutScreen extends StatelessWidget {
                       Text(
                         member.name,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       Text(
                         member.role,
-                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                              color: Theme.of(context).colorScheme.primary,
-                            ),
+                        style: Theme.of(
+                          context,
+                        ).textTheme.titleMedium?.copyWith(
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
                       ),
                       const SizedBox(height: 8),
                       Row(
@@ -321,9 +332,11 @@ class AboutScreen extends StatelessWidget {
                                     const SizedBox(width: 4),
                                     Text(
                                       _getContactLabel(contact.key),
-                                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                                            decoration: TextDecoration.underline,
-                                          ),
+                                      style: Theme.of(
+                                        context,
+                                      ).textTheme.bodySmall?.copyWith(
+                                        decoration: TextDecoration.underline,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -337,26 +350,28 @@ class AboutScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 16),
-            Text(
-              member.bio,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
+            Text(member.bio, style: Theme.of(context).textTheme.bodyMedium),
             const SizedBox(height: 16),
-            
+
             // Expertise chips
             Wrap(
               spacing: 8,
               runSpacing: 8,
-              children: member.expertise.map(
-                (expertise) => Chip(
-                  label: Text(expertise),
-                  backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                  labelStyle: TextStyle(
-                    color: Theme.of(context).colorScheme.primary,
-                    fontSize: 12,
-                  ),
-                ),
-              ).toList(),
+              children:
+                  member.expertise
+                      .map(
+                        (expertise) => Chip(
+                          label: Text(expertise),
+                          backgroundColor: Theme.of(
+                            context,
+                          ).colorScheme.primary.withOpacity(0.1),
+                          labelStyle: TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
+                            fontSize: 12,
+                          ),
+                        ),
+                      )
+                      .toList(),
             ),
           ],
         ),
