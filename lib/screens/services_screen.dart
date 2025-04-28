@@ -209,7 +209,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
               ),
               child: Center(
                 child: Image.asset(
-                  service.iconAsset,
+                  service.imageUrl,
                   width: 48,
                   height: 48,
                   errorBuilder: (context, error, stackTrace) {
@@ -252,7 +252,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
         const SizedBox(height: 16),
 
         // Capabilities list
-        ...service.capabilities
+        ...service.features
             .map(
               (capability) => Padding(
                 padding: const EdgeInsets.only(bottom: 16.0),

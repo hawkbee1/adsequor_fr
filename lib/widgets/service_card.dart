@@ -31,24 +31,21 @@ class ServiceCard extends StatelessWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.primary,
-                image:
-                    service.imageUrl != null
-                        ? DecorationImage(
-                          image: AssetImage(service.imageUrl!),
-                          fit: BoxFit.cover,
-                        )
-                        : null,
+                image: DecorationImage(
+                  image: AssetImage(service.imageUrl),
+                  fit: BoxFit.cover,
+                  onError: (exception, stackTrace) {
+                    // Handle error silently
+                  },
+                ),
               ),
-              child:
-                  service.imageUrl == null
-                      ? Center(
-                        child: Icon(
-                          service.icon ?? Icons.miscellaneous_services,
-                          size: 64,
-                          color: Colors.white,
-                        ),
-                      )
-                      : null,
+              child: Center(
+                child: Icon(
+                  Icons.miscellaneous_services,
+                  size: 64,
+                  color: Colors.white,
+                ),
+              ),
             ),
 
             // Service content
@@ -69,7 +66,7 @@ class ServiceCard extends StatelessWidget {
 
                   // Service short description
                   Text(
-                    service.shortDescription,
+                    service.description,
                     style: Theme.of(context).textTheme.bodyMedium,
                     maxLines: isExpanded ? null : 3,
                     overflow: isExpanded ? null : TextOverflow.ellipsis,
@@ -103,33 +100,6 @@ class ServiceCard extends StatelessWidget {
                         ),
                       ),
                     ),
-
-                    // Optional technologies section
-                    if (service.technologies.isNotEmpty) ...[
-                      const SizedBox(height: 24),
-                      Text(
-                        'Technologies:',
-                        style: Theme.of(context).textTheme.titleMedium
-                            ?.copyWith(fontWeight: FontWeight.bold),
-                      ),
-                      const SizedBox(height: 8),
-                      Wrap(
-                        spacing: 8,
-                        runSpacing: 8,
-                        children:
-                            service.technologies
-                                .map(
-                                  (tech) => Chip(
-                                    label: Text(tech),
-                                    backgroundColor:
-                                        Theme.of(
-                                          context,
-                                        ).colorScheme.surfaceVariant,
-                                  ),
-                                )
-                                .toList(),
-                      ),
-                    ],
                   ],
 
                   const SizedBox(height: 16),
@@ -148,12 +118,12 @@ class ServiceCard extends StatelessWidget {
                             )
                             : TextButton(
                               onPressed: onTap,
-                              child: Row(
+                              child: const Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Text('Learn More'),
-                                  const SizedBox(width: 4),
-                                  const Icon(Icons.arrow_forward, size: 16),
+                                  SizedBox(width: 4),
+                                  Icon(Icons.arrow_forward, size: 16),
                                 ],
                               ),
                             ),

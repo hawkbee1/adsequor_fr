@@ -4,6 +4,41 @@ import 'package:adsequor_fr/widgets/app_nav_bar.dart';
 import 'package:adsequor_fr/widgets/app_footer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+// FAQ class definition
+class FAQ {
+  final String question;
+  final String answer;
+
+  const FAQ({
+    required this.question,
+    required this.answer,
+  });
+}
+
+// List of frequently asked questions
+final List<FAQ> adsequorFaqs = [
+  FAQ(
+    question: 'What services does Adsequor offer?',
+    answer: 'Adsequor specializes in Flutter development, Business Intelligence solutions, and IT consulting. We provide cross-platform mobile and web application development, data warehouse design, ETL processes, dashboard development, and strategic IT consulting services.',
+  ),
+  FAQ(
+    question: 'How long has Adsequor been in business?',
+    answer: 'Adsequor was founded in 2002 by Romuald Barbe and has been providing high-quality IT services for over 20 years.',
+  ),
+  FAQ(
+    question: 'Do you work with clients internationally?',
+    answer: 'Yes, we work with clients across different countries and industries. Our remote collaboration capabilities allow us to deliver excellent results regardless of geographical location.',
+  ),
+  FAQ(
+    question: 'What is your project development process?',
+    answer: 'We follow an Agile methodology for most projects, with regular communication and iterative development. Our process typically includes discovery, planning, design, development, testing, deployment, and ongoing support phases.',
+  ),
+  FAQ(
+    question: 'How do you handle project pricing?',
+    answer: 'Our pricing models are flexible and can be adapted to the specific needs of each project. We offer fixed-price quotes for well-defined projects and time-and-materials pricing for more dynamic engagements. Please contact us for a personalized quote.',
+  ),
+];
+
 class ContactScreen extends StatefulWidget {
   const ContactScreen({Key? key}) : super(key: key);
 
