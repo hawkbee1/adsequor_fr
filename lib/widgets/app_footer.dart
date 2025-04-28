@@ -8,7 +8,7 @@ class AppFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+      color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
       padding: const EdgeInsets.all(32.0),
       child: Column(
         children: [
@@ -97,7 +97,7 @@ class AppFooter extends StatelessWidget {
         style: IconButton.styleFrom(
           backgroundColor: Theme.of(
             context,
-          ).colorScheme.primary.withOpacity(0.1),
+          ).colorScheme.primary.withValues(alpha: 0.1),
           foregroundColor: Theme.of(context).colorScheme.primary,
         ),
       ),

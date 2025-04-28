@@ -56,9 +56,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
                 Text(
                   'Adsequor provides expert technology services to help your business succeed.',
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    color: Colors.white.withAlpha(
-                        230,
-                      ),
+                    color: Colors.white.withAlpha(230),
                   ),
                 ),
               ],
@@ -68,7 +66,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
           // Service navigation tabs
           Container(
             padding: const EdgeInsets.symmetric(vertical: 12),
-            color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+            color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -95,7 +93,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
                       backgroundColor: Colors.white,
                       selectedColor: Theme.of(
                         context,
-                      ).colorScheme.primary.withOpacity(0.2),
+                      ).colorScheme.primary.withValues(alpha: 0.2),
                       labelStyle: TextStyle(
                         color:
                             _currentIndex == index
@@ -206,7 +204,9 @@ class _ServicesScreenState extends State<ServicesScreen> {
               width: 80,
               height: 80,
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                color: Theme.of(
+                  context,
+                ).colorScheme.primary.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Center(
@@ -254,56 +254,54 @@ class _ServicesScreenState extends State<ServicesScreen> {
         const SizedBox(height: 16),
 
         // Capabilities list
-        ...service.features
-            .map(
-              (capability) => Padding(
-                padding: const EdgeInsets.only(bottom: 16.0),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: Theme.of(
-                          context,
-                        ).colorScheme.primary.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Icon(
-                        Icons.check,
-                        color: Theme.of(context).colorScheme.primary,
-                      ),
-                    ),
-                    const SizedBox(width: 16),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            capability,
-                            style: Theme.of(context).textTheme.titleMedium
-                                ?.copyWith(fontWeight: FontWeight.bold),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            _getCapabilityDescription(capability),
-                            style: Theme.of(context).textTheme.bodyMedium,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+        ...service.features.map(
+          (capability) => Padding(
+            padding: const EdgeInsets.only(bottom: 16.0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Theme.of(
+                      context,
+                    ).colorScheme.primary.withValues(alpha: 0.1),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Icon(
+                    Icons.check,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
                 ),
-              ),
-            )
-            .toList(),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        capability,
+                        style: Theme.of(context).textTheme.titleMedium
+                            ?.copyWith(fontWeight: FontWeight.bold),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        _getCapabilityDescription(capability),
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
 
         const SizedBox(height: 32),
 
         // Call to action
         Card(
           elevation: 4,
-          color: Theme.of(context).colorScheme.surfaceVariant,
+          color: Theme.of(context).colorScheme.surfaceContainerHighest,
           child: Padding(
             padding: const EdgeInsets.all(24.0),
             child: Column(

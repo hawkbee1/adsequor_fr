@@ -107,18 +107,20 @@ class AboutScreen extends StatelessWidget {
                                   return Container(
                                     height: 300,
                                     decoration: BoxDecoration(
-                                      color: Theme.of(
-                                        context,
-                                      ).colorScheme.primary.withOpacity(0.1),
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .primary
+                                          .withValues(alpha: 0.1),
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Center(
                                       child: Icon(
                                         Icons.business,
                                         size: 64,
-                                        color: Theme.of(
-                                          context,
-                                        ).colorScheme.primary.withOpacity(0.5),
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .primary
+                                            .withValues(alpha: 0.5),
                                       ),
                                     ),
                                   );
@@ -135,7 +137,9 @@ class AboutScreen extends StatelessWidget {
 
             // Our Values
             Container(
-              color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+              color: Theme.of(
+                context,
+              ).colorScheme.primary.withValues(alpha: 0.05),
               padding: const EdgeInsets.all(32),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -207,9 +211,9 @@ class AboutScreen extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   const SizedBox(height: 24),
-                  ...adsequorProfile.team
-                      .map((member) => _buildTeamMemberCard(context, member))
-                      ,
+                  ...adsequorProfile.team.map(
+                    (member) => _buildTeamMemberCard(context, member),
+                  ),
                 ],
               ),
             ),
@@ -237,7 +241,7 @@ class AboutScreen extends StatelessWidget {
             radius: 16,
             backgroundColor: Theme.of(
               context,
-            ).colorScheme.primary.withOpacity(0.1),
+            ).colorScheme.primary.withValues(alpha: 0.1),
             child: Icon(
               icon,
               size: 16,
@@ -366,7 +370,7 @@ class AboutScreen extends StatelessWidget {
                           label: Text(expertise),
                           backgroundColor: Theme.of(
                             context,
-                          ).colorScheme.primary.withOpacity(0.1),
+                          ).colorScheme.primary.withValues(alpha: 0.1),
                           labelStyle: TextStyle(
                             color: Theme.of(context).colorScheme.primary,
                             fontSize: 12,

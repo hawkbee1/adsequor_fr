@@ -34,9 +34,7 @@ class ProjectsScreen extends StatelessWidget {
                   Text(
                     'Discover our successful implementations and technology solutions.',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      color: Colors.white.withAlpha(
-                        230,
-                      ),
+                      color: Colors.white.withAlpha(230),
                     ),
                   ),
                 ],
@@ -49,9 +47,9 @@ class ProjectsScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  ...adsequorProjects
-                      .map((project) => _buildProjectCard(context, project))
-                      ,
+                  ...adsequorProjects.map(
+                    (project) => _buildProjectCard(context, project),
+                  ),
                 ],
               ),
             ),
@@ -59,7 +57,7 @@ class ProjectsScreen extends StatelessWidget {
             // Testimonials section
             Container(
               padding: const EdgeInsets.all(32),
-              color: Theme.of(context).colorScheme.surfaceVariant,
+              color: Theme.of(context).colorScheme.surfaceContainerHighest,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -86,7 +84,7 @@ class ProjectsScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.1),
+                                color: Colors.black.withValues(alpha: 0.1),
                                 blurRadius: 10,
                                 offset: const Offset(0, 4),
                               ),
@@ -226,14 +224,16 @@ class ProjectsScreen extends StatelessWidget {
               errorBuilder: (context, error, stackTrace) {
                 return Container(
                   height: 200,
-                  color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                  color: Theme.of(
+                    context,
+                  ).colorScheme.primary.withValues(alpha: 0.1),
                   child: Center(
                     child: Icon(
                       Icons.image,
                       size: 48,
                       color: Theme.of(
                         context,
-                      ).colorScheme.primary.withOpacity(0.5),
+                      ).colorScheme.primary.withValues(alpha: 0.5),
                     ),
                   ),
                 );
@@ -269,7 +269,7 @@ class ProjectsScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Theme.of(
                           context,
-                        ).colorScheme.primary.withOpacity(0.1),
+                        ).colorScheme.primary.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
@@ -358,7 +358,7 @@ class ProjectsScreen extends StatelessWidget {
                               label: Text(tech),
                               backgroundColor: Theme.of(
                                 context,
-                              ).colorScheme.secondary.withOpacity(0.1),
+                              ).colorScheme.secondary.withValues(alpha: 0.1),
                               labelStyle: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                               ),

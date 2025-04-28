@@ -34,7 +34,9 @@ class HeroBanner extends StatelessWidget {
                   image: AssetImage(backgroundImage!),
                   fit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(
-                    Theme.of(context).colorScheme.primary.withOpacity(0.85),
+                    Theme.of(
+                      context,
+                    ).colorScheme.primary.withValues(alpha: 0.85),
                     BlendMode.srcOver,
                   ),
                 )
@@ -61,9 +63,7 @@ class HeroBanner extends StatelessWidget {
                 child: Text(
                   subtitle,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    color: Colors.white.withAlpha(
-                        230,
-                      ),
+                    color: Colors.white.withAlpha(230),
                     height: 1.5,
                   ),
                   textAlign: TextAlign.center,
@@ -76,7 +76,7 @@ class HeroBanner extends StatelessWidget {
                   child: Text(
                     description!,
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: Colors.white.withOpacity(0.8),
+                      color: Colors.white.withValues(alpha: 0.8),
                       height: 1.4,
                     ),
                     textAlign: TextAlign.center,

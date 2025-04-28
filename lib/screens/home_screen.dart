@@ -90,7 +90,9 @@ class HomeScreen extends StatelessWidget {
 
             // About Section
             Container(
-              color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+              color: Theme.of(
+                context,
+              ).colorScheme.primary.withValues(alpha: 0.05),
               padding: const EdgeInsets.all(32.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
