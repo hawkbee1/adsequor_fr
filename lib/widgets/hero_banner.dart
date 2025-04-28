@@ -5,13 +5,19 @@ import 'package:adsequor_fr/screens/contact_screen.dart';
 class HeroBanner extends StatelessWidget {
   final String title;
   final String subtitle;
+  final String? description;
   final String? backgroundImage;
+  final String? ctaText;
+  final VoidCallback? onCtaPressed;
 
   const HeroBanner({
     Key? key,
     required this.title,
     required this.subtitle,
+    this.description,
     this.backgroundImage,
+    this.ctaText,
+    this.onCtaPressed,
   }) : super(key: key);
 
   @override
@@ -61,6 +67,20 @@ class HeroBanner extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               ),
+              if (description != null) ...[
+                const SizedBox(height: 16),
+                Container(
+                  constraints: const BoxConstraints(maxWidth: 800),
+                  child: Text(
+                    description!,
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                      color: Colors.white.withOpacity(0.8),
+                      height: 1.4,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ],
               const SizedBox(height: 48),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -91,6 +111,7 @@ class HeroBanner extends StatelessWidget {
                   const SizedBox(width: 16),
                   OutlinedButton(
                     onPressed:
+                        onCtaPressed ??
                         () => Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -109,7 +130,7 @@ class HeroBanner extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    child: const Text('Contact Us'),
+                    child: Text(ctaText ?? 'Contact Us'),
                   ),
                 ],
               ),
