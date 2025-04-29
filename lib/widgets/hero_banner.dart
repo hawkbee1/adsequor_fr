@@ -52,7 +52,7 @@ class HeroBanner extends StatelessWidget {
               Text(
                 title,
                 style: Theme.of(context).textTheme.displayMedium?.copyWith(
-                  color: Colors.white,
+                  color: Theme.of(context).colorScheme.onPrimary,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.center,
@@ -63,7 +63,9 @@ class HeroBanner extends StatelessWidget {
                 child: Text(
                   subtitle,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    color: Colors.white.withAlpha(230),
+                    color: Theme.of(
+                      context,
+                    ).colorScheme.onPrimary.withAlpha(230),
                     height: 1.5,
                   ),
                   textAlign: TextAlign.center,
@@ -76,7 +78,9 @@ class HeroBanner extends StatelessWidget {
                   child: Text(
                     description!,
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: Colors.white.withValues(alpha: 0.8),
+                      color: Theme.of(
+                        context,
+                      ).colorScheme.onPrimary.withValues(alpha: 0.8),
                       height: 1.4,
                     ),
                     textAlign: TextAlign.center,
@@ -97,7 +101,7 @@ class HeroBanner extends StatelessWidget {
                         ),
                     style: ElevatedButton.styleFrom(
                       foregroundColor: Theme.of(context).colorScheme.primary,
-                      backgroundColor: Colors.white,
+                      backgroundColor: Theme.of(context).colorScheme.surface,
                       padding: const EdgeInsets.symmetric(
                         horizontal: 32,
                         vertical: 20,
@@ -121,8 +125,11 @@ class HeroBanner extends StatelessWidget {
                           ),
                         ),
                     style: OutlinedButton.styleFrom(
-                      foregroundColor: Colors.white,
-                      side: const BorderSide(color: Colors.white, width: 2),
+                      foregroundColor: Theme.of(context).colorScheme.onPrimary,
+                      side: BorderSide(
+                        color: Theme.of(context).colorScheme.onPrimary,
+                        width: 2,
+                      ),
                       padding: const EdgeInsets.symmetric(
                         horizontal: 32,
                         vertical: 20,

@@ -102,7 +102,7 @@ class AppNavBar extends StatelessWidget implements PreferredSizeWidget {
                 isSelected
                     ? Theme.of(context).colorScheme.secondary
                     : Theme.of(context).colorScheme.primary,
-            foregroundColor: Colors.white,
+            foregroundColor: Theme.of(context).colorScheme.onPrimary,
             padding: const EdgeInsets.symmetric(horizontal: 16),
           ),
           child: Text(title),

@@ -48,7 +48,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
                 Text(
                   'Our Services',
                   style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.onPrimary,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -56,7 +56,9 @@ class _ServicesScreenState extends State<ServicesScreen> {
                 Text(
                   'Adsequor provides expert technology services to help your business succeed.',
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    color: Colors.white.withAlpha(230),
+                    color: Theme.of(
+                      context,
+                    ).colorScheme.onPrimary.withAlpha(230),
                   ),
                 ),
               ],
@@ -90,7 +92,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
                           });
                         }
                       },
-                      backgroundColor: Colors.white,
+                      backgroundColor: Theme.of(context).colorScheme.surface,
                       selectedColor: Theme.of(
                         context,
                       ).colorScheme.primary.withValues(alpha: 0.2),
@@ -329,7 +331,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
                       ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Theme.of(context).colorScheme.primary,
-                    foregroundColor: Colors.white,
+                    foregroundColor: Theme.of(context).colorScheme.onPrimary,
                   ),
                   child: const Text('Request a Consultation'),
                 ),

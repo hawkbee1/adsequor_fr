@@ -26,7 +26,7 @@ class ProjectsScreen extends StatelessWidget {
                   Text(
                     'Our Projects',
                     style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                      color: Colors.white,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -34,7 +34,9 @@ class ProjectsScreen extends StatelessWidget {
                   Text(
                     'Discover our successful implementations and technology solutions.',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      color: Colors.white.withAlpha(230),
+                      color: Theme.of(
+                        context,
+                      ).colorScheme.onPrimary.withAlpha(230),
                     ),
                   ),
                 ],
@@ -80,11 +82,13 @@ class ProjectsScreen extends StatelessWidget {
                           margin: const EdgeInsets.only(right: 16),
                           padding: const EdgeInsets.all(24),
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Theme.of(context).colorScheme.surface,
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withValues(alpha: 0.1),
+                                color: Theme.of(
+                                  context,
+                                ).colorScheme.shadow.withValues(alpha: 0.1),
                                 blurRadius: 10,
                                 offset: const Offset(0, 4),
                               ),
@@ -93,9 +97,9 @@ class ProjectsScreen extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Icon(
+                              Icon(
                                 Icons.format_quote,
-                                color: Colors.amber,
+                                color: Theme.of(context).colorScheme.secondary,
                                 size: 32,
                               ),
                               const SizedBox(height: 16),
@@ -115,8 +119,11 @@ class ProjectsScreen extends StatelessWidget {
                                         Theme.of(context).colorScheme.primary,
                                     child: Text(
                                       testimonial.author.substring(0, 1),
-                                      style: const TextStyle(
-                                        color: Colors.white,
+                                      style: TextStyle(
+                                        color:
+                                            Theme.of(
+                                              context,
+                                            ).colorScheme.onPrimary,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),

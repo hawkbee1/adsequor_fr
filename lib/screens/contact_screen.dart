@@ -9,33 +9,35 @@ class FAQ {
   final String question;
   final String answer;
 
-  const FAQ({
-    required this.question,
-    required this.answer,
-  });
+  const FAQ({required this.question, required this.answer});
 }
 
 // List of frequently asked questions
 final List<FAQ> adsequorFaqs = [
   FAQ(
     question: 'What services does Adsequor offer?',
-    answer: 'Adsequor specializes in Flutter development, Business Intelligence solutions, and IT consulting. We provide cross-platform mobile and web application development, data warehouse design, ETL processes, dashboard development, and strategic IT consulting services.',
+    answer:
+        'Adsequor specializes in Flutter development, Business Intelligence solutions, and IT consulting. We provide cross-platform mobile and web application development, data warehouse design, ETL processes, dashboard development, and strategic IT consulting services.',
   ),
   FAQ(
     question: 'How long has Adsequor been in business?',
-    answer: 'Adsequor was founded in 2002 by Romuald Barbe and has been providing high-quality IT services for over 20 years.',
+    answer:
+        'Adsequor was founded in 2002 by Romuald Barbe and has been providing high-quality IT services for over 20 years.',
   ),
   FAQ(
     question: 'Do you work with clients internationally?',
-    answer: 'Yes, we work with clients across different countries and industries. Our remote collaboration capabilities allow us to deliver excellent results regardless of geographical location.',
+    answer:
+        'Yes, we work with clients across different countries and industries. Our remote collaboration capabilities allow us to deliver excellent results regardless of geographical location.',
   ),
   FAQ(
     question: 'What is your project development process?',
-    answer: 'We follow an Agile methodology for most projects, with regular communication and iterative development. Our process typically includes discovery, planning, design, development, testing, deployment, and ongoing support phases.',
+    answer:
+        'We follow an Agile methodology for most projects, with regular communication and iterative development. Our process typically includes discovery, planning, design, development, testing, deployment, and ongoing support phases.',
   ),
   FAQ(
     question: 'How do you handle project pricing?',
-    answer: 'Our pricing models are flexible and can be adapted to the specific needs of each project. We offer fixed-price quotes for well-defined projects and time-and-materials pricing for more dynamic engagements. Please contact us for a personalized quote.',
+    answer:
+        'Our pricing models are flexible and can be adapted to the specific needs of each project. We offer fixed-price quotes for well-defined projects and time-and-materials pricing for more dynamic engagements. Please contact us for a personalized quote.',
   ),
 ];
 
@@ -85,7 +87,7 @@ class _ContactScreenState extends State<ContactScreen> {
                   Text(
                     'Contact Us',
                     style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                      color: Colors.white,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -93,9 +95,9 @@ class _ContactScreenState extends State<ContactScreen> {
                   Text(
                     'We\'d love to hear from you. Get in touch with our team.',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      color: Colors.white.withAlpha(
-                        230,
-                      ),
+                      color: Theme.of(
+                        context,
+                      ).colorScheme.onPrimary.withAlpha(230),
                     ),
                   ),
                 ],
@@ -149,9 +151,7 @@ class _ContactScreenState extends State<ContactScreen> {
                     ),
                   ),
                   const SizedBox(height: 24),
-                  ...adsequorFaqs
-                      .map((faq) => _buildFaqItem(context, faq))
-                      ,
+                  ...adsequorFaqs.map((faq) => _buildFaqItem(context, faq)),
                 ],
               ),
             ),
@@ -275,7 +275,9 @@ class _ContactScreenState extends State<ContactScreen> {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                  color: Theme.of(
+                    context,
+                  ).colorScheme.primary.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(
@@ -475,7 +477,7 @@ class _ContactScreenState extends State<ContactScreen> {
                     ),
                     child:
                         _isSubmitting
-                            ? const Row(
+                            ? Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 SizedBox(
@@ -483,11 +485,12 @@ class _ContactScreenState extends State<ContactScreen> {
                                   height: 20,
                                   child: CircularProgressIndicator(
                                     strokeWidth: 2,
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
                                   ),
                                 ),
-                                SizedBox(width: 16),
-                                Text('Sending...'),
+                                const SizedBox(width: 16),
+                                const Text('Sending...'),
                               ],
                             )
                             : const Text('Send Message'),

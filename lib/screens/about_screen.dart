@@ -25,7 +25,7 @@ class AboutScreen extends StatelessWidget {
                   Text(
                     'About Adsequor',
                     style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                      color: Colors.white,
+                      color: Theme.of(context).colorScheme.onPrimary,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -33,7 +33,7 @@ class AboutScreen extends StatelessWidget {
                   Text(
                     'Learn more about our company, our values, and our expertise.',
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      color: Colors.white.withAlpha(
+                      color: Theme.of(context).colorScheme.onPrimary.withAlpha(
                         230,
                       ), // 0.9 opacity is approximately 230 in 0-255 scale
                     ),
@@ -292,9 +292,9 @@ class AboutScreen extends StatelessWidget {
                       member.imageAsset == null
                           ? Text(
                             member.name.substring(0, 1),
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 32,
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.onPrimary,
                               fontWeight: FontWeight.bold,
                             ),
                           )

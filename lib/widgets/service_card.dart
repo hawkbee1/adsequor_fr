@@ -43,7 +43,7 @@ class ServiceCard extends StatelessWidget {
                 child: Icon(
                   Icons.miscellaneous_services,
                   size: 64,
-                  color: Colors.white,
+                  color: Theme.of(context).colorScheme.onPrimary,
                 ),
               ),
             ),
