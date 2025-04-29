@@ -6,7 +6,7 @@ class AppTheme {
   AppTheme._();
 
   // Seed color
-  static const Color seedColor = Color(0xFFFFCB2F);
+  static const Color seedColor = Colors.red;
 
   // Create color schemes to reuse
   static final ColorScheme _lightColorScheme = ColorScheme.fromSeed(
