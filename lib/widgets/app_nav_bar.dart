@@ -5,6 +5,7 @@ import 'package:adsequor_fr/screens/contact_screen.dart';
 import 'package:adsequor_fr/screens/home_screen.dart';
 import 'package:adsequor_fr/screens/projects_screen.dart';
 import 'package:adsequor_fr/screens/services_screen.dart';
+import 'package:adsequor_fr/widgets/theme_switcher.dart';
 
 class AppNavBar extends StatelessWidget implements PreferredSizeWidget {
   final String currentPage;
@@ -77,6 +78,8 @@ class AppNavBar extends StatelessWidget implements PreferredSizeWidget {
             }
           },
         ),
+        // Add theme switcher button
+        const ThemeSwitcher(),
         const SizedBox(width: 16),
       ],
     );
