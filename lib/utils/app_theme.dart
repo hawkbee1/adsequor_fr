@@ -5,30 +5,33 @@ class AppTheme {
   // Private constructor to prevent instantiation
   AppTheme._();
 
-  // Color constants
-  static const Color primaryColor = Color(0xFF1A237E); // Deep Indigo
-  static const Color secondaryColor = Color(0xFFFFD54F); // Amber
-  static const Color accentColor = Color(0xFF29B6F6); // Light Blue
-  static const Color errorColor = Color(0xFFD32F2F); // Red
-  static const Color textDarkColor = Color(0xFF263238);
-  static const Color textLightColor = Color(0xFFFAFAFA);
+  // Seed color
+  static const Color seedColor = Color(0xFFFFCB2F);
+
+  // Create color schemes to reuse
+  static final ColorScheme _lightColorScheme = ColorScheme.fromSeed(
+    seedColor: seedColor,
+    brightness: Brightness.light,
+    dynamicSchemeVariant: DynamicSchemeVariant.content,
+  );
+
+  static final ColorScheme _darkColorScheme = ColorScheme.fromSeed(
+    seedColor: seedColor,
+    brightness: Brightness.dark,
+  );
 
   // Light theme
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
-    colorScheme: ColorScheme.fromSeed(
-      seedColor: primaryColor,
-      secondary: secondaryColor,
-      brightness: Brightness.light,
-    ),
+    colorScheme: _lightColorScheme,
     textTheme: GoogleFonts.poppinsTextTheme(),
-    appBarTheme: const AppBarTheme(
+    appBarTheme: AppBarTheme(
       elevation: 0,
       centerTitle: false,
       color: Colors.transparent,
-      foregroundColor: primaryColor,
+      foregroundColor: _lightColorScheme.primary,
       titleTextStyle: TextStyle(
-        color: primaryColor,
+        color: _lightColorScheme.primary,
         fontSize: 20.0,
         fontWeight: FontWeight.bold,
       ),
@@ -37,7 +40,7 @@ class AppTheme {
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        backgroundColor: primaryColor,
+        backgroundColor: _lightColorScheme.primary,
         foregroundColor: Colors.white,
       ),
     ),
@@ -45,14 +48,14 @@ class AppTheme {
       style: OutlinedButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        side: const BorderSide(color: primaryColor, width: 1.5),
-        foregroundColor: primaryColor,
+        side: BorderSide(color: _lightColorScheme.primary, width: 1.5),
+        foregroundColor: _lightColorScheme.primary,
       ),
     ),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-        foregroundColor: primaryColor,
+        foregroundColor: _lightColorScheme.primary,
       ),
     ),
     cardTheme: CardTheme(
@@ -60,11 +63,11 @@ class AppTheme {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       clipBehavior: Clip.antiAlias,
     ),
-    chipTheme: const ChipThemeData(
-      backgroundColor: Color(0xFFE0E0E0),
-      selectedColor: Color(0xFFBBDEFB),
-      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      labelStyle: TextStyle(fontSize: 14),
+    chipTheme: ChipThemeData(
+      backgroundColor: const Color(0xFFE0E0E0),
+      selectedColor: _lightColorScheme.primaryContainer,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      labelStyle: const TextStyle(fontSize: 14),
     ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
@@ -76,7 +79,7 @@ class AppTheme {
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8),
-        borderSide: const BorderSide(color: primaryColor, width: 2),
+        borderSide: BorderSide(color: _lightColorScheme.primary, width: 2),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8),
@@ -84,11 +87,11 @@ class AppTheme {
       ),
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8),
-        borderSide: BorderSide(color: errorColor, width: 1.5),
+        borderSide: BorderSide(color: _lightColorScheme.error, width: 1.5),
       ),
       focusedErrorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8),
-        borderSide: BorderSide(color: errorColor, width: 2),
+        borderSide: BorderSide(color: _lightColorScheme.error, width: 2),
       ),
       labelStyle: TextStyle(color: Colors.grey.shade700),
     ),
@@ -97,11 +100,7 @@ class AppTheme {
   // Dark theme (for future implementation)
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
-    colorScheme: ColorScheme.fromSeed(
-      seedColor: primaryColor,
-      secondary: secondaryColor,
-      brightness: Brightness.dark,
-    ),
+    colorScheme: _darkColorScheme,
     textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
     // Add more dark theme customizations as needed
   );
