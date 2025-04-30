@@ -12,7 +12,6 @@ void main() {
     TestWidgetsFlutterBinding.ensureInitialized();
     // Use a wider screen to avoid overflow issues - 1500 pixels wide
     TestUtils.setupTestScreenSize();
-    TestUtils.setupAssetMocking();
   });
 
   tearDownAll(() {

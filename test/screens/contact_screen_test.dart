@@ -8,7 +8,6 @@ void main() {
   setUpAll(() {
     TestWidgetsFlutterBinding.ensureInitialized();
     TestUtils.setupTestScreenSize();
-    TestUtils.setupAssetMocking();
   });
 
   // Clean up after tests
