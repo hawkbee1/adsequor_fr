@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:adsequor_fr/widgets/hero_banner.dart';
 import 'package:adsequor_fr/screens/services_screen.dart';
 import 'package:adsequor_fr/screens/contact_screen.dart';
 

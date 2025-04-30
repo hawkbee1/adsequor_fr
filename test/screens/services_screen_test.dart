@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:adsequor_fr/screens/services_screen.dart';
-import 'package:adsequor_fr/screens/contact_screen.dart';
 import 'package:adsequor_fr/models/service.dart';
 import 'package:adsequor_fr/widgets/app_nav_bar.dart';
 import 'package:adsequor_fr/widgets/app_footer.dart';
@@ -12,13 +11,12 @@ void main() {
   // Configure test window size to accommodate larger screen content
   setUpAll(() {
     TestWidgetsFlutterBinding.ensureInitialized();
-    final dpi = TestWidgetsFlutterBinding.instance.window.devicePixelRatio;
+    final binding = TestWidgetsFlutterBinding.instance;
+    final testFlutterView = binding.platformDispatcher.views.first;
+    final dpi = testFlutterView.devicePixelRatio;
     final width = 1024;
     final height = 2000; // Taller to accommodate scrolling
-    TestWidgetsFlutterBinding.instance.window.physicalSizeTestValue = Size(
-      width * dpi,
-      height * dpi,
-    );
+    testFlutterView.physicalSize = Size(width * dpi, height * dpi);
 
     // Register asset bundles to handle image loading in tests
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
@@ -34,7 +32,9 @@ void main() {
 
   // Clean up after tests
   tearDownAll(() {
-    TestWidgetsFlutterBinding.instance.window.clearPhysicalSizeTestValue();
+    final binding = TestWidgetsFlutterBinding.instance;
+    final testFlutterView = binding.platformDispatcher.views.first;
+    testFlutterView.resetPhysicalSize();
   });
 
   // Helper function to wrap widgets in a ProviderScope for testing

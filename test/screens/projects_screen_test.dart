@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:adsequor_fr/screens/projects_screen.dart';
-import 'package:adsequor_fr/screens/contact_screen.dart';
 import 'package:adsequor_fr/models/project.dart';
 import 'package:adsequor_fr/widgets/app_nav_bar.dart';
 import 'package:adsequor_fr/widgets/app_footer.dart';

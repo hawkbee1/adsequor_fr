@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'dart:typed_data';
+import 'package:flutter_test/flutter_test.dart';
 
 /// A collection of utility functions for Flutter testing
 class TestUtils {
@@ -113,17 +113,25 @@ class TestUtils {
 
   /// Configure test window size to a standard desktop size
   static void setupTestScreenSize() {
-    final dpi = TestWidgetsFlutterBinding.instance.window.devicePixelRatio;
+    final dpi =
+        TestWidgetsFlutterBinding
+            .instance
+            .platformDispatcher
+            .views
+            .first
+            .devicePixelRatio;
     final width = 1024;
     final height = 1500;
-    TestWidgetsFlutterBinding.instance.window.physicalSizeTestValue = Size(
-      width * dpi,
-      height * dpi,
-    );
+
+    final testFlutterView =
+        TestWidgetsFlutterBinding.instance.platformDispatcher.views.first;
+    testFlutterView.physicalSize = Size(width * dpi, height * dpi);
   }
 
   /// Reset the test screen size
   static void clearTestScreenSize() {
-    TestWidgetsFlutterBinding.instance.window.clearPhysicalSizeTestValue();
+    final testFlutterView =
+        TestWidgetsFlutterBinding.instance.platformDispatcher.views.first;
+    testFlutterView.resetPhysicalSize();
   }
 }

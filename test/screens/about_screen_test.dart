@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:adsequor_fr/screens/about_screen.dart';
 import 'package:adsequor_fr/widgets/app_nav_bar.dart';

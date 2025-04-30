@@ -12,26 +12,26 @@ void main() {
 
   test('ThemeNotifier initializes with system theme', () {
     final themeNotifier = ThemeNotifier();
-    expect(themeNotifier.debugState, equals(ThemeMode.system));
+    expect(themeNotifier.state, equals(ThemeMode.system));
   });
 
   test('toggleTheme cycles through theme modes correctly', () async {
     final themeNotifier = ThemeNotifier();
 
     // Initial state is system theme
-    expect(themeNotifier.debugState, equals(ThemeMode.system));
+    expect(themeNotifier.state, equals(ThemeMode.system));
 
     // First toggle should go to light theme
     await themeNotifier.toggleTheme();
-    expect(themeNotifier.debugState, equals(ThemeMode.light));
+    expect(themeNotifier.state, equals(ThemeMode.light));
 
     // Second toggle should go to dark theme
     await themeNotifier.toggleTheme();
-    expect(themeNotifier.debugState, equals(ThemeMode.dark));
+    expect(themeNotifier.state, equals(ThemeMode.dark));
 
     // Third toggle should go back to system theme
     await themeNotifier.toggleTheme();
-    expect(themeNotifier.debugState, equals(ThemeMode.system));
+    expect(themeNotifier.state, equals(ThemeMode.system));
   });
 
   test('setThemeMode updates theme correctly', () async {
@@ -39,11 +39,11 @@ void main() {
 
     // Set to dark theme
     await themeNotifier.setThemeMode(ThemeMode.dark);
-    expect(themeNotifier.debugState, equals(ThemeMode.dark));
+    expect(themeNotifier.state, equals(ThemeMode.dark));
 
     // Change to light theme
     await themeNotifier.setThemeMode(ThemeMode.light);
-    expect(themeNotifier.debugState, equals(ThemeMode.light));
+    expect(themeNotifier.state, equals(ThemeMode.light));
   });
 
   test('theme preference is saved to SharedPreferences', () async {
@@ -70,7 +70,7 @@ void main() {
     await Future.delayed(const Duration(milliseconds: 10));
 
     // Verify theme was loaded
-    expect(themeNotifier.debugState, equals(ThemeMode.dark));
+    expect(themeNotifier.state, equals(ThemeMode.dark));
   });
 
   testWidgets('themeProvider provides correct theme mode', (
