@@ -1,10 +1,3 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,18 +5,19 @@ import 'package:adsequor_fr/main.dart';
 import 'package:adsequor_fr/screens/home_screen.dart';
 
 void main() {
-  testWidgets('App initializes with HomeScreen', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+  testWidgets('MyApp initializes correctly', (WidgetTester tester) async {
+    // Build our app and trigger a frame
     await tester.pumpWidget(const ProviderScope(child: MyApp()));
 
-    // Verify that the app contains HomeScreen
+    // Verify that the app contains a MaterialApp
+    expect(find.byType(MaterialApp), findsOneWidget);
+
+    // Verify that HomeScreen is the initial route
     expect(find.byType(HomeScreen), findsOneWidget);
   });
 
-  testWidgets('App has correct theme configuration', (
-    WidgetTester tester,
-  ) async {
-    // Build our app and trigger a frame.
+  testWidgets('MyApp applies theme correctly', (WidgetTester tester) async {
+    // Build our app and trigger a frame
     await tester.pumpWidget(const ProviderScope(child: MyApp()));
 
     // Find MaterialApp widget
@@ -34,5 +28,6 @@ void main() {
     expect(materialApp.darkTheme, isNotNull);
     expect(materialApp.themeMode, isNotNull);
     expect(materialApp.debugShowCheckedModeBanner, isFalse);
+    expect(materialApp.title, 'Adsequor');
   });
 }

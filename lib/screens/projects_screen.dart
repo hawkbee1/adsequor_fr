@@ -88,7 +88,7 @@ class ProjectsScreen extends StatelessWidget {
                               BoxShadow(
                                 color: Theme.of(
                                   context,
-                                ).colorScheme.shadow.withValues(alpha: 0.1),
+                                ).colorScheme.shadow.withOpacity(0.1),
                                 blurRadius: 10,
                                 offset: const Offset(0, 4),
                               ),
@@ -231,16 +231,14 @@ class ProjectsScreen extends StatelessWidget {
               errorBuilder: (context, error, stackTrace) {
                 return Container(
                   height: 200,
-                  color: Theme.of(
-                    context,
-                  ).colorScheme.primary.withValues(alpha: 0.1),
+                  color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
                   child: Center(
                     child: Icon(
                       Icons.image,
                       size: 48,
                       color: Theme.of(
                         context,
-                      ).colorScheme.primary.withValues(alpha: 0.5),
+                      ).colorScheme.primary.withOpacity(0.5),
                     ),
                   ),
                 );
@@ -257,7 +255,7 @@ class ProjectsScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Expanded(
+                    Flexible(
                       child: Text(
                         project.title,
                         style: Theme.of(
@@ -266,24 +264,30 @@ class ProjectsScreen extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Theme.of(context).colorScheme.primary,
                         ),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 2,
                       ),
                     ),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: 6,
-                      ),
-                      decoration: BoxDecoration(
-                        color: Theme.of(
-                          context,
-                        ).colorScheme.primary.withValues(alpha: 0.1),
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Text(
-                        project.duration,
-                        style: TextStyle(
-                          color: Theme.of(context).colorScheme.primary,
-                          fontWeight: FontWeight.bold,
+                    const SizedBox(width: 16),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 6,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Theme.of(
+                            context,
+                          ).colorScheme.primary.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Text(
+                          project.duration,
+                          style: TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
@@ -365,7 +369,7 @@ class ProjectsScreen extends StatelessWidget {
                               label: Text(tech),
                               backgroundColor: Theme.of(
                                 context,
-                              ).colorScheme.secondary.withValues(alpha: 0.1),
+                              ).colorScheme.secondary.withOpacity(0.1),
                               labelStyle: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                               ),
