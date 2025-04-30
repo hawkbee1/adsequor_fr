@@ -33,22 +33,6 @@ final List<Service> adsequorServices = [
     ],
   ),
   Service(
-    id: 'business_intel',
-    title: 'Business Intelligence',
-    description:
-        'Comprehensive business intelligence solutions to help organizations make data-driven decisions.',
-    imageUrl:
-        'assets/bi_solutions.png', // You may need to update this with actual image
-    features: [
-      'Data warehouse design',
-      'ETL processes',
-      'Dashboard development',
-      'Data analysis',
-      'Reporting solutions',
-      'Performance metrics',
-    ],
-  ),
-  Service(
     id: 'it_consulting',
     title: 'IT Consulting',
     description:
