@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:adsequor_fr/screens/home_screen.dart';
+import 'package:adsequor_fr/screens/one_page_screen.dart';
 import 'package:adsequor_fr/utils/app_theme.dart';
 import 'package:adsequor_fr/providers/theme_provider.dart';
 
@@ -26,7 +26,7 @@ class MyApp extends ConsumerWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: themeMode,
-      home: const HomeScreen(),
+      home: const OnePageScreen(),
     );
   }
 }
