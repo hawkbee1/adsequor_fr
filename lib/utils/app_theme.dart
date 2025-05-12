@@ -18,6 +18,7 @@ class AppTheme {
   static final ColorScheme _darkColorScheme = ColorScheme.fromSeed(
     seedColor: seedColor,
     brightness: Brightness.dark,
+    dynamicSchemeVariant: DynamicSchemeVariant.content,
   );
 
   // Light theme

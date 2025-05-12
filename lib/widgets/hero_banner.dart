@@ -49,6 +49,14 @@ class HeroBanner extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              // Company logo
+              Image.asset(
+                'assets/logo_adsequor.png',
+                height: 100,
+                width: 100,
+                fit: BoxFit.contain,
+              ),
+              const SizedBox(height: 24),
               Text(
                 title,
                 style: Theme.of(context).textTheme.displayMedium?.copyWith(
