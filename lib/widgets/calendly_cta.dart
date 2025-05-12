@@ -24,7 +24,7 @@ class CalendlyCta extends StatelessWidget {
   Widget build(BuildContext context) {
     final bgColor =
         backgroundColor ??
-        Theme.of(context).colorScheme.secondary.withOpacity(0.1);
+        Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1);
     final txtColor = textColor ?? Theme.of(context).colorScheme.secondary;
 
     return Container(
@@ -35,7 +35,7 @@ class CalendlyCta extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),

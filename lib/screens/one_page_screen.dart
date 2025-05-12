@@ -77,7 +77,7 @@ class OnePageScreen extends StatelessWidget {
                     'Schedule a free 30-minute consultation to discuss how we can help with your specific technology needs.',
                 backgroundColor: Theme.of(
                   context,
-                ).colorScheme.primary.withOpacity(0.1),
+                ).colorScheme.primary.withValues(alpha: 0.1),
                 textColor: Theme.of(context).colorScheme.primary,
               ),
             ),
@@ -145,7 +145,7 @@ class OnePageScreen extends StatelessWidget {
                     'Let\'s have a tea together and explore how we can bring your ideas to life.',
                 backgroundColor: Theme.of(
                   context,
-                ).colorScheme.secondary.withOpacity(0.1),
+                ).colorScheme.secondary.withValues(alpha: 0.1),
                 textColor: Theme.of(context).colorScheme.secondary,
                 icon: Icons.emoji_food_beverage,
               ),
@@ -382,7 +382,7 @@ class OnePageScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Theme.of(
                             context,
-                          ).colorScheme.primary.withOpacity(0.1),
+                          ).colorScheme.primary.withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Center(
@@ -442,7 +442,7 @@ class OnePageScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Theme.of(
                                 context,
-                              ).colorScheme.primary.withOpacity(0.1),
+                              ).colorScheme.primary.withValues(alpha: 0.1),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Icon(
@@ -568,7 +568,7 @@ class OnePageScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Theme.of(
                       context,
-                    ).colorScheme.primary.withOpacity(0.1),
+                    ).colorScheme.primary.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text(
@@ -607,7 +607,7 @@ class OnePageScreen extends StatelessWidget {
                           label: Text(tech),
                           backgroundColor: Theme.of(
                             context,
-                          ).colorScheme.secondary.withOpacity(0.1),
+                          ).colorScheme.secondary.withValues(alpha: 0.1),
                           labelStyle: TextStyle(
                             color: Theme.of(context).colorScheme.secondary,
                             fontSize: 12,
@@ -633,7 +633,7 @@ class OnePageScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Theme.of(context).colorScheme.shadow.withOpacity(0.1),
+            color: Theme.of(context).colorScheme.shadow.withValues(alpha: 0.1),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -771,7 +771,9 @@ class OnePageScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                  color: Theme.of(
+                    context,
+                  ).colorScheme.primary.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(
