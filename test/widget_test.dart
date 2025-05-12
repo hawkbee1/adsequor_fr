@@ -5,11 +5,11 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:adsequor_fr/screens/one_page_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:adsequor_fr/main.dart';
-import 'package:adsequor_fr/screens/home_screen.dart';
 
 void main() {
   testWidgets('App initializes with HomeScreen', (WidgetTester tester) async {
@@ -17,7 +17,7 @@ void main() {
     await tester.pumpWidget(const ProviderScope(child: MyApp()));
 
     // Verify that the app contains HomeScreen
-    expect(find.byType(HomeScreen), findsOneWidget);
+    expect(find.byType(OnePageScreen), findsOneWidget);
   });
 
   testWidgets('App has correct theme configuration', (

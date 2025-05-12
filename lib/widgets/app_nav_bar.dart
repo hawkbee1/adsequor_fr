@@ -1,8 +1,8 @@
+import 'package:adsequor_fr/screens/one_page_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:adsequor_fr/models/company.dart';
 import 'package:adsequor_fr/screens/about_screen.dart';
 import 'package:adsequor_fr/screens/contact_screen.dart';
-import 'package:adsequor_fr/screens/home_screen.dart';
 import 'package:adsequor_fr/screens/projects_screen.dart';
 import 'package:adsequor_fr/screens/services_screen.dart';
 import 'package:adsequor_fr/widgets/theme_switcher.dart';
@@ -22,7 +22,7 @@ class AppNavBar extends StatelessWidget implements PreferredSizeWidget {
         onTap: () {
           if (currentPage != 'home') {
             Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (_) => const HomeScreen()),
+              MaterialPageRoute(builder: (_) => const OnePageScreen()),
             );
           }
         },

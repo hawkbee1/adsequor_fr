@@ -88,68 +88,34 @@ class HeroBanner extends StatelessWidget {
                 ),
               ],
               const SizedBox(height: 48),
-              Flex(
-                mainAxisAlignment: MainAxisAlignment.center,
-                direction: Axis.horizontal,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ElevatedButton.icon(
-                      onPressed:
-                          () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const ServicesScreen(),
-                            ),
-                          ),
-                      style: ElevatedButton.styleFrom(
-                        foregroundColor: Theme.of(context).colorScheme.primary,
-                        backgroundColor: Theme.of(context).colorScheme.surface,
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 32,
-                          vertical: 20,
-                        ),
-                        textStyle: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: OutlinedButton(
+                  onPressed:
+                      onCtaPressed ??
+                      () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const ContactScreen(),
                         ),
                       ),
-                      icon: const Icon(Icons.business_center),
-                      label: const Text('View Our Services'),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: Theme.of(context).colorScheme.onPrimary,
+                    side: BorderSide(
+                      color: Theme.of(context).colorScheme.onPrimary,
+                      width: 2,
+                    ),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 32,
+                      vertical: 20,
+                    ),
+                    textStyle: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(width: 16),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: OutlinedButton(
-                      onPressed:
-                          onCtaPressed ??
-                          () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const ContactScreen(),
-                            ),
-                          ),
-                      style: OutlinedButton.styleFrom(
-                        foregroundColor:
-                            Theme.of(context).colorScheme.onPrimary,
-                        side: BorderSide(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                          width: 2,
-                        ),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 32,
-                          vertical: 20,
-                        ),
-                        textStyle: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      child: Text(ctaText ?? 'Contact Us'),
-                    ),
-                  ),
-                ],
+                  child: Text(ctaText ?? 'Contact Us'),
+                ),
               ),
             ],
           ),

@@ -1,8 +1,8 @@
+import 'package:adsequor_fr/screens/one_page_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:adsequor_fr/main.dart';
-import 'package:adsequor_fr/screens/home_screen.dart';
 
 void main() {
   testWidgets('MyApp initializes correctly', (WidgetTester tester) async {
@@ -13,7 +13,7 @@ void main() {
     expect(find.byType(MaterialApp), findsOneWidget);
 
     // Verify that HomeScreen is the initial route
-    expect(find.byType(HomeScreen), findsOneWidget);
+    expect(find.byType(OnePageScreen), findsOneWidget);
   });
 
   testWidgets('MyApp applies theme correctly', (WidgetTester tester) async {
