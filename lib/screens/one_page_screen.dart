@@ -1,8 +1,11 @@
+import 'package:adsequor_fr/screens/about_widget.dart';
+import 'package:adsequor_fr/screens/projects_widget.dart';
+import 'package:adsequor_fr/screens/services_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:adsequor_fr/models/company.dart';
 import 'package:adsequor_fr/models/service.dart';
 import 'package:adsequor_fr/models/project.dart';
-import 'package:adsequor_fr/screens/contact_screen.dart';
+import 'package:adsequor_fr/screens/contact_widget.dart';
 import 'package:adsequor_fr/widgets/app_nav_bar.dart';
 import 'package:adsequor_fr/widgets/app_footer.dart';
 import 'package:adsequor_fr/widgets/hero_banner.dart';
@@ -22,50 +25,29 @@ class OnePageScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Hero Banner
-            HeroBanner(
-              title: adsequorProfile.name,
-              subtitle: adsequorProfile.tagline,
-              description:
-                  'Delivering innovative Flutter solutions and IT consultancy services since ${adsequorProfile.foundedYear}',
-              ctaText: 'Schedule a Consultation',
-              onCtaPressed: () async {
-                final uri = Uri.parse(
-                  'https://calendly.com/romuald-barbe/prendre-un-the',
-                );
-                if (await canLaunchUrl(uri)) {
-                  await launchUrl(uri, mode: LaunchMode.externalApplication);
-                }
-              },
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: HeroBanner(
+                title: adsequorProfile.name,
+                subtitle: adsequorProfile.tagline,
+                description:
+                    'Delivering innovative Flutter solutions and IT consultancy services since ${adsequorProfile.foundedYear}',
+                ctaText: 'Schedule a Consultation',
+                onCtaPressed: () async {
+                  final uri = Uri.parse(
+                    'https://calendly.com/romuald-barbe/prendre-un-the',
+                  );
+                  if (await canLaunchUrl(uri)) {
+                    await launchUrl(uri, mode: LaunchMode.externalApplication);
+                  }
+                },
+              ),
             ),
 
             // Services Section
             Padding(
-              padding: const EdgeInsets.all(32.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Our Services',
-                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: Theme.of(context).colorScheme.primary,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    'Specialized in Flutter development and business intelligence solutions.',
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
-                  const SizedBox(height: 24),
-                  LayoutBuilder(
-                    builder: (context, constraints) {
-                      return constraints.maxWidth > 900
-                          ? _buildServicesGrid(context)
-                          : _buildServicesList(context);
-                    },
-                  ),
-                ],
-              ),
+              padding: const EdgeInsets.all(8.0),
+              child: ServicesWidget(),
             ),
 
             // First Calendly CTA
@@ -74,43 +56,15 @@ class OnePageScreen extends StatelessWidget {
               child: CalendlyCta(
                 title: 'Interested in our services?',
                 description:
-                    'Schedule a free 30-minute consultation to discuss how we can help with your specific technology needs.',
-                backgroundColor: Theme.of(
-                  context,
-                ).colorScheme.primary.withValues(alpha: 0.1),
-                textColor: Theme.of(context).colorScheme.primary,
+                    'Schedule a free 15-minutes consultation to discuss how we can help with your specific technology needs.',
               ),
             ),
 
             // About Section
-            Container(
-              color: Theme.of(
-                context,
-              ).colorScheme.primary.withValues(alpha: 0.05),
-              padding: const EdgeInsets.all(32.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'About Us',
-                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: Theme.of(context).colorScheme.primary,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    adsequorProfile.description,
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
-                  const SizedBox(height: 32),
-                  _buildCompanyHighlights(context),
-                  const SizedBox(height: 24),
-                ],
-              ),
-            ),
+            Padding(padding: const EdgeInsets.all(8.0), child: AboutWidget()),
 
             // Projects Section
+            ProjectsWidget(),
             Padding(
               padding: const EdgeInsets.all(32.0),
               child: Column(
@@ -143,10 +97,6 @@ class OnePageScreen extends StatelessWidget {
                 title: 'Ready to discuss your project?',
                 description:
                     'Let\'s have a tea together and explore how we can bring your ideas to life.',
-                backgroundColor: Theme.of(
-                  context,
-                ).colorScheme.secondary.withValues(alpha: 0.1),
-                textColor: Theme.of(context).colorScheme.secondary,
                 icon: Icons.emoji_food_beverage,
               ),
             ),
@@ -181,91 +131,7 @@ class OnePageScreen extends StatelessWidget {
             ),
 
             // Contact Form Section
-            Padding(
-              padding: const EdgeInsets.all(32.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Contact Us',
-                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: Theme.of(context).colorScheme.primary,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    'Get in touch with our team to discuss your project requirements.',
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
-                  const SizedBox(height: 24),
-                  LayoutBuilder(
-                    builder: (context, constraints) {
-                      if (constraints.maxWidth > 900) {
-                        // Desktop layout
-                        return Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            // Contact information
-                            Expanded(child: _buildContactInfo(context)),
-                            const SizedBox(width: 32),
-                            // Final Calendly CTA - prominently displayed
-                            Expanded(
-                              child: CalendlyCta(
-                                title: 'Schedule a Tea Time Chat',
-                                description:
-                                    'The fastest way to get answers to your questions is to schedule a quick call. Let\'s have a tea together!',
-                                backgroundColor:
-                                    Theme.of(context).colorScheme.primary,
-                                textColor:
-                                    Theme.of(context).colorScheme.onPrimary,
-                              ),
-                            ),
-                          ],
-                        );
-                      } else {
-                        // Mobile layout
-                        return Column(
-                          children: [
-                            _buildContactInfo(context),
-                            const SizedBox(height: 24),
-                            CalendlyCta(
-                              title: 'Schedule a Tea Time Chat',
-                              description:
-                                  'The fastest way to get answers to your questions is to schedule a quick call. Let\'s have a tea together!',
-                              backgroundColor:
-                                  Theme.of(context).colorScheme.primary,
-                              textColor:
-                                  Theme.of(context).colorScheme.onPrimary,
-                            ),
-                          ],
-                        );
-                      }
-                    },
-                  ),
-                ],
-              ),
-            ),
-
-            // FAQ Section
-            Container(
-              color: Theme.of(context).colorScheme.surfaceContainerHighest,
-              padding: const EdgeInsets.all(32),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Frequently Asked Questions',
-                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: Theme.of(context).colorScheme.primary,
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-                  ...adsequorFaqs.map((faq) => _buildFaqItem(context, faq)),
-                ],
-              ),
-            ),
+            Padding(padding: const EdgeInsets.all(8.0), child: ContactWidget()),
 
             // Final CTA Section
             Container(
@@ -490,45 +356,6 @@ class OnePageScreen extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
-          ),
-        );
-      },
-    );
-  }
-
-  // Company Highlights
-  Widget _buildCompanyHighlights(BuildContext context) {
-    return GridView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        crossAxisSpacing: 16,
-        mainAxisSpacing: 16,
-        childAspectRatio: 2.5,
-      ),
-      itemCount: adsequorProfile.values.length,
-      itemBuilder: (context, index) {
-        return Card(
-          elevation: 2,
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  _getValueIcon(index),
-                  color: Theme.of(context).colorScheme.secondary,
-                  size: 32,
-                ),
-                const SizedBox(height: 12),
-                Text(
-                  adsequorProfile.values[index],
-                  style: Theme.of(context).textTheme.titleSmall,
-                  textAlign: TextAlign.center,
-                ),
-              ],
             ),
           ),
         );
@@ -831,17 +658,5 @@ class OnePageScreen extends StatelessWidget {
         Text(faq.answer, style: Theme.of(context).textTheme.bodyMedium),
       ],
     );
-  }
-
-  // Value Icons
-  IconData _getValueIcon(int index) {
-    final icons = [
-      Icons.star,
-      Icons.lightbulb,
-      Icons.school,
-      Icons.message,
-      Icons.groups,
-    ];
-    return index < icons.length ? icons[index] : Icons.check_circle;
   }
 }

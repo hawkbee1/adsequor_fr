@@ -58,7 +58,6 @@ final CompanyProfile adsequorProfile = CompanyProfile(
     'Adaptability',
   ],
   contact: {
-    'email': 'barbe.romuald@gmail.com',
     'linkedin': 'linkedin.com/in/hawkbee',
     'github': 'github.com/hawkbee1',
   },
@@ -80,7 +79,6 @@ final CompanyProfile adsequorProfile = CompanyProfile(
         'Mobile Development',
       ],
       contact: {
-        'email': 'barbe.romuald@gmail.com',
         'linkedin': 'linkedin.com/in/hawkbee',
         'github': 'github.com/hawkbee1',
       },

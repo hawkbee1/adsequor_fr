@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:adsequor_fr/screens/services_screen.dart';
+import 'package:adsequor_fr/screens/services_widget.dart';
 import 'package:adsequor_fr/models/service.dart';
 import 'package:adsequor_fr/widgets/app_nav_bar.dart';
 import 'package:adsequor_fr/widgets/app_footer.dart';
@@ -46,7 +46,7 @@ void main() {
     WidgetTester tester,
   ) async {
     // Build the actual ServicesScreen widget
-    await tester.pumpWidget(createTestWidget(child: const ServicesScreen()));
+    await tester.pumpWidget(createTestWidget(child: const ServicesWidget()));
 
     // Skip animation frames
     await tester.pump();
@@ -59,7 +59,7 @@ void main() {
     WidgetTester tester,
   ) async {
     // Build the ServicesScreen widget
-    await tester.pumpWidget(createTestWidget(child: const ServicesScreen()));
+    await tester.pumpWidget(createTestWidget(child: const ServicesWidget()));
     await tester.pump();
 
     // Verify navbar and footer are displayed
@@ -71,7 +71,7 @@ void main() {
     WidgetTester tester,
   ) async {
     // Build the ServicesScreen widget
-    await tester.pumpWidget(createTestWidget(child: const ServicesScreen()));
+    await tester.pumpWidget(createTestWidget(child: const ServicesWidget()));
     await tester.pump();
 
     // Verify service tabs are displayed by finding ChoiceChip widgets instead of Tab widgets
@@ -80,7 +80,7 @@ void main() {
 
   testWidgets('Contact Us button is present', (WidgetTester tester) async {
     // Build the ServicesScreen widget
-    await tester.pumpWidget(createTestWidget(child: const ServicesScreen()));
+    await tester.pumpWidget(createTestWidget(child: const ServicesWidget()));
     await tester.pump();
 
     // Verify call to action content without relying on exact text

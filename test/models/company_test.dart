@@ -104,10 +104,6 @@ void main() {
       );
 
       // Contact information
-      expect(
-        adsequorProfile.contact['email'],
-        equals('barbe.romuald@gmail.com'),
-      );
       expect(adsequorProfile.contact['github'], equals('github.com/hawkbee1'));
 
       // Values

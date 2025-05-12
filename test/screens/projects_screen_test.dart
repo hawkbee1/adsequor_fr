@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:adsequor_fr/screens/projects_screen.dart';
+import 'package:adsequor_fr/screens/projects_widget.dart';
 import 'package:adsequor_fr/models/project.dart';
 import 'package:adsequor_fr/widgets/app_nav_bar.dart';
 import 'package:adsequor_fr/widgets/app_footer.dart';
@@ -23,7 +23,7 @@ void main() {
   ) async {
     // Build the actual ProjectsScreen widget
     await tester.pumpWidget(
-      TestUtils.createTestWidget(child: const ProjectsScreen()),
+      TestUtils.createTestWidget(child: const ProjectsWidget()),
     );
 
     // Use pumpAndSettle with a timeout to avoid getting stuck in infinite animations
@@ -38,7 +38,7 @@ void main() {
   ) async {
     // Build the ProjectsScreen widget
     await tester.pumpWidget(
-      TestUtils.createTestWidget(child: const ProjectsScreen()),
+      TestUtils.createTestWidget(child: const ProjectsWidget()),
     );
 
     // Use pumpAndSettle with a timeout to avoid getting stuck in infinite animations
@@ -54,7 +54,7 @@ void main() {
   ) async {
     // Build the ProjectsScreen widget
     await tester.pumpWidget(
-      TestUtils.createTestWidget(child: const ProjectsScreen()),
+      TestUtils.createTestWidget(child: const ProjectsWidget()),
     );
 
     // Use pumpAndSettle with a timeout to avoid getting stuck in infinite animations

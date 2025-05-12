@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:adsequor_fr/screens/contact_screen.dart';
+import 'package:adsequor_fr/screens/contact_widget.dart';
 import '../helpers/test_utils.dart';
 
 void main() {
@@ -18,7 +18,7 @@ void main() {
   testWidgets('Contact screen renders properly', (WidgetTester tester) async {
     // Build the contact screen widget
     await tester.pumpWidget(
-      TestUtils.createTestWidget(child: const ContactScreen()),
+      TestUtils.createTestWidget(child: const ContactWidget()),
     );
 
     // Verify that the contact form is rendered

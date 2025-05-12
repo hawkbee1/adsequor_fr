@@ -1,12 +1,9 @@
+import 'package:adsequor_fr/widgets/schedule_now.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class CalendlyCta extends StatelessWidget {
   final String title;
   final String description;
-  final String calendlyUrl;
-  final Color? backgroundColor;
-  final Color? textColor;
   final IconData icon;
 
   const CalendlyCta({
@@ -14,18 +11,15 @@ class CalendlyCta extends StatelessWidget {
     this.title = 'Schedule an Appointment',
     this.description =
         'Take the first step towards transforming your business with a personalized consultation.',
-    this.calendlyUrl = 'https://calendly.com/romuald-barbe/prendre-un-the',
-    this.backgroundColor,
-    this.textColor,
     this.icon = Icons.calendar_month,
   });
 
   @override
   Widget build(BuildContext context) {
-    final bgColor =
-        backgroundColor ??
-        Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1);
-    final txtColor = textColor ?? Theme.of(context).colorScheme.secondary;
+    final bgColor = Theme.of(
+      context,
+    ).colorScheme.secondary.withValues(alpha: 0.1);
+    final txtColor = Theme.of(context).colorScheme.secondary;
 
     return Container(
       padding: const EdgeInsets.all(24),
@@ -62,30 +56,7 @@ class CalendlyCta extends StatelessWidget {
           const SizedBox(height: 16),
           Text(description, style: Theme.of(context).textTheme.bodyLarge),
           const SizedBox(height: 24),
-          Align(
-            alignment: Alignment.centerRight,
-            child: ElevatedButton.icon(
-              onPressed: () async {
-                final uri = Uri.parse(calendlyUrl);
-                if (await canLaunchUrl(uri)) {
-                  await launchUrl(uri, mode: LaunchMode.externalApplication);
-                }
-              },
-              icon: const Icon(Icons.event_available),
-              label: const Text('Schedule Now'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: txtColor,
-                foregroundColor:
-                    bgColor.computeLuminance() > 0.5
-                        ? Colors.black
-                        : Colors.white,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 24,
-                  vertical: 16,
-                ),
-              ),
-            ),
-          ),
+          Align(alignment: Alignment.centerRight, child: ScheduleNow()),
         ],
       ),
     );

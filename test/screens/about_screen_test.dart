@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:adsequor_fr/screens/about_screen.dart';
+import 'package:adsequor_fr/screens/about_widget.dart';
 import 'package:adsequor_fr/widgets/app_nav_bar.dart';
 import 'package:adsequor_fr/widgets/app_footer.dart';
 import '../helpers/test_utils.dart';
@@ -21,7 +21,7 @@ void main() {
   ) async {
     // Build the actual AboutScreen widget
     await tester.pumpWidget(
-      TestUtils.createTestWidget(child: const AboutScreen()),
+      TestUtils.createTestWidget(child: const AboutWidget()),
     );
 
     // Wait for all images to load and animations to complete
@@ -36,7 +36,7 @@ void main() {
   ) async {
     // Build the AboutScreen widget
     await tester.pumpWidget(
-      TestUtils.createTestWidget(child: const AboutScreen()),
+      TestUtils.createTestWidget(child: const AboutWidget()),
     );
 
     // Wait for all images to load and animations to complete
@@ -52,7 +52,7 @@ void main() {
   ) async {
     // Build the AboutScreen widget
     await tester.pumpWidget(
-      TestUtils.createTestWidget(child: const AboutScreen()),
+      TestUtils.createTestWidget(child: const AboutWidget()),
     );
 
     // Wait for all images to load and animations to complete

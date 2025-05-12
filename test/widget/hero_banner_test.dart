@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:adsequor_fr/screens/services_screen.dart';
-import 'package:adsequor_fr/screens/contact_screen.dart';
+import 'package:adsequor_fr/screens/services_widget.dart';
+import 'package:adsequor_fr/screens/contact_widget.dart';
 
 // Test-friendly version of HeroBanner that avoids layout overflow issues in tests
 class TestHeroBanner extends StatelessWidget {
@@ -50,7 +50,7 @@ class TestHeroBanner extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => const ServicesScreen(),
+                          builder: (_) => const ServicesWidget(),
                         ),
                       );
                     },
@@ -64,7 +64,7 @@ class TestHeroBanner extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (_) => const ContactScreen(),
+                              builder: (_) => const ContactWidget(),
                             ),
                           );
                         },

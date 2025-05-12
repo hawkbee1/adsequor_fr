@@ -1,12 +1,11 @@
+import 'package:adsequor_fr/widgets/schedule_now.dart';
 import 'package:flutter/material.dart';
-import 'package:adsequor_fr/screens/services_screen.dart';
-import 'package:adsequor_fr/screens/contact_screen.dart';
+import 'package:adsequor_fr/screens/contact_widget.dart';
 
 class HeroBanner extends StatelessWidget {
   final String title;
   final String subtitle;
   final String? description;
-  final String? backgroundImage;
   final String? ctaText;
   final VoidCallback? onCtaPressed;
 
@@ -15,7 +14,6 @@ class HeroBanner extends StatelessWidget {
     required this.title,
     required this.subtitle,
     this.description,
-    this.backgroundImage,
     this.ctaText,
     this.onCtaPressed,
   });
@@ -24,23 +22,13 @@ class HeroBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: MediaQuery.of(context).size.height * 0.7, // 70% of screen height
       constraints: const BoxConstraints(minHeight: 500),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
-        image:
-            backgroundImage != null
-                ? DecorationImage(
-                  image: AssetImage(backgroundImage!),
-                  fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(
-                    Theme.of(
-                      context,
-                    ).colorScheme.primary.withValues(alpha: 0.85),
-                    BlendMode.srcOver,
-                  ),
-                )
-                : null,
+        image: DecorationImage(
+          image: AssetImage('assets/pyrenees.jpeg'),
+          fit: BoxFit.cover,
+        ),
       ),
       child: Center(
         child: Padding(
@@ -50,81 +38,38 @@ class HeroBanner extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               // Company logo
-              Image.asset(
-                'assets/logo_adsequor.png',
-                height: 100,
-                width: 100,
-                fit: BoxFit.contain,
-              ),
-              const SizedBox(height: 24),
-              Text(
-                title,
-                style: Theme.of(context).textTheme.displayMedium?.copyWith(
-                  color: Theme.of(context).colorScheme.onPrimary,
-                  fontWeight: FontWeight.bold,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 24),
-              Container(
-                constraints: const BoxConstraints(maxWidth: 800),
-                child: Text(
-                  subtitle,
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    color: Theme.of(
-                      context,
-                    ).colorScheme.onPrimary.withAlpha(230),
-                    height: 1.5,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              if (description != null) ...[
-                const SizedBox(height: 16),
-                Container(
+              Image.asset('assets/logo_adsequor.png', fit: BoxFit.contain),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
                   constraints: const BoxConstraints(maxWidth: 800),
                   child: Text(
-                    description!,
-                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: Theme.of(
-                        context,
-                      ).colorScheme.onPrimary.withValues(alpha: 0.8),
-                      height: 1.4,
+                    subtitle,
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                      color: Colors.white,
+                      height: 1.5,
                     ),
                     textAlign: TextAlign.center,
                   ),
                 ),
-              ],
-              const SizedBox(height: 48),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: OutlinedButton(
-                  onPressed:
-                      onCtaPressed ??
-                      () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => const ContactScreen(),
-                        ),
+              ),
+              if (description != null) ...[
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    constraints: const BoxConstraints(maxWidth: 800),
+                    child: Text(
+                      description!,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        color: Colors.white,
+                        height: 1.4,
                       ),
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: Theme.of(context).colorScheme.onPrimary,
-                    side: BorderSide(
-                      color: Theme.of(context).colorScheme.onPrimary,
-                      width: 2,
-                    ),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 32,
-                      vertical: 20,
-                    ),
-                    textStyle: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                      textAlign: TextAlign.center,
                     ),
                   ),
-                  child: Text(ctaText ?? 'Contact Us'),
                 ),
-              ),
+              ],
+              Padding(padding: const EdgeInsets.all(8.0), child: ScheduleNow()),
             ],
           ),
         ),

@@ -34,19 +34,13 @@ class AppFooter extends StatelessWidget {
                 children: [
                   _buildSocialButton(
                     context: context,
-                    icon: Icons.email,
-                    tooltip: 'Email',
-                    url: 'mailto:${adsequorProfile.contact['email']}',
-                  ),
-                  _buildSocialButton(
-                    context: context,
-                    icon: Icons.link,
+                    icon: ImageIcon(AssetImage('assets/linkedin_logo.png')),
                     tooltip: 'LinkedIn',
                     url: 'https://${adsequorProfile.contact['linkedin']}',
                   ),
                   _buildSocialButton(
                     context: context,
-                    icon: Icons.code,
+                    icon: ImageIcon(AssetImage('assets/github_logo.png')),
                     tooltip: 'GitHub',
                     url: 'https://${adsequorProfile.contact['github']}',
                   ),
@@ -79,7 +73,7 @@ class AppFooter extends StatelessWidget {
 
   Widget _buildSocialButton({
     required BuildContext context,
-    required IconData icon,
+    required Widget icon,
     required String tooltip,
     required String url,
   }) {
@@ -92,7 +86,7 @@ class AppFooter extends StatelessWidget {
             await launchUrl(uri);
           }
         },
-        icon: Icon(icon),
+        icon: icon,
         tooltip: tooltip,
         style: IconButton.styleFrom(
           backgroundColor: Theme.of(
