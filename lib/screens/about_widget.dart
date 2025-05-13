@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adsequor_fr/models/company.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutWidget extends StatelessWidget {
   const AboutWidget({super.key});
@@ -154,7 +155,6 @@ class AboutWidget extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );
@@ -262,7 +262,15 @@ class AboutWidget extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(right: 16.0),
                               child: InkWell(
-                                onTap: () {},
+                                onTap: () async {
+                                  final uri = Uri.parse(contact.value);
+                                  if (await canLaunchUrl(uri)) {
+                                    await launchUrl(
+                                      uri,
+                                      mode: LaunchMode.externalApplication,
+                                    );
+                                  }
+                                },
                                 child: Row(
                                   children: [
                                     Icon(
