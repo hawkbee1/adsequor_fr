@@ -101,34 +101,6 @@ class OnePageScreen extends StatelessWidget {
               ),
             ),
 
-            // Testimonials section
-            Container(
-              padding: const EdgeInsets.all(32),
-              color: Theme.of(context).colorScheme.surfaceContainerHighest,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Client Testimonials',
-                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-                  SizedBox(
-                    height: 250,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: adsequorTestimonials.length,
-                      itemBuilder: (context, index) {
-                        final testimonial = adsequorTestimonials[index];
-                        return _buildTestimonialCard(context, testimonial);
-                      },
-                    ),
-                  ),
-                ],
-              ),
-            ),
 
             // Contact Form Section
             Padding(padding: const EdgeInsets.all(8.0), child: ContactWidget()),
