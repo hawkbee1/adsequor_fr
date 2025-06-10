@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:adsequor_fr/models/project.dart';
-import 'package:adsequor_fr/screens/contact_widget.dart';
 
 class ProjectsWidget extends StatelessWidget {
   const ProjectsWidget({super.key});

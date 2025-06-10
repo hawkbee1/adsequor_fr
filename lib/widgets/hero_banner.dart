@@ -1,6 +1,5 @@
 import 'package:adsequor_fr/widgets/schedule_now.dart';
 import 'package:flutter/material.dart';
-import 'package:adsequor_fr/screens/contact_widget.dart';
 
 class HeroBanner extends StatelessWidget {
   final String title;
