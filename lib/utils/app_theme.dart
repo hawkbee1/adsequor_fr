@@ -29,7 +29,7 @@ class AppTheme {
     appBarTheme: AppBarTheme(
       elevation: 0,
       centerTitle: false,
-      color: Colors.transparent,
+      backgroundColor: Colors.transparent,
       foregroundColor: _lightColorScheme.primary,
       titleTextStyle: TextStyle(
         color: _lightColorScheme.primary,
