@@ -3,20 +3,25 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 // Theme mode state provider
-final themeProvider = StateNotifierProvider<ThemeNotifier, ThemeMode>(
-  (ref) => ThemeNotifier(),
+final themeProvider = NotifierProvider<ThemeNotifier, ThemeMode>(
+  () => ThemeNotifier(),
 );
 
 // Theme notifier to manage theme state
-class ThemeNotifier extends StateNotifier<ThemeMode> {
-  // Initialize with system theme as default
-  ThemeNotifier() : super(ThemeMode.system) {
+class ThemeNotifier extends Notifier<ThemeMode> {
+  bool _disposed = false;
+
+  @override
+  ThemeMode build() {
+    ref.onDispose(() => _disposed = true);
     _loadThemePreference();
+    return ThemeMode.system;
   }
 
   // Save theme preference
   Future<void> setThemeMode(ThemeMode themeMode) async {
     final prefs = await SharedPreferences.getInstance();
+    if (_disposed) return;
     state = themeMode;
 
     // Save preference based on theme mode
@@ -53,7 +58,7 @@ class ThemeNotifier extends StateNotifier<ThemeMode> {
     final prefs = await SharedPreferences.getInstance();
     final themeString = prefs.getString('theme_mode');
 
-    if (themeString == null) {
+    if (themeString == null || _disposed) {
       return; // Use default theme (system)
     }
 

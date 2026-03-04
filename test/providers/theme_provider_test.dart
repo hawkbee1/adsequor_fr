@@ -11,48 +11,53 @@ void main() {
   });
 
   test('ThemeNotifier initializes with system theme', () {
-    final themeNotifier = ThemeNotifier();
-    expect(themeNotifier.state, equals(ThemeMode.system));
+    final container = ProviderContainer();
+    addTearDown(container.dispose);
+
+    expect(container.read(themeProvider), equals(ThemeMode.system));
   });
 
   test('toggleTheme cycles through theme modes correctly', () async {
-    final themeNotifier = ThemeNotifier();
+    final container = ProviderContainer();
+    addTearDown(container.dispose);
 
     // Initial state is system theme
-    expect(themeNotifier.state, equals(ThemeMode.system));
+    expect(container.read(themeProvider), equals(ThemeMode.system));
 
     // First toggle should go to light theme
-    await themeNotifier.toggleTheme();
-    expect(themeNotifier.state, equals(ThemeMode.light));
+    await container.read(themeProvider.notifier).toggleTheme();
+    expect(container.read(themeProvider), equals(ThemeMode.light));
 
     // Second toggle should go to dark theme
-    await themeNotifier.toggleTheme();
-    expect(themeNotifier.state, equals(ThemeMode.dark));
+    await container.read(themeProvider.notifier).toggleTheme();
+    expect(container.read(themeProvider), equals(ThemeMode.dark));
 
     // Third toggle should go back to system theme
-    await themeNotifier.toggleTheme();
-    expect(themeNotifier.state, equals(ThemeMode.system));
+    await container.read(themeProvider.notifier).toggleTheme();
+    expect(container.read(themeProvider), equals(ThemeMode.system));
   });
 
   test('setThemeMode updates theme correctly', () async {
-    final themeNotifier = ThemeNotifier();
+    final container = ProviderContainer();
+    addTearDown(container.dispose);
 
     // Set to dark theme
-    await themeNotifier.setThemeMode(ThemeMode.dark);
-    expect(themeNotifier.state, equals(ThemeMode.dark));
+    await container.read(themeProvider.notifier).setThemeMode(ThemeMode.dark);
+    expect(container.read(themeProvider), equals(ThemeMode.dark));
 
     // Change to light theme
-    await themeNotifier.setThemeMode(ThemeMode.light);
-    expect(themeNotifier.state, equals(ThemeMode.light));
+    await container.read(themeProvider.notifier).setThemeMode(ThemeMode.light);
+    expect(container.read(themeProvider), equals(ThemeMode.light));
   });
 
   test('theme preference is saved to SharedPreferences', () async {
     // Initialize with empty shared preferences
     SharedPreferences.setMockInitialValues({});
-    final themeNotifier = ThemeNotifier();
+    final container = ProviderContainer();
+    addTearDown(container.dispose);
 
     // Change theme mode
-    await themeNotifier.setThemeMode(ThemeMode.dark);
+    await container.read(themeProvider.notifier).setThemeMode(ThemeMode.dark);
 
     // Verify preference was saved
     final prefs = await SharedPreferences.getInstance();
@@ -63,14 +68,18 @@ void main() {
     // Initialize with dark theme preference
     SharedPreferences.setMockInitialValues({'theme_mode': 'dark'});
 
-    // Create notifier - should load dark theme from preferences
-    final themeNotifier = ThemeNotifier();
+    // Create container - should load dark theme from preferences
+    final container = ProviderContainer();
+    addTearDown(container.dispose);
+
+    // TRIGGER INITIALIZATION
+    container.read(themeProvider);
 
     // Wait for async _loadThemePreference to complete
-    await Future.delayed(const Duration(milliseconds: 10));
+    await Future.delayed(const Duration(milliseconds: 100));
 
     // Verify theme was loaded
-    expect(themeNotifier.state, equals(ThemeMode.dark));
+    expect(container.read(themeProvider), equals(ThemeMode.dark));
   });
 
   testWidgets('themeProvider provides correct theme mode', (

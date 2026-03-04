@@ -9,24 +9,11 @@ class ThemeSwitcher extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final currentThemeMode = ref.watch(themeProvider);
 
-    // Get icon and tooltip text based on current theme mode
-    IconData iconData;
-    String tooltip;
-
-    switch (currentThemeMode) {
-      case ThemeMode.system:
-        iconData = Icons.brightness_auto;
-        tooltip = 'System Theme';
-        break;
-      case ThemeMode.light:
-        iconData = Icons.light_mode;
-        tooltip = 'Light Theme';
-        break;
-      case ThemeMode.dark:
-        iconData = Icons.dark_mode;
-        tooltip = 'Dark Theme';
-        break;
-    }
+    final (iconData, tooltip) = switch (currentThemeMode) {
+      ThemeMode.system => (Icons.brightness_auto, 'System Theme'),
+      ThemeMode.light => (Icons.light_mode, 'Light Theme'),
+      ThemeMode.dark => (Icons.dark_mode, 'Dark Theme'),
+    };
 
     return IconButton(
       icon: Icon(iconData),
