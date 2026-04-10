@@ -19,7 +19,7 @@ class ProjectsWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Our Projects',
+                  'Selected Engagements',
                   style: Theme.of(context).textTheme.displaySmall?.copyWith(
                     color: Theme.of(context).colorScheme.onPrimary,
                     fontWeight: FontWeight.bold,
@@ -27,7 +27,7 @@ class ProjectsWidget extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'Discover our successful implementations and technology solutions.',
+                  'Examples of the kinds of products, platforms and delivery challenges Adsequor has handled.',
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     color: Theme.of(
                       context,
@@ -102,12 +102,11 @@ class ProjectsWidget extends StatelessWidget {
                     Flexible(
                       child: Text(
                         project.title,
-                        style: Theme.of(
-                          context,
-                        ).textTheme.headlineSmall?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: Theme.of(context).colorScheme.primary,
-                        ),
+                        style: Theme.of(context).textTheme.headlineSmall
+                            ?.copyWith(
+                              fontWeight: FontWeight.bold,
+                              color: Theme.of(context).colorScheme.primary,
+                            ),
                         overflow: TextOverflow.ellipsis,
                         maxLines: 2,
                       ),
@@ -206,20 +205,19 @@ class ProjectsWidget extends StatelessWidget {
                 Wrap(
                   spacing: 8,
                   runSpacing: 8,
-                  children:
-                      project.technologies
-                          .map(
-                            (tech) => Chip(
-                              label: Text(tech),
-                              backgroundColor: Theme.of(
-                                context,
-                              ).colorScheme.secondary.withValues(alpha: 0.1),
-                              labelStyle: TextStyle(
-                                color: Theme.of(context).colorScheme.secondary,
-                              ),
-                            ),
-                          )
-                          .toList(),
+                  children: project.technologies
+                      .map(
+                        (tech) => Chip(
+                          label: Text(tech),
+                          backgroundColor: Theme.of(
+                            context,
+                          ).colorScheme.secondary.withValues(alpha: 0.1),
+                          labelStyle: TextStyle(
+                            color: Theme.of(context).colorScheme.secondary,
+                          ),
+                        ),
+                      )
+                      .toList(),
                 ),
               ],
             ),

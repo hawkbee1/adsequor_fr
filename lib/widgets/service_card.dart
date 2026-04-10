@@ -27,13 +27,12 @@ class ServiceCard extends StatelessWidget {
           children: [
             // Service image or icon
             Container(
-              height: 180,
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.primary,
                 image: DecorationImage(
                   image: AssetImage(service.imageUrl),
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
                   onError: (exception, stackTrace) {
                     // Handle error silently
                   },
@@ -107,26 +106,25 @@ class ServiceCard extends StatelessWidget {
                   // Learn more or contact us button
                   Align(
                     alignment: Alignment.centerRight,
-                    child:
-                        isExpanded
-                            ? ElevatedButton.icon(
-                              onPressed: () {
-                                // Navigate to contact page with service pre-selected
-                              },
-                              icon: const Icon(Icons.email),
-                              label: const Text('Inquire About This Service'),
-                            )
-                            : TextButton(
-                              onPressed: onTap,
-                              child: const Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Text('Learn More'),
-                                  SizedBox(width: 4),
-                                  Icon(Icons.arrow_forward, size: 16),
-                                ],
-                              ),
+                    child: isExpanded
+                        ? ElevatedButton.icon(
+                            onPressed: () {
+                              // Navigate to contact page with service pre-selected
+                            },
+                            icon: const Icon(Icons.email),
+                            label: const Text('Inquire About This Service'),
+                          )
+                        : TextButton(
+                            onPressed: onTap,
+                            child: const Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text('Learn More'),
+                                SizedBox(width: 4),
+                                Icon(Icons.arrow_forward, size: 16),
+                              ],
                             ),
+                          ),
                   ),
                 ],
               ),

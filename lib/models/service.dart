@@ -17,35 +17,42 @@ class Service {
 // List of services offered by Adsequor
 final List<Service> adsequorServices = [
   Service(
-    id: 'flutter_dev',
-    title: 'Flutter Development',
+    id: 'dart_engineering',
+    title: 'Dart Engineering',
     description:
-        'Cross-platform mobile and web application development using Google\'s Flutter framework.',
-    imageUrl:
-        'assets/flutter_dev.png', // You may need to update this with actual image
+        'Application logic, domain modeling and integration layers built in Dart so the core of your product stays consistent across platforms.',
+    imageUrl: 'assets/flutter_dev.png',
     features: [
-      'Cross-platform mobile apps',
-      'Web applications',
-      'Desktop applications',
-      'Custom widgets development',
-      'State management solutions',
-      'Performance optimization',
+      'Shared business logic for client and server flows',
+      'Clean architecture and modular code organization',
+      'API clients, authentication and data workflows',
+      'Automated testing and release-ready foundations',
     ],
   ),
   Service(
-    id: 'it_consulting',
-    title: 'IT Consulting',
+    id: 'flutter_applications',
+    title: 'Flutter Applications',
     description:
-        'Strategic IT consulting services to optimize your technology infrastructure and processes.',
-    imageUrl:
-        'assets/consulting.png', // You may need to update this with actual image
+        'User-facing products delivered with Flutter for mobile, web and desktop from one codebase, with native-feeling experiences on every target.',
+    imageUrl: 'assets/consulting.png',
     features: [
-      'Technology assessment',
-      'Digital transformation',
-      'Project management',
-      'Team leadership',
-      'Agile methodology implementation',
-      'Technical architecture design',
+      'Android and iPhone applications',
+      'Responsive web applications',
+      'Desktop apps for macOS, Windows and Linux',
+      'Design system implementation and performance tuning',
+    ],
+  ),
+  Service(
+    id: 'appwrite_platform',
+    title: 'Appwrite Backend Platform',
+    description:
+        'Backend capabilities delivered with Appwrite to accelerate authentication, data storage, file handling, functions and operations without rebuilding common infrastructure.',
+    imageUrl: 'assets/bi_solutions.png',
+    features: [
+      'Authentication and user management',
+      'Databases, storage and permissions',
+      'Cloud functions and event-driven workflows',
+      'Deployment patterns for secure web server workloads',
     ],
   ),
 ];

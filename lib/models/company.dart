@@ -5,6 +5,7 @@ class CompanyProfile {
   final String description;
   final String location;
   final List<String> values;
+  final List<String> platforms;
   final Map<String, String> contact;
   final List<TeamMember> team;
 
@@ -15,6 +16,7 @@ class CompanyProfile {
     required this.description,
     required this.location,
     required this.values,
+    required this.platforms,
     required this.contact,
     required this.team,
   });
@@ -38,24 +40,32 @@ class TeamMember {
   });
 }
 
-// Adsequor company profile based on the resume information
+// Adsequor company profile
 final CompanyProfile adsequorProfile = CompanyProfile(
   name: 'Adsequor',
-  tagline: 'IT Consultancy & Flutter Development Experts',
+  tagline: 'Dart, Flutter and Appwrite application studio',
   foundedYear: '2002',
   description:
-      'Adsequor is an IT services provider founded by Romuald Barbe in 2002. '
-      'Specializing in Flutter development, Business Intelligence, and team leadership, '
-      'Adsequor delivers innovative digital solutions for businesses of all sizes. '
-      'With a focus on quality, efficiency, and long-term sustainability, we help clients '
-      'navigate the complex technological landscape and achieve their business goals.',
+      'Adsequor designs, builds and ships business applications with a pragmatic '
+      'stack: Dart for shared logic, Flutter for polished interfaces, and Appwrite '
+      'for backend services. We help companies move from product idea to production '
+      'with one codebase strategy, clear architecture, and delivery that targets '
+      'mobile, web and desktop environments without fragmenting the product team.',
   location: 'Normandy, France',
   values: [
-    'Innovation',
-    'Quality',
-    'Expertise',
-    'Collaboration',
-    'Adaptability',
+    'Pragmatic architecture',
+    'Reliable delivery',
+    'Transparent collaboration',
+    'Long-term maintainability',
+    'Product focus',
+  ],
+  platforms: [
+    'Mobile phones',
+    'Web applications',
+    'Web servers',
+    'macOS',
+    'Windows',
+    'Linux',
   ],
   contact: {
     'linkedin': 'linkedin.com/in/hawkbee',
@@ -63,26 +73,26 @@ final CompanyProfile adsequorProfile = CompanyProfile(
   },
   team: [
     TeamMember(
-      name: 'Romuald Barbe',
-      role: 'Founder & Lead Developer',
+      name: 'Adsequor Delivery Team',
+      role: 'Architecture, product delivery and platform engineering',
       bio:
-          'Seasoned IT contractor with extensive expertise in Flutter development, '
-          'Business Intelligence, and Agile methodologies. With over 20 years of experience, '
-          'Romuald has led teams of various sizes and worked with companies across different '
-          'industries to deliver impactful digital solutions.',
+          'Adsequor combines product discovery, application engineering and deployment '
+          'practices so clients can launch a coherent platform instead of a disconnected '
+          'set of prototypes. The focus is on dependable releases, measurable outcomes '
+          'and a codebase that remains easy to evolve.',
       expertise: [
-        'Flutter & Dart',
-        'Business Intelligence',
-        'Scrum Master',
-        'Team Leadership',
-        'Data Warehouse Design',
-        'Mobile Development',
+        'Dart architecture',
+        'Flutter apps',
+        'Appwrite backends',
+        'API integration',
+        'CI/CD and release management',
+        'Cross-platform delivery',
       ],
       contact: {
         'linkedin': 'linkedin.com/in/hawkbee',
         'github': 'github.com/hawkbee1',
       },
-      imageAsset: 'assets/profil_online.jpg',
+      imageAsset: null,
     ),
   ],
 );

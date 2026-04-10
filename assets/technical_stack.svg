@@ -1,0 +1,52 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="40" fill="#F6F8F2"/>
+  <rect x="40" y="40" width="1120" height="640" rx="32" fill="#FFFFFF" stroke="#C9D5B7" stroke-width="4"/>
+  <text x="90" y="110" fill="#284B16" font-family="Arial, sans-serif" font-size="42" font-weight="700">Adsequor Technical Stack</text>
+  <text x="90" y="152" fill="#506040" font-family="Arial, sans-serif" font-size="24">One coherent application platform from business logic to delivery targets.</text>
+
+  <rect x="90" y="210" width="290" height="170" rx="24" fill="#EEF6E3" stroke="#95B36D" stroke-width="3"/>
+  <text x="120" y="258" fill="#284B16" font-family="Arial, sans-serif" font-size="34" font-weight="700">Dart Core</text>
+  <text x="120" y="302" fill="#506040" font-family="Arial, sans-serif" font-size="24">Business rules</text>
+  <text x="120" y="336" fill="#506040" font-family="Arial, sans-serif" font-size="24">Integrations and APIs</text>
+  <text x="120" y="370" fill="#506040" font-family="Arial, sans-serif" font-size="24">Reusable product logic</text>
+
+  <rect x="455" y="210" width="290" height="170" rx="24" fill="#E5F1F7" stroke="#6E9FB6" stroke-width="3"/>
+  <text x="485" y="258" fill="#18455B" font-family="Arial, sans-serif" font-size="34" font-weight="700">Flutter UI</text>
+  <text x="485" y="302" fill="#416173" font-family="Arial, sans-serif" font-size="24">Mobile experiences</text>
+  <text x="485" y="336" fill="#416173" font-family="Arial, sans-serif" font-size="24">Responsive web apps</text>
+  <text x="485" y="370" fill="#416173" font-family="Arial, sans-serif" font-size="24">Desktop interfaces</text>
+
+  <rect x="820" y="210" width="290" height="170" rx="24" fill="#FFF2E2" stroke="#C69B63" stroke-width="3"/>
+  <text x="850" y="258" fill="#6A4214" font-family="Arial, sans-serif" font-size="34" font-weight="700">Appwrite</text>
+  <text x="850" y="302" fill="#825A30" font-family="Arial, sans-serif" font-size="24">Authentication</text>
+  <text x="850" y="336" fill="#825A30" font-family="Arial, sans-serif" font-size="24">Database and storage</text>
+  <text x="850" y="370" fill="#825A30" font-family="Arial, sans-serif" font-size="24">Functions and operations</text>
+
+  <path d="M380 295H455" stroke="#738A5A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M745 295H820" stroke="#8B8B67" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="418" cy="295" r="8" fill="#738A5A"/>
+  <circle cx="783" cy="295" r="8" fill="#8B8B67"/>
+
+  <text x="90" y="460" fill="#284B16" font-family="Arial, sans-serif" font-size="30" font-weight="700">Delivery targets</text>
+
+  <rect x="90" y="500" width="150" height="92" rx="20" fill="#F1F6EA" stroke="#95B36D" stroke-width="2"/>
+  <text x="123" y="553" fill="#284B16" font-family="Arial, sans-serif" font-size="24" font-weight="700">Mobile</text>
+
+  <rect x="265" y="500" width="150" height="92" rx="20" fill="#F1F6EA" stroke="#95B36D" stroke-width="2"/>
+  <text x="308" y="553" fill="#284B16" font-family="Arial, sans-serif" font-size="24" font-weight="700">Web App</text>
+
+  <rect x="440" y="500" width="165" height="92" rx="20" fill="#F1F6EA" stroke="#95B36D" stroke-width="2"/>
+  <text x="460" y="553" fill="#284B16" font-family="Arial, sans-serif" font-size="24" font-weight="700">Web Server</text>
+
+  <rect x="630" y="500" width="135" height="92" rx="20" fill="#F1F6EA" stroke="#95B36D" stroke-width="2"/>
+  <text x="658" y="553" fill="#284B16" font-family="Arial, sans-serif" font-size="24" font-weight="700">macOS</text>
+
+  <rect x="790" y="500" width="145" height="92" rx="20" fill="#F1F6EA" stroke="#95B36D" stroke-width="2"/>
+  <text x="814" y="553" fill="#284B16" font-family="Arial, sans-serif" font-size="24" font-weight="700">Windows</text>
+
+  <rect x="960" y="500" width="150" height="92" rx="20" fill="#F1F6EA" stroke="#95B36D" stroke-width="2"/>
+  <text x="1002" y="553" fill="#284B16" font-family="Arial, sans-serif" font-size="24" font-weight="700">Linux</text>
+
+  <path d="M600 380V470" stroke="#738A5A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M165 500V470H1035V500" stroke="#738A5A" stroke-width="6" stroke-linecap="round"/>
+</svg>
