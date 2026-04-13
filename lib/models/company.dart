@@ -108,12 +108,9 @@ const CompanyProfile adsequorProfile = CompanyProfile(
   tagline: 'Scalable Applications with Open-Source Technologies',
   foundedYear: '2002',
   description:
-      'Adsequor builds modern, production-ready applications using an open-source '
-      'stack: Dart, Flutter and Appwrite. Our solutions scale from a single user '
-      'to millions, can be installed on-premise or deployed in the cloud, and run '
-      'on every major platform — mobile, web and desktop. We combine deep '
-      'technical expertise with a pragmatic approach so you ship faster and own '
-      'your technology.',
+      'Adsequor builds modern applications which can be deployed on-premise or in the cloud.\n'
+      'It works on every major platform: mobile, web and desktop.\n'
+      'You own the code, the data and the infrastructure — no vendor lock-in, no hidden fees.',
   location: 'Normandy, France',
   values: [
     'Open Source',
