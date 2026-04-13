@@ -21,11 +21,11 @@ class ScheduleNow extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.secondary,
         foregroundColor:
             Theme.of(context).colorScheme.secondary
-                        .withValues(alpha: 0.1)
-                        .computeLuminance() >
-                    0.5
-                ? Colors.black
-                : Colors.white,
+                    .withValues(alpha: 0.1)
+                    .computeLuminance() >
+                0.5
+            ? Colors.black
+            : Colors.white,
       ),
     );
   }

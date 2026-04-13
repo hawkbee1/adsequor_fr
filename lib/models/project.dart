@@ -1,12 +1,27 @@
+/// Represents a project or case study.
 class Project {
+  /// Project title.
   final String title;
+
+  /// Client name.
   final String client;
+
+  /// Duration / period.
   final String duration;
+
+  /// Short description.
   final String description;
+
+  /// Key achievements.
   final List<String> achievements;
+
+  /// Technologies used.
   final List<String> technologies;
+
+  /// Optional image asset path.
   final String? imageAsset;
 
+  /// Creates a [Project].
   const Project({
     required this.title,
     required this.client,
@@ -18,12 +33,21 @@ class Project {
   });
 }
 
+/// Represents a client testimonial.
 class Testimonial {
+  /// Author's name.
   final String author;
+
+  /// Author's position / title.
   final String position;
+
+  /// Author's company.
   final String company;
+
+  /// Quote text.
   final String quote;
 
+  /// Creates a [Testimonial].
   const Testimonial({
     required this.author,
     required this.position,
@@ -32,92 +56,63 @@ class Testimonial {
   });
 }
 
-// Sample projects based on the resume information
-final List<Project> adsequorProjects = [
+/// Sample projects delivered with the Flutter + Appwrite stack.
+const List<Project> adsequorProjects = [
   Project(
     title: 'ALTME Mobile Wallet',
-    client: 'TALAO - ALTME',
-    duration: '2021 - Present',
+    client: 'TALAO — ALTME',
+    duration: '2021 — Present',
     description:
-        'Leading the development of mobile wallets for crypto and Self Sovereign Identity (SSI), evolving from a basic SSI wallet to a comprehensive crypto solution with advanced features.',
+        'A cross-platform crypto and Self-Sovereign Identity wallet built '
+        'entirely in Flutter, published on both app stores with continuous '
+        'delivery via GitHub Actions and Fastlane.',
     achievements: [
-      'Led a Flutter development team using SCRUM methodology',
-      'Maintained and improved two mobile applications with continuous delivery via GitHub and Fastlane',
-      'Implemented support for OIDC4VCI, OIDC4VP, SD-JWT VC, DID standards',
-      'Added support for multiple blockchains including Ethereum, Tezos, Fantom, Polygon, BNB and Etherlink',
-      'Built and published specialized wallets for specific use cases',
+      'Led a Flutter team using Scrum methodology',
+      'Published on Google Play and the App Store',
+      'Implemented OIDC4VCI, OIDC4VP, SD-JWT VC and DID standards',
+      'Multi-blockchain support: Ethereum, Tezos, Polygon, BNB & more',
     ],
     technologies: [
       'Flutter',
       'Dart',
-      'Firebase',
       'GitHub Actions',
       'Fastlane',
       'Blockchain',
-      'SSI',
-      'OIDC',
     ],
-    imageAsset: null,
   ),
   Project(
-    title: 'Enterprise Business Intelligence System',
+    title: 'Enterprise Business Intelligence',
     client: 'Confidential',
-    duration: '2010 - 2018',
+    duration: '2010 — 2018',
     description:
-        'Created custom operating systems specifically designed for direct Business Intelligence usage, resulting in significant cost reductions while maintaining long-term performance.',
+        'Custom BI system that reduced project costs by 40% and has remained '
+        'in production for over 15 years, demonstrating the long-term value '
+        'of well-architected solutions.',
     achievements: [
       'Reduced project costs by 40%',
-      'Developed a solution that has remained effective for over 15 years',
-      'Designed and implemented optimized data warehouse architecture',
-      'Provided comprehensive documentation and user training',
+      'Solution still in production after 15+ years',
+      'Optimised data-warehouse architecture',
     ],
-    technologies: [
-      'Business Intelligence',
-      'Data Warehousing',
-      'SQL',
-      'ETL',
-      'Business Objects',
-    ],
-    imageAsset: null,
-  ),
-  Project(
-    title: 'University Teacher Recruitment Platform',
-    client: 'National Education Institution',
-    duration: '2001 - 2002',
-    description:
-        'Developed a comprehensive web application for the national recruitment of university teachers, streamlining the application and selection process.',
-    achievements: [
-      'Built a scalable platform handling thousands of applications',
-      'Implemented secure user authentication and data management',
-      'Provided administrators with powerful tools for candidate evaluation',
-      'Improved efficiency in the teacher recruitment process',
-    ],
-    technologies: ['PHP', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
-    imageAsset: null,
+    technologies: ['Business Intelligence', 'Data Warehousing', 'SQL', 'ETL'],
   ),
 ];
 
-// Sample testimonials
-final List<Testimonial> adsequorTestimonials = [
-  Testimonial(
-    author: 'Marie Laurent',
-    position: 'CTO',
-    company: 'TechInnovate',
-    quote:
-        'Working with Adsequor transformed our approach to data analysis. Their expertise in Business Intelligence helped us uncover critical insights that have driven our growth strategy.',
-  ),
+/// Sample testimonials.
+const List<Testimonial> adsequorTestimonials = [
   Testimonial(
     author: 'Philippe Dubois',
     position: 'Product Manager',
     company: 'MobileSoft',
     quote:
-        'The Flutter applications developed by Adsequor exceeded our expectations. They delivered on time, with excellent quality, and provided thoughtful guidance throughout the process.',
+        'The Flutter applications developed by Adsequor exceeded our '
+        'expectations. Delivered on time, with excellent quality.',
   ),
   Testimonial(
     author: 'Sophie Moreau',
     position: 'Team Lead',
     company: 'DataForge',
     quote:
-        'The Scrum coaching we received from Adsequor was invaluable. Our team productivity improved significantly, and we now have a sustainable, efficient development process.',
+        'The Scrum coaching we received from Adsequor was invaluable. '
+        'Our team productivity improved significantly.',
   ),
 ];

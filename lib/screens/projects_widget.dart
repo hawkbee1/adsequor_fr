@@ -102,12 +102,11 @@ class ProjectsWidget extends StatelessWidget {
                     Flexible(
                       child: Text(
                         project.title,
-                        style: Theme.of(
-                          context,
-                        ).textTheme.headlineSmall?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: Theme.of(context).colorScheme.primary,
-                        ),
+                        style: Theme.of(context).textTheme.headlineSmall
+                            ?.copyWith(
+                              fontWeight: FontWeight.bold,
+                              color: Theme.of(context).colorScheme.primary,
+                            ),
                         overflow: TextOverflow.ellipsis,
                         maxLines: 2,
                       ),
@@ -206,20 +205,19 @@ class ProjectsWidget extends StatelessWidget {
                 Wrap(
                   spacing: 8,
                   runSpacing: 8,
-                  children:
-                      project.technologies
-                          .map(
-                            (tech) => Chip(
-                              label: Text(tech),
-                              backgroundColor: Theme.of(
-                                context,
-                              ).colorScheme.secondary.withValues(alpha: 0.1),
-                              labelStyle: TextStyle(
-                                color: Theme.of(context).colorScheme.secondary,
-                              ),
-                            ),
-                          )
-                          .toList(),
+                  children: project.technologies
+                      .map(
+                        (tech) => Chip(
+                          label: Text(tech),
+                          backgroundColor: Theme.of(
+                            context,
+                          ).colorScheme.secondary.withValues(alpha: 0.1),
+                          labelStyle: TextStyle(
+                            color: Theme.of(context).colorScheme.secondary,
+                          ),
+                        ),
+                      )
+                      .toList(),
                 ),
               ],
             ),

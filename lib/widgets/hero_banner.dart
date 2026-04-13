@@ -1,20 +1,24 @@
 import 'package:adsequor_fr/widgets/schedule_now.dart';
 import 'package:flutter/material.dart';
 
+/// Full-width hero banner with a background image, logo, subtitle
+/// and a call-to-action button.
 class HeroBanner extends StatelessWidget {
+  /// The main title (not displayed — logo used instead).
   final String title;
-  final String subtitle;
-  final String? description;
-  final String? ctaText;
-  final VoidCallback? onCtaPressed;
 
+  /// Subtitle text displayed below the logo.
+  final String subtitle;
+
+  /// Optional longer description.
+  final String? description;
+
+  /// Creates a [HeroBanner].
   const HeroBanner({
     super.key,
     required this.title,
     required this.subtitle,
     this.description,
-    this.ctaText,
-    this.onCtaPressed,
   });
 
   @override
@@ -24,7 +28,7 @@ class HeroBanner extends StatelessWidget {
       constraints: const BoxConstraints(minHeight: 500),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
-        image: DecorationImage(
+        image: const DecorationImage(
           image: AssetImage('assets/pyrenees.jpeg'),
           fit: BoxFit.cover,
         ),
@@ -34,10 +38,19 @@ class HeroBanner extends StatelessWidget {
           padding: const EdgeInsets.all(32.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               // Company logo
-              Image.asset('assets/logo_adsequor.png', fit: BoxFit.contain),
+              Image.asset(
+                'assets/logo_adsequor.png',
+                fit: BoxFit.contain,
+                errorBuilder: (context, error, stackTrace) => Text(
+                  title,
+                  style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
@@ -52,7 +65,7 @@ class HeroBanner extends StatelessWidget {
                   ),
                 ),
               ),
-              if (description != null) ...[
+              if (description != null)
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
@@ -67,8 +80,7 @@ class HeroBanner extends StatelessWidget {
                     ),
                   ),
                 ),
-              ],
-              Padding(padding: const EdgeInsets.all(8.0), child: ScheduleNow()),
+              const Padding(padding: EdgeInsets.all(8.0), child: ScheduleNow()),
             ],
           ),
         ),

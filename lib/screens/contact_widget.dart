@@ -2,102 +2,48 @@ import 'package:flutter/material.dart';
 import 'package:adsequor_fr/models/company.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-// FAQ class definition
-class FAQ {
-  final String question;
-  final String answer;
-
-  const FAQ({required this.question, required this.answer});
-}
-
-class ContactWidget extends StatefulWidget {
+/// Contact section with links to LinkedIn, GitHub and a location map.
+class ContactWidget extends StatelessWidget {
+  /// Creates a [ContactWidget].
   const ContactWidget({super.key});
 
   @override
-  State<ContactWidget> createState() => _ContactWidgetState();
-}
-
-class _ContactWidgetState extends State<ContactWidget> {
-  final _nameController = TextEditingController();
-  final _emailController = TextEditingController();
-  final _subjectController = TextEditingController();
-  final _messageController = TextEditingController();
-
-
-  @override
-  void dispose() {
-    _nameController.dispose();
-    _emailController.dispose();
-    _subjectController.dispose();
-    _messageController.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Header
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.all(32),
-            color: Theme.of(context).colorScheme.primary,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Contact Us',
-                  style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                    color: Theme.of(context).colorScheme.onPrimary,
-                    fontWeight: FontWeight.bold,
-                  ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Header
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(32),
+          color: Theme.of(context).colorScheme.primary,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Contact Us',
+                style: Theme.of(context).textTheme.displaySmall?.copyWith(
+                  color: Theme.of(context).colorScheme.onPrimary,
+                  fontWeight: FontWeight.bold,
                 ),
-                const SizedBox(height: 16),
-                Text(
-                  'We\'d love to hear from you. Get in touch with our team.',
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    color: Theme.of(
-                      context,
-                    ).colorScheme.onPrimary.withAlpha(230),
-                  ),
+              ),
+              const SizedBox(height: 16),
+              Text(
+                'We\'d love to hear from you. Get in touch with our team.',
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  color: Theme.of(context).colorScheme.onPrimary.withAlpha(230),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
+        ),
 
-          // Contact info and form
-          Padding(
-            padding: const EdgeInsets.all(32),
-            child: LayoutBuilder(
-              builder: (context, constraints) {
-                if (constraints.maxWidth > 900) {
-                  // Desktop layout
-                  return Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Contact information
-                      Expanded(flex: 2, child: _buildContactInfo(context)),
-                      const SizedBox(width: 32),
-                      // Contact form
-                    ],
-                  );
-                } else {
-                  // Mobile layout
-                  return Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      _buildContactInfo(context),
-                      const SizedBox(height: 32),
-                    ],
-                  );
-                }
-              },
-            ),
-          ),
-        ],
-      ),
+        // Contact info
+        Padding(
+          padding: const EdgeInsets.all(32),
+          child: _buildContactInfo(context),
+        ),
+      ],
     );
   }
 
@@ -114,83 +60,70 @@ class _ContactWidgetState extends State<ContactWidget> {
         ),
         const SizedBox(height: 16),
         Text(
-          'Feel free to reach out to us using any of the contact methods below or fill out the form and we\'ll get back to you as soon as possible.',
+          'Feel free to reach out to us using any of the contact methods below.',
           style: Theme.of(context).textTheme.bodyLarge,
         ),
         const SizedBox(height: 32),
 
         // Location
-        _buildContactMethod(
-          context: context,
+        _ContactMethod(
           icon: Icons.location_on_outlined,
           title: 'Location',
           value: adsequorProfile.location,
-          onTap: () async {
-            final mapsUrl =
-                'https://maps.google.com/?q=${Uri.encodeComponent(adsequorProfile.location)}';
-            final mapsUri = Uri.parse(mapsUrl);
-            if (await canLaunchUrl(mapsUri)) {
-              await launchUrl(mapsUri, mode: LaunchMode.externalApplication);
-            }
-          },
+          url:
+              'https://maps.google.com/?q=${Uri.encodeComponent(adsequorProfile.location)}',
         ),
 
         // LinkedIn
-        _buildContactMethod(
-          context: context,
+        _ContactMethod(
           icon: Icons.link,
           title: 'LinkedIn',
           value:
               adsequorProfile.contact['linkedin'] ??
               'linkedin.com/company/adsequor',
-          onTap: () async {
-            final linkedInUri = Uri.parse(
-              'https://${adsequorProfile.contact['linkedin']}',
-            );
-            if (await canLaunchUrl(linkedInUri)) {
-              await launchUrl(
-                linkedInUri,
-                mode: LaunchMode.externalApplication,
-              );
-            }
-          },
+          url: 'https://${adsequorProfile.contact['linkedin']}',
         ),
 
         // GitHub
-        _buildContactMethod(
-          context: context,
+        _ContactMethod(
           icon: Icons.code,
           title: 'GitHub',
           value: adsequorProfile.contact['github'] ?? 'github.com/adsequor',
-          onTap: () async {
-            final githubUri = Uri.parse(
-              'https://${adsequorProfile.contact['github']}',
-            );
-            if (await canLaunchUrl(githubUri)) {
-              await launchUrl(githubUri, mode: LaunchMode.externalApplication);
-            }
-          },
+          url: 'https://${adsequorProfile.contact['github']}',
         ),
       ],
     );
   }
+}
 
-  Widget _buildContactMethod({
-    required BuildContext context,
-    required IconData icon,
-    required String title,
-    required String value,
-    required VoidCallback onTap,
-  }) {
+class _ContactMethod extends StatelessWidget {
+  const _ContactMethod({
+    required this.icon,
+    required this.title,
+    required this.value,
+    required this.url,
+  });
+
+  final IconData icon;
+  final String title;
+  final String value;
+  final String url;
+
+  @override
+  Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 24.0),
       child: InkWell(
-        onTap: onTap,
+        onTap: () async {
+          final uri = Uri.parse(url);
+          if (await canLaunchUrl(uri)) {
+            await launchUrl(uri, mode: LaunchMode.externalApplication);
+          }
+        },
         borderRadius: BorderRadius.circular(8),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                 padding: const EdgeInsets.all(12),
@@ -239,7 +172,4 @@ class _ContactWidgetState extends State<ContactWidget> {
       ),
     );
   }
-
-
-
 }

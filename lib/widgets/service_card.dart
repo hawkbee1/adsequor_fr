@@ -107,26 +107,25 @@ class ServiceCard extends StatelessWidget {
                   // Learn more or contact us button
                   Align(
                     alignment: Alignment.centerRight,
-                    child:
-                        isExpanded
-                            ? ElevatedButton.icon(
-                              onPressed: () {
-                                // Navigate to contact page with service pre-selected
-                              },
-                              icon: const Icon(Icons.email),
-                              label: const Text('Inquire About This Service'),
-                            )
-                            : TextButton(
-                              onPressed: onTap,
-                              child: const Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Text('Learn More'),
-                                  SizedBox(width: 4),
-                                  Icon(Icons.arrow_forward, size: 16),
-                                ],
-                              ),
+                    child: isExpanded
+                        ? ElevatedButton.icon(
+                            onPressed: () {
+                              // Navigate to contact page with service pre-selected
+                            },
+                            icon: const Icon(Icons.email),
+                            label: const Text('Inquire About This Service'),
+                          )
+                        : TextButton(
+                            onPressed: onTap,
+                            child: const Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text('Learn More'),
+                                SizedBox(width: 4),
+                                Icon(Icons.arrow_forward, size: 16),
+                              ],
                             ),
+                          ),
                   ),
                 ],
               ),

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:adsequor_fr/models/company.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+/// Footer with company info, social links and copyright.
 class AppFooter extends StatelessWidget {
+  /// Creates an [AppFooter].
   const AppFooter({super.key});
 
   @override
@@ -34,13 +36,15 @@ class AppFooter extends StatelessWidget {
                 children: [
                   _buildSocialButton(
                     context: context,
-                    icon: ImageIcon(AssetImage('assets/linkedin_logo.png')),
+                    icon: const ImageIcon(
+                      AssetImage('assets/linkedin_logo.png'),
+                    ),
                     tooltip: 'LinkedIn',
                     url: 'https://${adsequorProfile.contact['linkedin']}',
                   ),
                   _buildSocialButton(
                     context: context,
-                    icon: ImageIcon(AssetImage('assets/github_logo.png')),
+                    icon: const ImageIcon(AssetImage('assets/github_logo.png')),
                     tooltip: 'GitHub',
                     url: 'https://${adsequorProfile.contact['github']}',
                   ),
@@ -51,18 +55,31 @@ class AppFooter extends StatelessWidget {
           const SizedBox(height: 24),
           const Divider(),
           const SizedBox(height: 24),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          Wrap(
+            alignment: WrapAlignment.spaceBetween,
+            crossAxisAlignment: WrapCrossAlignment.center,
             children: [
               Text(
-                '© ${DateTime.now().year} ${adsequorProfile.name}. All rights reserved.',
+                '\u00a9 ${DateTime.now().year} ${adsequorProfile.name}. All rights reserved.',
                 style: Theme.of(context).textTheme.bodySmall,
               ),
-              Text(
-                'Built with Flutter',
-                style: Theme.of(
-                  context,
-                ).textTheme.bodySmall?.copyWith(fontStyle: FontStyle.italic),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Image.asset(
+                    'assets/built_with_flutter.png',
+                    height: 24,
+                    errorBuilder: (context, error, stackTrace) =>
+                        const SizedBox.shrink(),
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    'Built with Flutter',
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
