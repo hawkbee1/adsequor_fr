@@ -30,7 +30,6 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
 /coverage/
 
 # Symbolication related
@@ -46,5 +45,19 @@ app.*.map.json
 
 # don't track firebase deployment files
 .firebase/
-!build/web/margngo/
-!build/web/margngo/**
+
+# rules to track margngo 
+# Ignore everything in build
+/build/*
+
+# Allow Git to descend into web
+!/build/web/
+
+# Ignore everything in web
+/build/web/*
+
+# Except margngo
+!/build/web/margngo/
+
+# And everything inside margngo
+!/build/web/margngo/**
