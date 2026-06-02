@@ -6,8 +6,6 @@
 .DS_Store
 .atom/
 .build/
-!build/web/margngo/
-!build/web/margngo/**
 .buildlog/
 .history
 .svn/
@@ -48,3 +46,5 @@ app.*.map.json
 
 # don't track firebase deployment files
 .firebase/
+!build/web/margngo/
+!build/web/margngo/**
