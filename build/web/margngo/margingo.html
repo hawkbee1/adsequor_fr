@@ -5,17 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MarginGo — Coût de revient TRM</title>
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAARLElEQVR42u1afXRU5Zn/vR/3zp3JzORjkoB8JQEEJBFBEBAtYquChVYsVq1SsVbXHrTdVtuu1q6t67anePaUtu4Wu1q32BW0uNAtFC0FLRooqHyIgfCREJKQhAz5mu+5974f+8fMhAQC2m63p8ed3zn3nMydm/u+z/M+z+/9Pc87QB555JFHHnnkkUceHw0QQvLG/790AqUUAFBQUDDo8weBfVSMV0ph7MSLrcfXPrvNFHi7/r33T1PGoLX+aDsgF+6zP3FN+c1PPLQ5Vuq/etKMqcuCgmw6uG9/mFJ6QSfQj4IDtNaYOu+qBQUXj5mT7Iv1hWXa94lv3n/gK//46HylFBhnH+0UIITgQO3u966bO2+cZ1RoVjplp3rScT35yunLWHfspfoDdd3niwT2t2IApRSEkD/vohRSKezY+NqGGZNrdMnkyhvSKdvtTifUlLmz7y8UdFPd3v2dlLG/DQdQSjMGU9K/Klrr/9UFreG6Lt7c9LvtU8aO7w6MH7VICq2irs1mLLhu+Ugr+OY7tTtOMM6g1ZlIIH9twzUArdSg+4FAgIwYNcr0WBYXWvXPSkP/Se9njFHhClVTXVN+27f+fvuBvvaRoFTZSqmKYIm559mXr3z+6VW7crzxV3PAwAEBYMLEieaUj115iXd4aHLlpdWLjFCwJlBcXEM4o65WAFH9y6MBaD1gpnrAtIkGGfS9BgUBJRROOo2kcKApgZZQtlaqqjDEmzb+4daV335inVIKWmf+H5QxqOyqUEqhpPw/MX7qFTMCM2++8bbJ181dKX2mPyEduK4L6QrYwklrTRQlBASDI0QD0EOoOzIoQAgA3X+PcGJxSikFAQEFJEQCEhMLivh3P/k53tHeIQml4AAGGfyXNJ4xBiklRo8ew5d+5+HHSq+o/m6MaLRFYkKlRNT0eIIe0wPL70eQwiIAaNaQs6HJufeoHmg8GRQg6UQSjnChCUCgYROlxhaXmkc3vnFPZ2enJJRAKwVCCMENtyweV33Dx+4j3DDf3/z6M1vWbThKKM09MHgiWn/ofFdKYfrsWUWf+f6j252Qd0oiEnMIofAV+Mwijw+J9tOHIm0dWzuPnXgr3RvpjPb2dqfiiTjUUGMMPe4ZdxFQSqAB4vVYdOG9n1/ZFfLc5LqusKVwhgeKfHv//eWr1/z02R0Do5LffPfSqTc89uC+tngfCAhumjvza5SQya/9an19zgl/rjSdt/DGUQu+9eC7EVMPEz2RqDfgDwYUQexg80/2v3Ng7ZZ169/u6OhQf2nOWXLPXdN7i43rbUcIRwkxfnSlr2ndlnvONh4AyA9ee3lXb5E1jWitiCRCWdwqaO3Z+sQtd98IQlAaCjFuGIRSSqQQqr29XZ79kkHGMwolFS6feUXgvv/4YfREtAfSduNFJYV+o7V784uPr7jtwJ598f4JZPdmfU7qETCDZxhuwFj6LObWAAjJPKKkxJe+/c3F429fsOF0NKKEkOlhBYW+1k3bl/x8xQ/Xp20bOkt+OfBoPN5NQz4QRyoFDYMS5bp2WikFxhiGXTztBfiKF0NLB9C2p+DA5U3HjrQP5YTMPcDj8eCmR5avbUn1Qtp2tLSsLNi5ecfynz/51DPRaFQTRqEVAK36DQ+FQqS4uNiIxuOSaK27urqUdN1+Z2SM1BeMuPse/frCSUs/taG561SaKarGj6n01a/+9a1Pf+ef1w+1GwEAb9y288mrH/riJ8OJiMlBMCJQhK1b163QWsMwDMTSsrK7p8vHqDYlIUWlxZWvBgLt02KxmDonnCiBkgqLv7B0tndCxcJI1+l4UUlJ8NTvd33jp4/90yrHccA5hxACADC6otKsnn3DJ3ioahEPDp/nLwhOisYTPQVeaotoZ23PycOr63e8trW9rdXVemgDKGNQUuL2B+6be8k9n9nU0tYa9ZqWVRIIWEdf3HTrcyt+uI4yBmjdv9OdzSFYfNedU8fOnf4FreE21r675jer1+zNrcrFMxc0H2kJj/R4DCipHQVllbD4I0f37ljRH3sAcnxRVVXFv/nSsyebRKyYM07Nnti+H92xfFZfX582TBOu46C6utpz9S1/94M2u+Re7Qn5Uw6BEjakchVhBoXSYJTB6/OApLt7fLHDP9i18fmVrS0nxflS7rrFi8YtfOLhujY7bl3kCWDvsy9f8+K/rnrzLKYc2gHnQ1FRERk/68bGhpNdVR7TUFprqqROGwaxxKm6itPtrS25VclteXNvvGHUp576h9Zwb3e0rLQ0eOKVrXf89PHvr+WGAeG6mHvtx0sv++T9b9R1emqE1uBEJbWW0NTjo5RAZQWNct0kV0ppzv2UMVQFE4271q6YdqjuQOzs3YhxDikEFi9beuncL9255uCGLY/9/KmVv+GmCS0l5AW2dh4qLTPGXnr57bbtKEKgLNPDW48dXNd+sjXNsg2Ffr0NgHFqph1HlFTU7CTSrQp3nnIJIVDZ72fM//jtcekocGqyuN33+toN6wnJpEZ1TbVVNe/z2/a38xqDuWmTEm4r+Ap9XpiiN0xFtB6ECKE8I1nh8EmRFCDtRNxRyuzpS/scxx2UBjnOkdmU+vXq/3w/fOz4nEOHDsUBQDjOedVovwMMy+c7lfK8kEgqgFAUBQtQWFy6vf1kawsZormmNajBuOiJi5Gjx095OtLX+yXbtgGt4fF4UDaxakmfY1Ovx2elGjv++3B9vQ1CQKBx+fylj7cmi6Yw5qYJNUypCR1X4vYd/v2q2c2H9zR0dXVLrTUKC4Nk2px5E4yLpt7nGTHnYa843Xngv/5l4rEjh2K5tBto0CWXTvGFKmqmllVOuW1C9dS7JoTDjfHe8K5TDfte6mzYu+fY4fqUzpDIoB0FALiUUnEp0tAKINqRQpqxeCw5wHX9HlRKQSlXMMo4BU+HU7h/3OTL1hza9/ab2ZShymdUSeEqry9Ij+49+Epu0MrxF3sjxsgvC0cJgzHuKqhyo6fuyObnP757R233wEn19PTqbZs2HAE2fP3Gz92/s6np8NvHDh+K5dg+Z7zf7yfzltx7p3/sNatj0kejro3aw30wDP907i2aXji9+oHh028SM3rqvvGHV579SUdHhyKEQuszZEiz9bQFQiyiiUUILEroECuvASgU+Au40poyBjNtu07KKt02fORILwCUjxzhM/wFZUKqpME4tJCRnMdHV8+5Wpilfg4phNQoCzDeuvPFRbt21HYzzjOKM3sRQpCp3QleXfuz9Xt3bT/JGO83HgCKi4vJzcuffM4dM/+XHREHiXgkLhwBy1sAyjhc21GpZDwZTjDeHZi58uYHvrd+woQJZo6wz2qJ6UHFhR7EkrmbWkitMWVs2S99JukUSsLDOfoSkofGVr9gGAY0FCGMUgZOmQa62zvactHjLR+/yHYkGIWipsl15PjGd2v/0EophRSiv6ZHlm8yNcmZmUgpzsxIa1z16WVf6LIm3JOOR+OcUzBm+If5Up3FzrFflsimNcMLkdZgPk6FslOJeIs7/KZJs+ffrrUaZCAfuoI7V4FrpYVhWeb+3TtWUK2eMIvHNTi2UAYlTk/ac0vFhJpr4bh/zHhXK2ggHsukkmEYoJ7geGgNqaA8jMKNtm+RUgKEnreKHDfxkoLi4hKf1Bqu48pj9e/3plMpXTl2nIePuvLfeuNpxzKYybhJS+1jz+1es2r58eONrtYaU6dN9V1792P797UaF5tcWH2RWPqisfNWXTF7z8Z3du3szaXTn9QUpQRQhBa1NB5pLGapnwHaIpQqV7qq2/G+dP1NN9+toRxAc5KpBlm2V08KAkVjlJLZvZsjFom0D3WIkfscCATI3DseqR+94NFwxYJHwtM++3j3iDHjAgBQOWXOVS4LWhZRwlWEl3qSrftffe7BxsYGN8dx+/ftT+5e9+NZFxXIqK0YNTlVNg34KmtmXTNwlWkmtwe2iMjQ8iArRTnnFADSXa0Plxf5umzH4QYhcKlRXtfeu0oKxSnNKA+dpWkpJTi0rQFQSqgrJfzFZZdSSs9h5TMhL3UsaXeHI47T1evEe5JSiOxeW1RWNc8WAgpaeC0P7Wna9+NDh+rtDG/ktkiKnbW1vdwJv0opo4Rw5TgSHeEozUb0QA4gF5BGA1tHGiq7jE2NDQnRdfxjPo/BXUeIQIFPbX9zr9i5eRcN+gsgM7JTA0A8Htd9nUc3mgZXmoDa6aQqqpj2UGVlpaG1xlDNSkIIYZRRkzOTG9Q0OeW5YBGEezUBAAWDMtjxvpazxVHur0hX5/ucM2iilNZAsKhkxNlRPaDpkCsuMolJKQUnjJ+pwsiZkCUUDfXvH/aT+EMaMJXSoshfyHf8uhbh5tMwLKN/QkopdDbsedlghCopwSgVp+MkOHvh0q8COcLLdHcpY/28wBg3oTUUMteZRojbw6AVAahtSwTKK663LAtaZZxJaUb7jxkzhtvSU6EIAdEKnCpFYMfOfzCSFRher88EgEQioaKRaFtmUloN5blTxw78qNDH69JSUsohnKiL7b96HSZhENLNNajQ01zfEPLaSUEMkwM07WrRF7jsqUXLvnpXKBQigIZWKqPqtEIwGKQiG0YEehBzdzfXbfYYJlWg3HFSwjey5r658xdOzDlTKQnGKBYvved2Y9jEL8KxhQazLK5ob9vR2oFcwweFfFbsxKLRVNYB6O3raeZW8WwthTpbFxBCEI1GdXm0dWFBoLI5mbLTvqDFG95uwPG6FoTKy3wAwAyOEyeaRemrP5s27NoHjkRjtuM1qJmwufBVzF999bJJXymivZtFOnKkOxxuM7xFo0Pjpnz5ZMI7iRKpoCglII5hmBQAmuvfOTjmqs929EgeKjApWrtcp2rmHfvvnTj1G2/9dt0vfH6/ed2Su79zIlX6lWjUVR5mwBaKFsjwgYPv/vF4Zv4qtw0SADTXhlUAVLYxl6u1mQQUAKUJUQM5KycvG+rrWqou9S5zzbLVWso00Qx7tuxWw0yvZ2BkvfvWlqN3Xj7na6xk5sq+mAMDtpNOSZXmF01PsRHTTR+DWcbhuApN0TR4RkWKtBKqhPtMJVwFACdbTwrRsvPzVdVLtjadCKd9HsrbeqhpWVOennJb9dOUcbzXCzhOWpmMq6QjVUW512x+4/klkUhED1SDNKt/KEAoKLE0CFVqEJtwEEKJJpZUmup+phjMmZ2NB1/w0/QWR8Hyei0ce6+J7ty+M5zjAJ3ljTU/eeJHkd3Pzyj3JcLU8luu0Ca0dBzHicaiib6+3khfKhmLUkC4SsOljI8MFZixI797sL25IZY7Ddqw+pltbW+smjWihFgCJgekSqTceGevTLaHk3HHTsW1okoIyscNM8143fpra1//XQOhg6Uw11opItKdkDYgtGP4PN7CUKm//URjl8fjgWVRkXbinVTrZMAqHC1jWg6VCslkEuJ00x2+kqr3UhI8EYvGi03vZQDa+lVe9qhj++ZX9lQe2Tdm0pWfuvWSqdc/197nmJp6TYBme/wScNIoKqBREj/2iyObNnxvz67a8MA2qBACb2z81duXh0+WT51/9zN9pOTTaWn4Qc2Ms7WDoKkRYr2/PfLW+uXbNm9sGVJwMcbAGKe5ReecEwKoVCqpMyrOJNlmDAqLinksGnHtdFoPpdwIITBMkzJuUOG6yrI8JBqJnFOMD2y2VtfUWIKYXitYVlo2fESFnbZT3adOtkZ7OroZXLu1uUWo8zVms4VWMBgkofLhnoKii0qtwtAwQil1En2n3fjp0x2tLcne3l6dI70P29X+K5wW0Q99MHWhX3t8mF+CEHL+Z8iFOu0fdMR1gRHPqdk/2ICzzh/6tz79ge/IVZLkTOnWL9wGNnPyyCOPPPLII4888sgjjzzyyCOPPPIA8D9BODyZVqdn6gAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --bg: #d8e8de;
+  --bg: #F4F6F8;
   --bg2: #ffffff;
-  --text: #1a2332;
-  --text2: #6b7689;
-  --border: #e4e9f2;
-  --accent: #0e7490;
-  --accent-h: #155e75;
-  --accent-soft: #ecfeff;
+  --text: #142F47;
+  --text2: #5A6F82;
+  --border: #E3E8ED;
+  --accent: #142F47;
+  --accent-h: #243B52;
+  --accent-soft: #EAF0F5;
+  --brand-green: #77C3AB;
+  --action: #2E9E7B;
+  --action-h: #27876A;
+  --cta: #E0584C;
+  --cta-h: #C8493E;
   --success: #059669;
   --warning: #ea8a0c;
   --danger: #e11d48;
@@ -23,30 +31,53 @@
   --shadow-md: 0 4px 16px rgba(15,40,80,0.08);
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: linear-gradient(180deg, #d8e8de 0%, #dfeae3 40%, #e6efe8 100%);
-  background-attachment: fixed;
+  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg,
+      #142F47 0px,
+      #142F47 58px,
+      #294762 130px,
+      #5e7488 210px,
+      #aab6c1 290px,
+      #dfe4e9 360px,
+      #F4F6F8 82%,
+      #F7D6CF 93%,
+      #EBA79C 100%);
+  background-repeat: no-repeat;
   color: var(--text);
   font-size: 14px;
   line-height: 1.5;
   min-height: 100vh;
 }
 .container { max-width: 1200px; margin: 0 auto; padding: 12px 24px 24px; }
+body > .tab-content { max-width: 1200px; margin: 0 auto; padding: 12px 24px 24px; }
 header {
-  background: linear-gradient(120deg, #0e7490 0%, #0c5e76 55%, #134e63 100%);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  padding: 10px 24px 8px;
+  background: transparent;
+  padding: 0 24px;
+  min-height: 58px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 8px;
-  box-shadow: 0 2px 12px rgba(15,40,80,0.12);
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 14px;
+  position: relative;
 }
+.hdr-brand { display: flex; align-items: center; gap: 11px; flex-shrink: 0; align-self: center; }
+.hdr-logo { display: flex; align-items: center; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.22)); }
+.hdr-slogan {
+  font-size: 12px; font-style: italic; font-weight: 500;
+  color: rgba(255,255,255,0.72); letter-spacing: 0.2px; white-space: nowrap;
+  border-left: 1px solid rgba(255,255,255,0.22); padding-left: 11px;
+}
+.hdr-nav { display: flex; gap: 2px; flex-wrap: nowrap; align-items: stretch; position: absolute; left: 50%; transform: translateX(-50%); top: 0; bottom: 0; z-index: 90; }
+.hdr-spacer { flex: 1 1 auto; min-width: 8px; }
+.profile-status { align-self: center; }
+/* Masque le slogan quand la barre devient étroite, pour garder une ligne propre */
+@media (max-width: 1280px) { .hdr-slogan { display: none; } }
+@media (max-width: 1040px) { .hdr-nav .nav-btn { padding: 0 10px; font-size: 12.5px; } }
 header h1 { color: #ffffff; }
 header h1 span { color: rgba(255,255,255,0.75) !important; }
-h1 { font-size: 22px; font-weight: 700; }
-h2 { font-size: 18px; font-weight: 600; margin-bottom: 16px; color: var(--text); }
-h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text); }
+h1 { font-size: 22px; font-weight: 800; font-family: 'Montserrat', sans-serif; letter-spacing: -0.2px; }
+h2 { font-size: 18px; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 16px; color: var(--text); }
+h3 { font-size: 15px; font-weight: 600; font-family: 'Montserrat', sans-serif; margin-bottom: 12px; color: var(--text); }
 
 .tabs {
   display: flex;
@@ -72,8 +103,8 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 .tab.active { background: var(--accent); color: white; }
 
 .card {
-  background: var(--bg2);
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1.5px solid #77C3AB;
   border-radius: 8px;
   padding: 24px;
   margin-bottom: 16px;
@@ -96,8 +127,8 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 }
 /* Tableau de coûts compact côté droit avant calcul */
 .trip-costs-preview {
-  background: var(--bg2);
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1.5px solid #77C3AB;
   border-radius: 8px;
   padding: 16px 20px;
   box-shadow: var(--shadow);
@@ -129,13 +160,13 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   font-weight: 600;
-  background: #f8fafc;
+  background: transparent;
 }
 .trip-costs-preview tr.total td {
   font-weight: 700;
   color: var(--accent);
   font-size: 14px;
-  background: #ecfeff;
+  background: transparent;
   border-top: 2px solid var(--accent);
 }
 /* Placeholder carte côté droit avant calcul */
@@ -174,7 +205,8 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 }
 .field input:focus, .field select:focus, .field textarea:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: #1F7A5E;
+  box-shadow: 0 0 0 3px rgba(31,122,94,0.22);
 }
 .field .hint {
   font-size: 12px;
@@ -208,10 +240,10 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
   cursor: pointer;
   font-family: inherit;
 }
-.btn-primary { background: var(--accent); color: white; }
-.btn-primary:hover { background: var(--accent-h); }
-.btn-secondary { background: white; color: var(--text); border: 1px solid var(--border); }
-.btn-secondary:hover { background: var(--bg); }
+.btn-primary { background: var(--action); color: white; }
+.btn-primary:hover { background: var(--action-h); }
+.btn-secondary { background: white; color: var(--text); border: 1px solid var(--cta); }
+.btn-secondary:hover { background: #FDEEEC; border-color: var(--cta); }
 .btn-danger { background: white; color: var(--danger); border: 1px solid #fca5a5; }
 .btn-danger:hover { background: #fee2e2; }
 .btn-sm { padding: 6px 12px; font-size: 13px; }
@@ -335,8 +367,8 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
   gap: 12px;
   padding: 14px 22px;
   margin: -4px 0 16px;
-  background: white;
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1.5px solid #77C3AB;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(15,40,80,0.06);
 }
@@ -363,6 +395,43 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 
 
 /* ─────── Planning hebdomadaire ─────── */
+.planning-subtabs {
+  display: flex; gap: 4px; margin-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.planning-subtab {
+  background: transparent; border: none; border-bottom: 3px solid transparent;
+  padding: 9px 16px; font-size: 14px; font-weight: 600; color: var(--text2);
+  cursor: pointer; font-family: inherit; margin-bottom: -1px;
+}
+.planning-subtab:hover { color: var(--accent); }
+.planning-subtab.active { color: var(--accent); border-bottom-color: var(--cta); }
+.planning-cell.conducteur-empty { display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.planning-cell.conducteur-empty .add-absence { color: #cbd5e1; font-size: 22px; font-weight: 300; line-height: 1; transition: color .12s; }
+.planning-cell.conducteur-empty:hover { background: #f0fdf4; }
+.planning-cell.conducteur-empty:hover .add-absence { color: var(--action); }
+.planning-cell.absence { display: flex; align-items: center; justify-content: center; cursor: pointer; background: #f8fafc; }
+.planning-cell.absence .absence-tag { font-size: 12px; font-weight: 700; text-align: center; line-height: 1.3; }
+.planning-cell.absence:hover { filter: brightness(0.97); }
+.demo-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.demo-table th { text-align: left; padding: 8px 10px; font-size: 11px; text-transform: uppercase; letter-spacing: .3px; color: var(--text2); border-bottom: 2px solid var(--border); white-space: nowrap; }
+.demo-table td { padding: 7px 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.demo-table select, .demo-table input { padding: 5px 7px; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; font-size: 13px; width: 100%; box-sizing: border-box; background: white; }
+.demo-table input[type=number] { max-width: 78px; }
+.demo-table select:disabled { background: #f1f5f9; color: #94a3b8; }
+.demo-dispo { font-size: 12px; font-weight: 600; min-width: 180px; }
+.demo-dispo.dispo { color: #16a34a; }
+.demo-dispo.limite { color: #d97706; }
+.demo-dispo.indispo { color: #dc2626; }
+.action-cell { display: flex; flex-direction: column; gap: 2px; align-items: flex-start; text-align: left; width: 100%; background: #fff; border: 1.5px solid var(--border); border-radius: 8px; padding: 10px 14px; cursor: pointer; font-family: inherit; transition: border-color .12s, background .12s, box-shadow .12s; }
+.action-cell:hover { border-color: var(--action); background: #f0fdf4; }
+.action-cell.primary { border-color: var(--action); background: #f3fbf7; }
+.action-cell.primary:hover { background: #e7f7ef; box-shadow: 0 1px 4px rgba(46,158,123,0.18); }
+.action-cell.coral { border-color: var(--cta); background: #fef4f3; }
+.action-cell.coral:hover { background: #fdeae7; box-shadow: 0 1px 4px rgba(224,88,76,0.18); }
+.action-cell[disabled] { opacity: .45; cursor: not-allowed; pointer-events: none; }
+.action-cell .ac-title { font-size: 14px; font-weight: 700; color: var(--text); }
+.action-cell .ac-sub { font-size: 11px; color: var(--text2); }
 .planning-header {
   display: flex; justify-content: space-between; align-items: center;
   gap: 12px; margin-bottom: 16px; flex-wrap: wrap;
@@ -426,9 +495,9 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 .planning-cell.filled {
   cursor: pointer; transition: background 0.15s;
 }
-.planning-cell.filled:hover { background: #ecfeff; }
+.planning-cell.filled:hover { background: #EAF0F5; }
 .planning-trip {
-  background: #ecfeff; border-left: 3px solid var(--accent);
+  background: #EAF0F5; border-left: 3px solid var(--accent);
   padding: 6px 8px; border-radius: 4px;
   font-size: 11px; line-height: 1.4;
   margin-bottom: 4px;
@@ -481,7 +550,7 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
   gap: 14px;
 }
 .driver-card {
-  background: white; border: 1px solid var(--border); border-left: 4px solid var(--border);
+  background: white; border: 1.5px solid #142F47; border-left: 4px solid var(--border);
   border-radius: 8px; padding: 14px 16px; transition: box-shadow 0.15s, transform 0.15s;
 }
 .driver-card:hover { box-shadow: 0 4px 12px rgba(15,40,80,0.08); transform: translateY(-1px); }
@@ -645,10 +714,10 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
   margin-bottom: 16px;
 }
 .summary-card {
-  background: var(--bg);
+  background: #ffffff;
   padding: 14px;
   border-radius: 8px;
-  border: 1px solid var(--border);
+  border: 1.5px solid #77C3AB;
   border-left: 4px solid var(--accent);
   min-width: 0;
   overflow: hidden;
@@ -687,34 +756,35 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 .trip-split-right .summary-value { font-size: 16px; }
 
 /* ─── Bandeau menu horizontal ─── */
-.nav-rubrique { position: relative; }
+.nav-rubrique { position: relative; display: flex; align-items: stretch; }
 .nav-btn {
-  background: rgba(255,255,255,0.14);
-  border: 1px solid rgba(255,255,255,0.25);
+  background: transparent;
+  border: none;
+  border-radius: 0;
   color: #fff;
-  padding: 6px 12px;
-  border-radius: 7px;
+  padding: 0 16px;
   cursor: pointer;
-  font-size: 12.5px;
+  font-size: 15px;
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 5px;
-  transition: background 0.15s, border-color 0.15s;
+  gap: 6px;
+  transition: background 0.15s, box-shadow 0.15s;
   font-family: inherit;
   white-space: nowrap;
+  box-shadow: inset 0 -3px 0 transparent;
 }
-.nav-btn:hover { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.4); }
+.nav-btn:hover { background: rgba(255,255,255,0.10); }
 .nav-rubrique.is-open .nav-btn {
-  background: rgba(255,255,255,0.28);
-  border-color: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.12);
+  box-shadow: inset 0 -3px 0 #E0584C;
 }
 .nav-chev { font-size: 9px; opacity: 0.85; transition: transform 0.15s; }
 .nav-rubrique.is-open .nav-chev { transform: rotate(180deg); }
 .nav-submenu {
   display: none;
   position: absolute;
-  top: calc(100% + 4px);
+  top: calc(100% + 1px);
   left: 0;
   background: white;
   border: 1px solid var(--border);
@@ -830,20 +900,20 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 .login-field input:focus {
-  outline: none; border-color: #0e7490;
-  box-shadow: 0 0 0 3px rgba(14,116,144,0.12);
+  outline: none; border-color: #142F47;
+  box-shadow: 0 0 0 3px rgba(20,47,71,0.12);
 }
 .login-btn {
   width: 100%; padding: 13px;
-  background: linear-gradient(180deg, #0e7490 0%, #0c5e76 100%);
+  background: linear-gradient(180deg, #2E9E7B 0%, #27876A 100%);
   color: white; border: none; border-radius: 8px;
   font-size: 15px; font-weight: 600; cursor: pointer;
   margin-top: 8px; transition: transform 0.1s, box-shadow 0.2s;
-  box-shadow: 0 2px 6px rgba(14,116,144,0.25);
+  box-shadow: 0 2px 6px rgba(46,158,123,0.30);
 }
 .login-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(14,116,144,0.35);
+  box-shadow: 0 4px 12px rgba(46,158,123,0.40);
 }
 .login-btn:active { transform: translateY(0); }
 .login-footer {
@@ -852,13 +922,13 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
   font-size: 12px; color: #6b7689; text-align: center;
 }
 .login-footer a {
-  color: #0e7490; text-decoration: none; font-weight: 500;
+  color: #142F47; text-decoration: none; font-weight: 500;
 }
 
 /* Panneau droit : animation */
 .login-right {
   position: relative; overflow: hidden;
-  background: linear-gradient(135deg, #0e7490 0%, #0c5e76 60%, #134e63 100%);
+  background: linear-gradient(135deg, #142F47 0%, #0f2538 60%, #0a1c2e 100%);
   display: flex; align-items: center; justify-content: center;
   padding: 40px;
 }
@@ -1128,7 +1198,7 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 .final-overlay {
   position: absolute; inset: 0; z-index: 10;
   display: flex; align-items: center; justify-content: center;
-  background: linear-gradient(135deg, rgba(14,116,144,0.85) 0%, rgba(12,94,118,0.92) 60%, rgba(19,78,99,0.96) 100%);
+  background: linear-gradient(135deg, rgba(20,47,71,0.85) 0%, rgba(15,37,56,0.92) 60%, rgba(10,28,46,0.96) 100%);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   opacity: 0;
@@ -1256,7 +1326,7 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 
 .driver-card {
   background: white;
-  border: 1px solid var(--border);
+  border: 1.5px solid #142F47;
   border-radius: 10px;
   padding: 14px 16px;
   transition: box-shadow 0.15s, border-color 0.15s;
@@ -1279,7 +1349,7 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #6FBFA0, #0e7490);
+  background: linear-gradient(135deg, #6FBFA0, #142F47);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1324,7 +1394,7 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 .tachy-status.pause .dot { background: #3b82f6; }
 .tachy-status.repos { background: #f0fdf4; color: #065f46; }
 .tachy-status.repos .dot { background: #10b981; }
-.tachy-status.dispo { background: #ecfeff; color: #0e7490; }
+.tachy-status.dispo { background: #EAF0F5; color: #142F47; }
 .tachy-status.dispo .dot { background: #06b6d4; }
 .tachy-status.travail { background: #fef3c7; color: #92400e; }
 .tachy-status.travail .dot { background: #fbbf24; }
@@ -1385,6 +1455,77 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 .disponibilite.limite { background: #fef3c7; color: #92400e; border-left: 3px solid #f59e0b; }
 .disponibilite.indispo { background: #fee2e2; color: #7f1d1d; border-left: 3px solid #dc2626; }
 
+/* === Cellules "barre de recherche" : titre à l'intérieur de la cellule (trajet à calculer) === */
+.tripcells .field {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 7px 13px 9px;
+  gap: 1px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.tripcells .field:focus-within {
+  border-color: #1F7A5E;
+  box-shadow: 0 0 0 3px rgba(31,122,94,0.28);
+}
+.tripcells .field label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text2);
+  letter-spacing: 0.1px;
+}
+.tripcells .field input,
+.tripcells .field select {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  width: 100%;
+  outline: none;
+}
+.tripcells .field input::placeholder { font-weight: 400; color: #9aa7b2; }
+.tripcells .field input:focus,
+.tripcells .field select:focus {
+  box-shadow: none !important;
+  border: none !important;
+}
+.tripcells .input-with-unit { display: flex; align-items: baseline; gap: 6px; }
+.tripcells .input-with-unit input { flex: 1 1 auto; width: auto; min-width: 0; }
+.tripcells .input-with-unit .unit {
+  position: static;
+  transform: none;
+  font-size: 13px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.tripcells .field #t_cargoHint {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  margin: 0;
+}
+.tripcells .field .cell-info {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  margin: 0;
+  cursor: help;
+  color: var(--text2);
+  font-size: 13px;
+  font-weight: 400;
+}
+.tripcells .field label span[title] {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  margin: 0 !important;
+}
+.tripcells .suggestions { margin-top: 7px; }
+
 </style>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -1395,7 +1536,21 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 <!-- ═══════ PAGE DE LOGIN ═══════ -->
 <div id="loginPage">
   <div class="login-left">
-    <div class="logo-wrap"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="200 200 1000 380" preserveAspectRatio="xMidYMid meet"> <g fill="#14273f"> <path d="M647.2 511.1 c-10.2 -2.3 -26.1 -9.3 -26.1 -11.7 0 -0.5 2 -4.3 4.6 -8.4 2.5 -4 4.7 -7.9 4.9 -8.5 0.2 -0.6 3.2 0.2 7.6 2.3 19.9 9.1 40.9 7.9 48 -2.9 2.5 -3.7 5.5 -16.8 4.2 -18 -0.3 -0.3 -2.5 0.8 -4.8 2.6 -7.1 5.1 -14.2 7.3 -24.1 7.3 -18.3 0 -34.3 -9.3 -40.9 -23.9 -10 -22.1 -0.6 -49.4 20.4 -59.3 15 -7.1 35.2 -5.8 45.4 3 2.4 1.9 4.5 3.6 4.8 3.6 0.3 0 0.6 -2.3 0.6 -5.1 l0 -5.1 12.2 0 12.2 0 0.4 40.7 c0.2 22.3 0 43.8 -0.4 47.7 -2 18 -14.8 31.2 -34.8 35.9 -7.9 1.8 -25.7 1.8 -34.1 0z m31.3 -62.1 c2.4 -1.2 5.7 -4.1 7.5 -6.2 3 -3.8 3.2 -4.5 3.2 -12.9 0 -8.2 -0.2 -9.3 -3 -13.2 -7.4 -10.6 -25.2 -12.7 -35 -4.1 -5.3 4.7 -7.9 10.4 -7.9 17.7 0 7 1.5 10.6 6.8 15.7 6.9 6.7 19.6 8 28.4 3.1z"/> <path d="M472.1 479.6 c-10.1 -2.7 -18 -8.8 -21.5 -17 -0.9 -2 -1.6 -6.7 -1.7 -10.3 -0.1 -11.7 4.7 -19 16.1 -24.3 6 -2.8 6.9 -2.9 25.1 -3.2 l18.7 -0.4 -0.6 -3.1 c-1 -5.3 -4.5 -9.7 -9.4 -12.1 -4 -1.9 -5.9 -2.3 -13.7 -1.8 -7.8 0.4 -10 0.9 -16.3 4 -5 2.5 -7.6 3.3 -8.2 2.6 -1.4 -1.8 -8.3 -15.9 -8.3 -17 0 -1.5 11.1 -6.8 18.5 -8.8 9.6 -2.6 32.3 -2.6 39.3 0 12.5 4.5 19.6 11.7 23.1 23.1 1.8 6.1 1.9 9.2 1.7 37.3 l-0.3 30.7 -11.8 0 -11.8 0 -0.3 -4.3 c-0.2 -2.5 -0.5 -4.4 -0.8 -4.4 -0.3 0 -2.3 1.3 -4.3 3.1 -2 1.6 -5.6 3.8 -7.9 4.7 -5.3 2.3 -19 2.8 -25.7 1.1z m27.5 -19.5 c5.1 -2.6 8.9 -8.9 8.9 -15.2 l0 -4.8 -10.4 0 c-17 0 -23.3 3.1 -23.3 10.9 0 7.7 5.7 11.9 15.3 11.3 3.1 -0.2 7.4 -1.1 9.5 -2.1z"/> <path d="M296.4 479.2 c-0.4 -0.3 -0.7 -27.5 -0.7 -60.4 l0 -59.8 12.5 0.3 12.5 0.3 21.6 35.7 c11.9 19.6 22 35.9 22.5 36.1 0.6 0.1 10.5 -16 22.2 -35.8 l21.2 -36 12.3 -0.3 12.4 -0.3 0 60.5 0 60.4 -13.3 0 -13.3 0 0 -34.4 c0 -25.1 -0.3 -34.3 -1.1 -34 -0.7 0.2 -8.6 12.8 -17.7 27.9 l-16.5 27.6 -6.5 0 -6.5 0 -16.8 -27.6 c-9.2 -15.1 -17.2 -27.7 -17.7 -27.9 -0.6 -0.2 -1 12.1 -1 34 l0 34.4 -12.6 0 c-7 0 -13 -0.3 -13.3 -0.7z"/> <path d="M554.1 478.7 c-0.3 -0.7 -0.4 -21.6 -0.3 -46.4 l0.3 -45 12.8 0 12.8 0 0 5.9 c0 5.6 0.7 7.4 1.8 4.4 0.8 -2 9.1 -7.6 13.9 -9.3 2.1 -0.7 6.5 -1.6 9.7 -2 l5.7 -0.7 0 12.3 0 12.2 -6.9 0.6 c-8.3 0.6 -14.5 3.5 -18.1 8.2 -4.7 6.1 -5.7 13.2 -5.7 38.3 l0 22.8 -12.8 0 c-9.3 0 -13 -0.3 -13.3 -1.2z"/> <path d="M736.4 479.2 c-0.4 -0.3 -0.7 -21.3 -0.7 -46.6 l0 -45.8 13.3 0 13.3 0 0 46.6 0 46.6 -12.6 0 c-7 0 -13 -0.3 -13.3 -0.7z"/> <path d="M784.1 479.2 c-1.3 -0.2 -2.4 -1 -2.5 -1.6 0 -0.7 -0.1 -27.6 -0.2 -59.9 l-0.2 -58.5 11.9 0 11.8 0 24.4 35.8 c13.3 19.6 24.7 36 25.2 36.3 0.6 0.4 0.7 -0.7 0.4 -2.8 -0.9 -4.4 0.4 -3.3 5.7 5.3 10.9 17.7 13.7 23.7 14.5 31.2 0.3 4 1 8.9 1.4 11.1 l0.7 3.8 -10.1 -0.3 -10.1 -0.3 -23.8 -34.7 c-13.1 -19.1 -24.3 -34.9 -24.8 -35.1 -0.6 -0.2 -1 12.5 -1 35 l0 35.4 -10.4 -0.1 c-5.8 -0.1 -11.6 -0.4 -12.8 -0.6z"/> </g> <g fill="#4677b3"> <path d="M942.4 480.3 c-11.5 -2.3 -24.9 -9.1 -32.5 -16.7 -10.5 -10.4 -15.6 -23.3 -15.6 -40.2 0 -17.1 4.9 -29.3 16.4 -40.7 11.9 -12 26.4 -17.7 44.5 -17.7 16.3 0 30.7 4.9 41.1 14.1 l4.8 4.3 -7.5 8.3 c-4.2 4.6 -7.7 8.4 -7.9 8.4 -0.2 0 -2.8 -1.8 -5.7 -4.1 -7.2 -5.4 -13.8 -7.6 -23.3 -7.7 -11.9 0 -18.6 2.6 -26.2 10.1 -7.5 7.5 -10 13.8 -10 24.7 0 10.8 2.6 17.2 10 24.7 4.6 4.6 7.7 6.8 11.9 8.1 7.2 2.5 19 2.6 26.9 0.2 l5.8 -1.8 0 -16.8 0 -16.9 11.8 0 11.7 0 0.6 3.4 c0.3 1.7 0.5 12.3 0.3 23.2 l-0.3 19.9 -5.6 3.8 c-9.4 6.2 -20.8 9.3 -35.8 9.6 -7.1 0.2 -13.9 0.1 -15.3 -0.1z"/> <path d="M1048.1 479.4 c-12.1 -3.3 -24 -12.3 -28.9 -21.8 -13.1 -25.8 -0.2 -56 27.4 -64.1 8.1 -2.4 22.7 -2.1 31.1 0.4 17 5.2 29 21 30.1 39.4 1.4 22.1 -12 40.3 -33.8 46.1 -6.8 1.7 -19.1 1.7 -26 -0.1z m21 -21.6 c8.8 -3.6 13.5 -11.3 13.5 -21.9 0 -8.1 -2.4 -13.6 -7.5 -18.1 -10.7 -9.4 -27.6 -5.7 -33.6 7.4 -2.4 5.1 -2.6 15.6 -0.3 20.8 4.5 10.9 17.2 16.4 27.8 11.9z"/> <path d="M716.6 465.1 c0 -2.8 0.2 -3.9 0.4 -2.3 0.2 1.5 0.2 3.8 0 5.1 -0.2 1.2 -0.4 0 -0.4 -2.9z"/> </g> <g fill="#469d76"> <path d="M869.6 458.4 c-2.7 -5.3 -7.1 -13.2 -9.7 -17.5 -5.8 -9.1 -6.2 -12.5 -4.4 -33.7 2.1 -26.2 10 -44.6 25.3 -59.6 9.4 -9.1 27.3 -18.9 41.1 -22.5 20 -5.1 19.9 -5.1 87.3 -5.7 l64.2 -0.7 -14.4 -14.6 -14.4 -14.6 6.4 -6.5 c3.7 -3.7 7.1 -6.7 7.7 -6.7 0.6 0 13 12 27.6 26.6 l26.5 26.6 -21.4 21.7 c-11.7 12 -23.8 24.3 -26.9 27.3 l-5.5 5.4 -7.1 -7 -7.1 -7.1 15 -15.1 15.1 -15.1 -66 0.4 c-63.1 0.3 -66.4 0.4 -75.5 2.6 -5.2 1.2 -10.9 2.9 -12.8 3.6 -11.9 5.1 -15 6.9 -20.1 10.7 -11.5 8.7 -18.4 19.7 -22.8 35.7 -1.9 7.2 -2.3 11.6 -2.8 41.7 l-0.6 33.8 -4.8 -9.7z"/> <path d="M740.8 372.4 c-5.5 -3.3 -7.6 -6.7 -8 -13.7 -0.6 -10.6 5.4 -16.9 16.3 -16.9 9.8 0 16.7 6.8 16.7 16.4 0 12.6 -14 20.6 -25 14.2z"/> </g> </svg></div>
+    <div class="logo-wrap"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="243 248 919 251" preserveAspectRatio="xMidYMid meet"> <g fill="#142f47">
+  <path d="M661.9 479.9 c-12.4 -1.2 -29.9 -7.4 -37.6 -13.2 l-2.5 -1.8 6 -8.6 c3.3 -4.7 6.9 -8.7 7.9 -8.9 1 -0.2 4.9 1 8.7 2.8 22.8 10.4 44.5 7 52.5 -8.6 2.8 -5.2 3.8 -16.9 1.6 -16.9 -0.8 0 -2.4 1 -3.5 2.1 -3.3 3.8 -13.6 8 -21.7 8.9 -28.7 3.4 -52.1 -13.1 -56.7 -39.7 -3.3 -19.1 7.4 -40.8 24.7 -50 17.6 -9.3 41.1 -8.1 53.6 3 l3.8 3.3 0 -5.6 0 -5.7 13.6 -0.3 c7.4 -0.2 13.7 -0.2 13.9 -0.1 0.2 0.2 0.6 22.3 0.9 49.3 0.5 47.5 0.4 49.1 -1.6 56 -7.3 24 -32 37.2 -63.7 34.2z m24.3 -71.1 c18.4 -11.5 14.1 -39.5 -6.9 -44.5 -6.1 -1.5 -15.2 -0.6 -20.5 2 -14.6 7.5 -17.3 29.9 -4.8 40.4 5.6 4.8 8.7 5.6 18.3 5.4 7.7 -0.3 9.3 -0.7 13.8 -3.4z"/>
+  <path d="M263.6 414.7 c-0.3 -19 -0.9 -49.2 -1.2 -67 l-0.6 -32.5 13.8 0 13.7 0 24.3 40.4 c13.4 22.2 24.6 40.4 25 40.4 0.5 0 10.6 -17.6 22.7 -39 12.1 -21.5 22.8 -39.9 23.8 -40.9 1.5 -1.7 3.4 -1.9 15 -1.9 l13.3 0 0 35.6 c0 19.6 0.3 49.5 0.7 66.5 l0.6 30.9 -14.9 0 -15 0 0 -25.3 c0 -31.6 -0.9 -48.4 -2.6 -48.4 -1 0 -8.7 13.2 -30 51.5 l-5.5 9.9 -7.9 0 -8 0 -17.9 -29.9 c-9.9 -16.5 -18.7 -30.1 -19.5 -30.3 -1.2 -0.2 -1.3 4.8 -0.9 37.1 l0.5 37.3 -14.3 0 -14.4 0 -0.6 -34.5z"/>
+  <path d="M458.4 446.8 c-8.3 -1.7 -14.8 -5.3 -19.3 -10.4 -11.9 -13.4 -8.8 -37 5.5 -44 1.7 -0.8 4.7 -2.4 6.7 -3.5 6 -3.2 15.9 -4.6 32 -4.4 l15.2 0.1 -0.7 -3.7 c-1.7 -9.4 -7.7 -13.7 -19.7 -14.3 -9.4 -0.5 -18.3 1.1 -26.7 5.1 -3.6 1.6 -6.9 2.7 -7.4 2.1 -0.4 -0.4 -2.7 -4.8 -4.9 -9.7 l-4.1 -8.9 3 -2.6 c4.6 -3.8 13.6 -6.8 26.1 -8.6 31.3 -4.5 51.1 2.5 59.6 20.9 3.5 7.6 4.4 18.3 4.4 51.2 0 24.5 -0.2 27.9 -1.6 28.4 -0.9 0.3 -7.1 0.6 -13.8 0.6 l-12.2 0 0 -4.1 c0 -4.6 -1.6 -5.3 -4.6 -2 -7 7.7 -22.8 10.9 -37.3 7.8z m25.7 -21.2 c8.6 -2.9 14.1 -10.4 14.2 -19 l0 -4.4 -11.1 0 c-7 0 -13.1 0.6 -16.3 1.5 -16.5 4.9 -12.6 22.8 4.9 23 2.6 0 6.2 -0.5 8.2 -1.1z"/>
+  <path d="M547 394.4 c-0.3 -27.4 -0.4 -50.1 0 -50.4 0.3 -0.3 6.9 -0.6 14.5 -0.6 l14 0 -0.3 4.5 c-0.2 2.5 -0.1 5.5 0.3 7 l0.6 2.6 3 -3.8 c6.1 -7.7 11.2 -10.2 22.8 -11.3 l7.9 -0.7 0 13.3 0 13.2 -7.6 0.5 c-8.2 0.5 -14.5 3.4 -19.5 8.8 -5 5.4 -5.6 9.5 -5.6 39.3 l0 27.4 -14.6 0 -14.7 0 -0.7 -49.7z"/>
+  <path d="M748.7 406.5 c-0.4 -19 -0.7 -41.9 -0.7 -50.7 l0 -16.1 13.6 -0.3 c7.4 -0.2 13.8 -0.1 14.1 0.2 0.4 0.3 1 23.2 1.4 51 l0.7 50.3 -14.2 0 -14.3 0 -0.6 -34.5z"/>
+  <path d="M798.7 381 c-0.3 -32.5 -0.7 -62.3 -0.8 -66.3 l-0.2 -7.2 13.3 -0.3 13.3 -0.2 12.1 17.6 c27.8 40.6 46.7 67.3 47 66.6 0.3 -0.5 0 -21.4 -0.5 -46.6 -0.5 -25.2 -0.7 -46.5 -0.4 -47.4 0.6 -1.3 2.7 -1.5 14.7 -1.3 l14.1 0.3 1.1 55.3 c0.7 30.4 1.2 62.5 1.3 71.4 l0.1 16.1 -15.6 0 -15.7 0 -26.6 -38.1 c-14.7 -20.9 -27.2 -38.2 -27.9 -38.5 -1 -0.3 -1.1 3.5 -0.7 16.9 0.3 9.4 0.7 27 1 39 l0.5 21.7 -14.7 0 -14.7 0 -0.7 -59z"/>
+ </g> <g fill="#77c3ab">
+  <path stroke="#77c3ab" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" d="M1011 451.9 c-36.9 -6.5 -65.5 -27.7 -76.5 -56.7 -2.4 -6 -2.7 -8.5 -2.8 -19.6 0 -14.8 1.9 -22.6 8.4 -33.8 5.5 -9.6 21.3 -25 31.4 -30.6 28.5 -16.2 63.9 -20.5 96.6 -11.9 5.3 1.4 9.8 2.6 10.2 2.6 0.3 0 -0.5 -1.1 -1.7 -2.5 l-2.3 -2.5 4.4 1.2 c5.5 1.4 9.9 6.1 10 10.5 0 3.1 -0.6 3.7 -7.9 7.9 -5.9 3.5 -9.1 4.7 -12.1 4.7 -3.7 -0.1 -3.9 -0.2 -2.3 -1.5 1.8 -1.3 1.8 -1.4 0 -2.4 -8.4 -4.5 -39.5 -6 -55.1 -2.8 -34.6 7.3 -58.6 27.3 -62.9 52.4 -3.3 19.5 7.5 39.6 28.5 53.4 14.7 9.7 30.8 14.3 52.6 15.1 13.7 0.5 15 0.4 14.4 -1.1 -1.4 -3.7 3.1 -1.4 8.7 4.3 3.2 3.3 7.5 6.8 9.6 7.7 2.7 1.3 3.8 2.5 3.8 4.1 0 2.3 0 2.3 -23.8 2.5 -16.1 0.1 -26.2 -0.2 -31.4 -1.1z"/>
+  <path d="M1065.6 438 c-3 -1.6 -6.8 -4.7 -8.5 -6.9 -2.8 -3.4 -3.2 -4.5 -3.1 -10 0.1 -5.5 0.2 -5.8 1 -2.8 0.5 1.7 1.2 3.3 1.4 3.3 0.3 0 0.5 -2.8 0.5 -6.1 0 -6 -1.6 -8.5 -2.8 -4.1 -0.3 1.1 -1.2 2 -2 2 -1.2 0 -1.4 -0.9 -0.9 -4.3 0.3 -2.5 0.9 -8.9 1.2 -14.4 l0.6 -10.1 -4.7 0.7 c-4.1 0.6 -4.6 0.5 -4.1 -0.9 0.5 -1.4 -0.8 -1.6 -11.8 -1.6 -16.8 0 -20.6 -1.9 -20.6 -10.7 0 -9.8 2.9 -10.7 33.7 -10.7 15.2 0 24.8 0.4 25.2 1 0.3 0.6 1.7 1 3.2 1 3 0 3.2 0.5 3.8 9.5 0.4 5.4 0.2 6.9 -0.9 6.9 -1.2 0 -1.4 4.6 -1.2 29.2 0.2 22.1 0.6 29.3 1.6 29.7 2.7 1 1 2.6 -2.6 2.6 -2.5 0 -5.9 -1.2 -9.1 -3.1z"/>
+  <path d="M755.8 324.9 c-9 -3.2 -14.6 -13.3 -12.1 -21.8 2.6 -8.5 9.5 -13.5 18.6 -13.5 6.2 0 9.8 1.7 14.1 6.5 3.5 4 5 10.4 3.8 16.1 -1 4.5 -8.1 11.9 -12.7 13.2 -4.8 1.3 -7 1.2 -11.8 -0.5z"/>
+ </g> <g fill="#e0584c">
+  <path stroke="#e0584c" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" d="M1076.5 456.3 c-7.9 -1.3 -20.1 -7.7 -25.8 -13.3 -13.8 -13.8 -17 -37.5 -7.5 -56.2 2.6 -5.1 2.6 -5.1 7.7 -5.1 l5.1 0 0 10.6 c0 5.9 -0.5 13 -1.1 15.8 -2.4 10 3.7 21.3 14.5 27.3 5.2 2.9 6.1 3.1 17.3 3.1 10.6 0 12.4 -0.3 17.6 -2.8 11.1 -5.1 17.2 -14.4 17.2 -25.9 0 -11.8 -5.8 -20.8 -17.2 -26.3 -6.2 -3.1 -7.8 -3.4 -18.2 -3.7 l-11.4 -0.4 -0.6 -7.8 c-0.2 -4.3 -0.3 -8.1 0 -8.4 0.2 -0.2 5.2 -0.6 11.1 -0.8 8.6 -0.4 12 0 17.6 1.6 14.3 4.4 25.1 13.1 31 25.2 13.2 26.8 -1.5 57.8 -31.2 65.7 -7.1 1.9 -19.3 2.6 -26.1 1.3z"/>
+  <path d="M1049.5 342.5 c-3.6 -3.6 -3.6 -8.2 0.2 -11.9 1.5 -1.5 9.4 -6.5 17.7 -11.2 8.2 -4.6 15.7 -9 16.6 -9.6 1.4 -1.2 0 -3 -12.1 -15.7 -7.7 -7.9 -14.1 -15.3 -14.4 -16.7 -1.8 -6.9 7.7 -14.3 12.9 -10.1 4.9 3.9 35.9 37.7 36.8 40.1 1.9 5 -0.3 9.3 -6.9 13.1 -6.9 4 -16.7 9.5 -18.7 10.5 -3.8 1.8 -18.1 10.1 -19.4 11.3 -0.9 0.7 -3.5 1.6 -5.8 2 -3.7 0.5 -4.6 0.3 -6.9 -1.9z"/>
+ </g> </svg></div>
     <div class="tagline">
       Le copilote de votre rentabilité transport.
     </div>
@@ -1738,16 +1893,29 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
 </div>
 
 <header>
-  <div style="min-width:0;flex:1">
-    <!-- Logo -->
-    <div style="height:84px;display:flex;align-items:center;filter:drop-shadow(0 1px 2px rgba(0,0,0,0.25))"><svg style="height:72px;width:auto" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="200 200 1000 380" preserveAspectRatio="xMidYMid meet"> <g fill="#14273f"> <path d="M647.2 511.1 c-10.2 -2.3 -26.1 -9.3 -26.1 -11.7 0 -0.5 2 -4.3 4.6 -8.4 2.5 -4 4.7 -7.9 4.9 -8.5 0.2 -0.6 3.2 0.2 7.6 2.3 19.9 9.1 40.9 7.9 48 -2.9 2.5 -3.7 5.5 -16.8 4.2 -18 -0.3 -0.3 -2.5 0.8 -4.8 2.6 -7.1 5.1 -14.2 7.3 -24.1 7.3 -18.3 0 -34.3 -9.3 -40.9 -23.9 -10 -22.1 -0.6 -49.4 20.4 -59.3 15 -7.1 35.2 -5.8 45.4 3 2.4 1.9 4.5 3.6 4.8 3.6 0.3 0 0.6 -2.3 0.6 -5.1 l0 -5.1 12.2 0 12.2 0 0.4 40.7 c0.2 22.3 0 43.8 -0.4 47.7 -2 18 -14.8 31.2 -34.8 35.9 -7.9 1.8 -25.7 1.8 -34.1 0z m31.3 -62.1 c2.4 -1.2 5.7 -4.1 7.5 -6.2 3 -3.8 3.2 -4.5 3.2 -12.9 0 -8.2 -0.2 -9.3 -3 -13.2 -7.4 -10.6 -25.2 -12.7 -35 -4.1 -5.3 4.7 -7.9 10.4 -7.9 17.7 0 7 1.5 10.6 6.8 15.7 6.9 6.7 19.6 8 28.4 3.1z"/> <path d="M472.1 479.6 c-10.1 -2.7 -18 -8.8 -21.5 -17 -0.9 -2 -1.6 -6.7 -1.7 -10.3 -0.1 -11.7 4.7 -19 16.1 -24.3 6 -2.8 6.9 -2.9 25.1 -3.2 l18.7 -0.4 -0.6 -3.1 c-1 -5.3 -4.5 -9.7 -9.4 -12.1 -4 -1.9 -5.9 -2.3 -13.7 -1.8 -7.8 0.4 -10 0.9 -16.3 4 -5 2.5 -7.6 3.3 -8.2 2.6 -1.4 -1.8 -8.3 -15.9 -8.3 -17 0 -1.5 11.1 -6.8 18.5 -8.8 9.6 -2.6 32.3 -2.6 39.3 0 12.5 4.5 19.6 11.7 23.1 23.1 1.8 6.1 1.9 9.2 1.7 37.3 l-0.3 30.7 -11.8 0 -11.8 0 -0.3 -4.3 c-0.2 -2.5 -0.5 -4.4 -0.8 -4.4 -0.3 0 -2.3 1.3 -4.3 3.1 -2 1.6 -5.6 3.8 -7.9 4.7 -5.3 2.3 -19 2.8 -25.7 1.1z m27.5 -19.5 c5.1 -2.6 8.9 -8.9 8.9 -15.2 l0 -4.8 -10.4 0 c-17 0 -23.3 3.1 -23.3 10.9 0 7.7 5.7 11.9 15.3 11.3 3.1 -0.2 7.4 -1.1 9.5 -2.1z"/> <path d="M296.4 479.2 c-0.4 -0.3 -0.7 -27.5 -0.7 -60.4 l0 -59.8 12.5 0.3 12.5 0.3 21.6 35.7 c11.9 19.6 22 35.9 22.5 36.1 0.6 0.1 10.5 -16 22.2 -35.8 l21.2 -36 12.3 -0.3 12.4 -0.3 0 60.5 0 60.4 -13.3 0 -13.3 0 0 -34.4 c0 -25.1 -0.3 -34.3 -1.1 -34 -0.7 0.2 -8.6 12.8 -17.7 27.9 l-16.5 27.6 -6.5 0 -6.5 0 -16.8 -27.6 c-9.2 -15.1 -17.2 -27.7 -17.7 -27.9 -0.6 -0.2 -1 12.1 -1 34 l0 34.4 -12.6 0 c-7 0 -13 -0.3 -13.3 -0.7z"/> <path d="M554.1 478.7 c-0.3 -0.7 -0.4 -21.6 -0.3 -46.4 l0.3 -45 12.8 0 12.8 0 0 5.9 c0 5.6 0.7 7.4 1.8 4.4 0.8 -2 9.1 -7.6 13.9 -9.3 2.1 -0.7 6.5 -1.6 9.7 -2 l5.7 -0.7 0 12.3 0 12.2 -6.9 0.6 c-8.3 0.6 -14.5 3.5 -18.1 8.2 -4.7 6.1 -5.7 13.2 -5.7 38.3 l0 22.8 -12.8 0 c-9.3 0 -13 -0.3 -13.3 -1.2z"/> <path d="M736.4 479.2 c-0.4 -0.3 -0.7 -21.3 -0.7 -46.6 l0 -45.8 13.3 0 13.3 0 0 46.6 0 46.6 -12.6 0 c-7 0 -13 -0.3 -13.3 -0.7z"/> <path d="M784.1 479.2 c-1.3 -0.2 -2.4 -1 -2.5 -1.6 0 -0.7 -0.1 -27.6 -0.2 -59.9 l-0.2 -58.5 11.9 0 11.8 0 24.4 35.8 c13.3 19.6 24.7 36 25.2 36.3 0.6 0.4 0.7 -0.7 0.4 -2.8 -0.9 -4.4 0.4 -3.3 5.7 5.3 10.9 17.7 13.7 23.7 14.5 31.2 0.3 4 1 8.9 1.4 11.1 l0.7 3.8 -10.1 -0.3 -10.1 -0.3 -23.8 -34.7 c-13.1 -19.1 -24.3 -34.9 -24.8 -35.1 -0.6 -0.2 -1 12.5 -1 35 l0 35.4 -10.4 -0.1 c-5.8 -0.1 -11.6 -0.4 -12.8 -0.6z"/> </g> <g fill="#4677b3"> <path d="M942.4 480.3 c-11.5 -2.3 -24.9 -9.1 -32.5 -16.7 -10.5 -10.4 -15.6 -23.3 -15.6 -40.2 0 -17.1 4.9 -29.3 16.4 -40.7 11.9 -12 26.4 -17.7 44.5 -17.7 16.3 0 30.7 4.9 41.1 14.1 l4.8 4.3 -7.5 8.3 c-4.2 4.6 -7.7 8.4 -7.9 8.4 -0.2 0 -2.8 -1.8 -5.7 -4.1 -7.2 -5.4 -13.8 -7.6 -23.3 -7.7 -11.9 0 -18.6 2.6 -26.2 10.1 -7.5 7.5 -10 13.8 -10 24.7 0 10.8 2.6 17.2 10 24.7 4.6 4.6 7.7 6.8 11.9 8.1 7.2 2.5 19 2.6 26.9 0.2 l5.8 -1.8 0 -16.8 0 -16.9 11.8 0 11.7 0 0.6 3.4 c0.3 1.7 0.5 12.3 0.3 23.2 l-0.3 19.9 -5.6 3.8 c-9.4 6.2 -20.8 9.3 -35.8 9.6 -7.1 0.2 -13.9 0.1 -15.3 -0.1z"/> <path d="M1048.1 479.4 c-12.1 -3.3 -24 -12.3 -28.9 -21.8 -13.1 -25.8 -0.2 -56 27.4 -64.1 8.1 -2.4 22.7 -2.1 31.1 0.4 17 5.2 29 21 30.1 39.4 1.4 22.1 -12 40.3 -33.8 46.1 -6.8 1.7 -19.1 1.7 -26 -0.1z m21 -21.6 c8.8 -3.6 13.5 -11.3 13.5 -21.9 0 -8.1 -2.4 -13.6 -7.5 -18.1 -10.7 -9.4 -27.6 -5.7 -33.6 7.4 -2.4 5.1 -2.6 15.6 -0.3 20.8 4.5 10.9 17.2 16.4 27.8 11.9z"/> <path d="M716.6 465.1 c0 -2.8 0.2 -3.9 0.4 -2.3 0.2 1.5 0.2 3.8 0 5.1 -0.2 1.2 -0.4 0 -0.4 -2.9z"/> </g> <g fill="#469d76"> <path d="M869.6 458.4 c-2.7 -5.3 -7.1 -13.2 -9.7 -17.5 -5.8 -9.1 -6.2 -12.5 -4.4 -33.7 2.1 -26.2 10 -44.6 25.3 -59.6 9.4 -9.1 27.3 -18.9 41.1 -22.5 20 -5.1 19.9 -5.1 87.3 -5.7 l64.2 -0.7 -14.4 -14.6 -14.4 -14.6 6.4 -6.5 c3.7 -3.7 7.1 -6.7 7.7 -6.7 0.6 0 13 12 27.6 26.6 l26.5 26.6 -21.4 21.7 c-11.7 12 -23.8 24.3 -26.9 27.3 l-5.5 5.4 -7.1 -7 -7.1 -7.1 15 -15.1 15.1 -15.1 -66 0.4 c-63.1 0.3 -66.4 0.4 -75.5 2.6 -5.2 1.2 -10.9 2.9 -12.8 3.6 -11.9 5.1 -15 6.9 -20.1 10.7 -11.5 8.7 -18.4 19.7 -22.8 35.7 -1.9 7.2 -2.3 11.6 -2.8 41.7 l-0.6 33.8 -4.8 -9.7z"/> <path d="M740.8 372.4 c-5.5 -3.3 -7.6 -6.7 -8 -13.7 -0.6 -10.6 5.4 -16.9 16.3 -16.9 9.8 0 16.7 6.8 16.7 16.4 0 12.6 -14 20.6 -25 14.2z"/> </g> </svg></div>
-      <!-- Ligne slogan + onglets (sous le logo, sur la même ligne) -->
-      <div style="display:flex;align-items:center;gap:16px;flex-wrap:nowrap;margin-top:-12px;justify-content:space-between">
-        <span style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.92);letter-spacing:0.3px;font-style:italic;margin-left:4px;white-space:nowrap;flex-shrink:0">Le copilote de votre rentabilité transport</span>
-        <!-- Bandeau de menu horizontal -->
-        <div style="display:flex;gap:4px;flex-wrap:nowrap" id="homeMenuBar">
-      
-      <!-- 🚛 Flux -->
+  <!-- Logo (réduit) + slogan, façon lockup Trello -->
+  <div class="hdr-brand">
+    <div class="hdr-logo"><svg style="height:40px;width:auto;display:block" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="243 248 919 251" preserveAspectRatio="xMidYMid meet"> <g fill="#ffffff">
+  <path d="M661.9 479.9 c-12.4 -1.2 -29.9 -7.4 -37.6 -13.2 l-2.5 -1.8 6 -8.6 c3.3 -4.7 6.9 -8.7 7.9 -8.9 1 -0.2 4.9 1 8.7 2.8 22.8 10.4 44.5 7 52.5 -8.6 2.8 -5.2 3.8 -16.9 1.6 -16.9 -0.8 0 -2.4 1 -3.5 2.1 -3.3 3.8 -13.6 8 -21.7 8.9 -28.7 3.4 -52.1 -13.1 -56.7 -39.7 -3.3 -19.1 7.4 -40.8 24.7 -50 17.6 -9.3 41.1 -8.1 53.6 3 l3.8 3.3 0 -5.6 0 -5.7 13.6 -0.3 c7.4 -0.2 13.7 -0.2 13.9 -0.1 0.2 0.2 0.6 22.3 0.9 49.3 0.5 47.5 0.4 49.1 -1.6 56 -7.3 24 -32 37.2 -63.7 34.2z m24.3 -71.1 c18.4 -11.5 14.1 -39.5 -6.9 -44.5 -6.1 -1.5 -15.2 -0.6 -20.5 2 -14.6 7.5 -17.3 29.9 -4.8 40.4 5.6 4.8 8.7 5.6 18.3 5.4 7.7 -0.3 9.3 -0.7 13.8 -3.4z"/>
+  <path d="M263.6 414.7 c-0.3 -19 -0.9 -49.2 -1.2 -67 l-0.6 -32.5 13.8 0 13.7 0 24.3 40.4 c13.4 22.2 24.6 40.4 25 40.4 0.5 0 10.6 -17.6 22.7 -39 12.1 -21.5 22.8 -39.9 23.8 -40.9 1.5 -1.7 3.4 -1.9 15 -1.9 l13.3 0 0 35.6 c0 19.6 0.3 49.5 0.7 66.5 l0.6 30.9 -14.9 0 -15 0 0 -25.3 c0 -31.6 -0.9 -48.4 -2.6 -48.4 -1 0 -8.7 13.2 -30 51.5 l-5.5 9.9 -7.9 0 -8 0 -17.9 -29.9 c-9.9 -16.5 -18.7 -30.1 -19.5 -30.3 -1.2 -0.2 -1.3 4.8 -0.9 37.1 l0.5 37.3 -14.3 0 -14.4 0 -0.6 -34.5z"/>
+  <path d="M458.4 446.8 c-8.3 -1.7 -14.8 -5.3 -19.3 -10.4 -11.9 -13.4 -8.8 -37 5.5 -44 1.7 -0.8 4.7 -2.4 6.7 -3.5 6 -3.2 15.9 -4.6 32 -4.4 l15.2 0.1 -0.7 -3.7 c-1.7 -9.4 -7.7 -13.7 -19.7 -14.3 -9.4 -0.5 -18.3 1.1 -26.7 5.1 -3.6 1.6 -6.9 2.7 -7.4 2.1 -0.4 -0.4 -2.7 -4.8 -4.9 -9.7 l-4.1 -8.9 3 -2.6 c4.6 -3.8 13.6 -6.8 26.1 -8.6 31.3 -4.5 51.1 2.5 59.6 20.9 3.5 7.6 4.4 18.3 4.4 51.2 0 24.5 -0.2 27.9 -1.6 28.4 -0.9 0.3 -7.1 0.6 -13.8 0.6 l-12.2 0 0 -4.1 c0 -4.6 -1.6 -5.3 -4.6 -2 -7 7.7 -22.8 10.9 -37.3 7.8z m25.7 -21.2 c8.6 -2.9 14.1 -10.4 14.2 -19 l0 -4.4 -11.1 0 c-7 0 -13.1 0.6 -16.3 1.5 -16.5 4.9 -12.6 22.8 4.9 23 2.6 0 6.2 -0.5 8.2 -1.1z"/>
+  <path d="M547 394.4 c-0.3 -27.4 -0.4 -50.1 0 -50.4 0.3 -0.3 6.9 -0.6 14.5 -0.6 l14 0 -0.3 4.5 c-0.2 2.5 -0.1 5.5 0.3 7 l0.6 2.6 3 -3.8 c6.1 -7.7 11.2 -10.2 22.8 -11.3 l7.9 -0.7 0 13.3 0 13.2 -7.6 0.5 c-8.2 0.5 -14.5 3.4 -19.5 8.8 -5 5.4 -5.6 9.5 -5.6 39.3 l0 27.4 -14.6 0 -14.7 0 -0.7 -49.7z"/>
+  <path d="M748.7 406.5 c-0.4 -19 -0.7 -41.9 -0.7 -50.7 l0 -16.1 13.6 -0.3 c7.4 -0.2 13.8 -0.1 14.1 0.2 0.4 0.3 1 23.2 1.4 51 l0.7 50.3 -14.2 0 -14.3 0 -0.6 -34.5z"/>
+  <path d="M798.7 381 c-0.3 -32.5 -0.7 -62.3 -0.8 -66.3 l-0.2 -7.2 13.3 -0.3 13.3 -0.2 12.1 17.6 c27.8 40.6 46.7 67.3 47 66.6 0.3 -0.5 0 -21.4 -0.5 -46.6 -0.5 -25.2 -0.7 -46.5 -0.4 -47.4 0.6 -1.3 2.7 -1.5 14.7 -1.3 l14.1 0.3 1.1 55.3 c0.7 30.4 1.2 62.5 1.3 71.4 l0.1 16.1 -15.6 0 -15.7 0 -26.6 -38.1 c-14.7 -20.9 -27.2 -38.2 -27.9 -38.5 -1 -0.3 -1.1 3.5 -0.7 16.9 0.3 9.4 0.7 27 1 39 l0.5 21.7 -14.7 0 -14.7 0 -0.7 -59z"/>
+ </g> <g fill="#77c3ab">
+  <path stroke="#77c3ab" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" d="M1011 451.9 c-36.9 -6.5 -65.5 -27.7 -76.5 -56.7 -2.4 -6 -2.7 -8.5 -2.8 -19.6 0 -14.8 1.9 -22.6 8.4 -33.8 5.5 -9.6 21.3 -25 31.4 -30.6 28.5 -16.2 63.9 -20.5 96.6 -11.9 5.3 1.4 9.8 2.6 10.2 2.6 0.3 0 -0.5 -1.1 -1.7 -2.5 l-2.3 -2.5 4.4 1.2 c5.5 1.4 9.9 6.1 10 10.5 0 3.1 -0.6 3.7 -7.9 7.9 -5.9 3.5 -9.1 4.7 -12.1 4.7 -3.7 -0.1 -3.9 -0.2 -2.3 -1.5 1.8 -1.3 1.8 -1.4 0 -2.4 -8.4 -4.5 -39.5 -6 -55.1 -2.8 -34.6 7.3 -58.6 27.3 -62.9 52.4 -3.3 19.5 7.5 39.6 28.5 53.4 14.7 9.7 30.8 14.3 52.6 15.1 13.7 0.5 15 0.4 14.4 -1.1 -1.4 -3.7 3.1 -1.4 8.7 4.3 3.2 3.3 7.5 6.8 9.6 7.7 2.7 1.3 3.8 2.5 3.8 4.1 0 2.3 0 2.3 -23.8 2.5 -16.1 0.1 -26.2 -0.2 -31.4 -1.1z"/>
+  <path d="M1065.6 438 c-3 -1.6 -6.8 -4.7 -8.5 -6.9 -2.8 -3.4 -3.2 -4.5 -3.1 -10 0.1 -5.5 0.2 -5.8 1 -2.8 0.5 1.7 1.2 3.3 1.4 3.3 0.3 0 0.5 -2.8 0.5 -6.1 0 -6 -1.6 -8.5 -2.8 -4.1 -0.3 1.1 -1.2 2 -2 2 -1.2 0 -1.4 -0.9 -0.9 -4.3 0.3 -2.5 0.9 -8.9 1.2 -14.4 l0.6 -10.1 -4.7 0.7 c-4.1 0.6 -4.6 0.5 -4.1 -0.9 0.5 -1.4 -0.8 -1.6 -11.8 -1.6 -16.8 0 -20.6 -1.9 -20.6 -10.7 0 -9.8 2.9 -10.7 33.7 -10.7 15.2 0 24.8 0.4 25.2 1 0.3 0.6 1.7 1 3.2 1 3 0 3.2 0.5 3.8 9.5 0.4 5.4 0.2 6.9 -0.9 6.9 -1.2 0 -1.4 4.6 -1.2 29.2 0.2 22.1 0.6 29.3 1.6 29.7 2.7 1 1 2.6 -2.6 2.6 -2.5 0 -5.9 -1.2 -9.1 -3.1z"/>
+  <path d="M755.8 324.9 c-9 -3.2 -14.6 -13.3 -12.1 -21.8 2.6 -8.5 9.5 -13.5 18.6 -13.5 6.2 0 9.8 1.7 14.1 6.5 3.5 4 5 10.4 3.8 16.1 -1 4.5 -8.1 11.9 -12.7 13.2 -4.8 1.3 -7 1.2 -11.8 -0.5z"/>
+ </g> <g fill="#e0584c">
+  <path stroke="#e0584c" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" d="M1076.5 456.3 c-7.9 -1.3 -20.1 -7.7 -25.8 -13.3 -13.8 -13.8 -17 -37.5 -7.5 -56.2 2.6 -5.1 2.6 -5.1 7.7 -5.1 l5.1 0 0 10.6 c0 5.9 -0.5 13 -1.1 15.8 -2.4 10 3.7 21.3 14.5 27.3 5.2 2.9 6.1 3.1 17.3 3.1 10.6 0 12.4 -0.3 17.6 -2.8 11.1 -5.1 17.2 -14.4 17.2 -25.9 0 -11.8 -5.8 -20.8 -17.2 -26.3 -6.2 -3.1 -7.8 -3.4 -18.2 -3.7 l-11.4 -0.4 -0.6 -7.8 c-0.2 -4.3 -0.3 -8.1 0 -8.4 0.2 -0.2 5.2 -0.6 11.1 -0.8 8.6 -0.4 12 0 17.6 1.6 14.3 4.4 25.1 13.1 31 25.2 13.2 26.8 -1.5 57.8 -31.2 65.7 -7.1 1.9 -19.3 2.6 -26.1 1.3z"/>
+  <path d="M1049.5 342.5 c-3.6 -3.6 -3.6 -8.2 0.2 -11.9 1.5 -1.5 9.4 -6.5 17.7 -11.2 8.2 -4.6 15.7 -9 16.6 -9.6 1.4 -1.2 0 -3 -12.1 -15.7 -7.7 -7.9 -14.1 -15.3 -14.4 -16.7 -1.8 -6.9 7.7 -14.3 12.9 -10.1 4.9 3.9 35.9 37.7 36.8 40.1 1.9 5 -0.3 9.3 -6.9 13.1 -6.9 4 -16.7 9.5 -18.7 10.5 -3.8 1.8 -18.1 10.1 -19.4 11.3 -0.9 0.7 -3.5 1.6 -5.8 2 -3.7 0.5 -4.6 0.3 -6.9 -1.9z"/>
+ </g> </svg></div>
+    <span class="hdr-slogan">Le copilote de votre rentabilité transport</span>
+  </div>
+
+  <!-- Menu horizontal -->
+  <nav id="homeMenuBar" class="hdr-nav">
+<!-- 🚛 Flux -->
       <div class="nav-rubrique" data-rubrique="flux">
         <button class="nav-btn" onclick="toggleNavRubrique(event, 'flux')">
           🚛 Flux <span class="nav-chev">▾</span>
@@ -1779,6 +1947,7 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
         <div class="nav-submenu" id="navSub-social">
           <button onclick="navAction(openPlanningModal, this)" class="nav-subitem">📅 Planning hebdomadaire</button>
           <button onclick="navAction(() => { clearDecisionContext(); openDecisionModal(); }, this)" class="nav-subitem">🎯 Pilotage heures</button>
+          <button onclick="navGo('salarySim', this)" class="nav-subitem">💰 Simulateur salaire</button>
         </div>
       </div>
       
@@ -1802,15 +1971,18 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
         <div class="nav-submenu" id="navSub-aides">
           <button onclick="navAction(openHelpModal, this)" class="nav-subitem">📖 Guide d'utilisation</button>
           <button onclick="navAction(openRseModal, this)" class="nav-subitem">⚖️ Réglementation Sociale</button>
+          <button onclick="navGo('demo', this)" class="nav-subitem">🧪 Démo conducteurs</button>
         </div>
       </div>
       
     </div><!-- /nav-rubrique aides -->
-  </div><!-- /homeMenuBar -->
-    </div><!-- /ligne slogan+menu -->
-  
-  <!-- Profile : nom transporteur + véhicules + conducteurs (en haut à droite) -->
-  <div class="profile-status" id="profileStatus" style="font-size:13px;background:rgba(255,255,255,0.10);padding:7px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.18);white-space:nowrap;flex-shrink:0"></div>
+  </nav>
+
+  <!-- Espace flexible -->
+  <div class="hdr-spacer"></div>
+
+  <!-- Profil entreprise (à droite, façon zone d'action Trello) -->
+  <div class="profile-status" id="profileStatus" style="font-size:11px;white-space:nowrap;flex-shrink:0"></div>
 </header>
 
 <div class="container">
@@ -2187,7 +2359,7 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
       ⚠️ Pour calculer un trajet, ajoutez d'abord au moins un véhicule et un conducteur dans les onglets correspondants.
     </div>
     
-    <div id="peageStatus" style="font-size:12px;color:var(--text2);margin-bottom:12px;padding:8px 12px;background:var(--bg);border-radius:6px">
+    <div id="peageStatus" style="font-size:12px;color:var(--text2);margin-bottom:12px">
       <span style="color:#f59e0b">⏳ Initialisation du moteur PéageCalc...</span>
     </div>
 
@@ -2198,23 +2370,13 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
         <h2 style="margin:0">🛣️ Trajet à calculer</h2>
         <div style="display:flex;gap:8px">
-          <button class="btn btn-secondary btn-sm" id="addGroupedFreightBtn" onclick="addGroupedFreight()">+ Ajouter fret groupé</button>
-          <button class="btn btn-secondary btn-sm" id="addReturnFreightBtn" onclick="addReturnFreight()">+ Ajouter fret retour</button>
+          <button class="btn btn-secondary btn-sm" id="addGroupedFreightBtn" onclick="addGroupedFreight()" style="background:#EAF0F5;color:#142F47;border-color:#142F47;font-weight:600">+ Ajouter fret groupé</button>
+          <button class="btn btn-secondary btn-sm" id="addReturnFreightBtn" onclick="addReturnFreight()" style="background:#EAF0F5;color:#142F47;border-color:#142F47;font-weight:600">+ Ajouter fret retour</button>
         </div>
       </div>
       
-      <!-- Date du trajet + bouton "Qui peut prendre ce trajet ?" -->
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;padding:10px 14px;background:#f8fafc;border:1px solid var(--border);border-radius:8px;flex-wrap:wrap">
-        <label style="font-size:13px;font-weight:600;color:var(--text);margin:0">📅 Date du trajet</label>
-        <input type="date" id="t_tripDate" onchange="onTripDateChange()" style="padding:6px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px;font-family:inherit;background:white">
-        <button class="btn btn-secondary btn-sm" onclick="openDecisionForTrip()" 
-                style="background:#ecfeff;color:var(--accent);border-color:#a5f3fc">
-          🔍 Qui peut prendre ce trajet ?
-        </button>
-      </div>
-      
       <!-- Layout : 3 adresses empilées à gauche, charge utile + marge cible + cases à cocher à droite -->
-      <div style="display:grid;grid-template-columns:1fr 220px;gap:16px;align-items:start">
+      <div class="tripcells" style="display:grid;grid-template-columns:1fr 220px;gap:16px;align-items:start">
         <!-- Colonne gauche : 3 adresses empilées -->
         <div style="display:flex;flex-direction:column;gap:12px">
           <div class="field address-input" style="position:relative">
@@ -2256,16 +2418,26 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
           <div class="field">
             <label>Marge cible</label>
             <div class="input-with-unit">
-              <input type="number" id="t_margin" value="10" min="0" max="50" step="0.5">
+              <input type="number" id="t_margin" value="5" min="0" max="50" step="0.5">
               <span class="unit">%</span>
             </div>
           </div>
         </div>
       </div>
       
+      <!-- Date du trajet + "Qui peut prendre ce trajet ?" : juste sous les cellules -->
+      <div style="display:flex;align-items:center;gap:12px;margin-top:14px;padding:10px 14px;background:#ffffff;border:1.5px solid #77C3AB;border-radius:8px;flex-wrap:wrap">
+        <label style="font-size:13px;font-weight:600;color:var(--text);margin:0">📅 Date du trajet</label>
+        <input type="date" id="t_tripDate" onchange="onTripDateChange()" style="padding:6px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px;font-family:inherit;background:white">
+        <button class="btn btn-secondary btn-sm" onclick="openDecisionForTrip()" 
+                style="background:#EAF0F5;color:#142F47;border-color:#142F47;font-weight:600">
+          🔍 Qui peut prendre ce trajet ?
+        </button>
+      </div>
+      
       <!-- Options trajet + Nom client A (visible en groupage) sur une ligne équilibrée -->
       <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch">
-        <div style="padding:8px 12px;background:#f8fafc;border:1px solid var(--border);border-radius:6px;display:flex;flex-direction:column;gap:6px;justify-content:center">
+        <div style="padding:8px 12px;background:#ffffff;border:1.5px solid #77C3AB;border-radius:6px;display:flex;flex-direction:column;gap:6px;justify-content:center">
           <span style="font-size:10px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:0.5px">Options trajet</span>
           <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:12px">
             <input type="checkbox" id="t_depotEmpty" checked style="width:auto">
@@ -2379,20 +2551,19 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
     <!-- Ressources affectées (déplacé dans paramètres avancés) -->
     <div class="card">
       <h2>🚛 Ressources affectées</h2>
-      <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="tripcells" style="display:flex;flex-direction:column;gap:12px">
         <div class="field">
           <label>Véhicule moteur</label>
           <select id="t_vehicleMoteur" onchange="onTripVehicleChange()">
             <option value="">— Sélectionner —</option>
           </select>
-          <span class="hint">Tracteur, porteur ou utilitaire.</span>
         </div>
         <div class="field">
           <label>Véhicule tracté <span style="font-size:11px;color:var(--text2);font-weight:400">(optionnel)</span></label>
+          <span class="cell-info" title="Auto-sélectionné si lié 🔗 au moteur.">ⓘ</span>
           <select id="t_vehicleTracte" onchange="onTripVehicleChange()">
             <option value="">— Aucun —</option>
           </select>
-          <span class="hint">Auto-sélectionné si lié 🔗 au moteur.</span>
         </div>
         <div class="field">
           <label>Conducteur</label>
@@ -2403,30 +2574,38 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
       </div>
     </div>
 
-    <div class="card" style="background:#fefce8">
+    <div class="card" style="background:#ffffff">
       <h2 style="font-size:16px">⏱️ Manutention (chargement / déchargement)
         <span style="display:inline-block;cursor:help;color:var(--text2);font-size:14px;font-weight:400;margin-left:4px"
               title="Décompté comme temps de service du conducteur (art. L. 3312-1 et Annexe IV du Code des transports : du moment où le véhicule est identifié à son arrivée jusqu'à l'émargement des documents). Forfaits pré-remplis selon le type de véhicule, modifiables.">ⓘ</span>
       </h2>
       <span class="hint" id="t_loadMinHint" style="display:block;margin:4px 0 8px 0;font-style:italic">Forfait par défaut</span>
       <!-- Layout très compact : labels + inputs étroits sur une ligne -->
-      <table style="border-collapse:collapse;font-size:13px">
-        <tr>
-          <td style="padding:4px 12px 4px 0;color:var(--text2)">Chargement</td>
-          <td style="padding:4px 8px 4px 0"><input type="number" id="t_loadMin" value="60" min="0" step="5" oninput="updateManutTotal()" style="width:60px;padding:4px 6px;border:1px solid var(--border);border-radius:4px;text-align:center;font-family:inherit;font-size:13px"></td>
-          <td style="padding:4px 16px 4px 0;color:var(--text2);font-size:12px">min</td>
-          <td style="padding:4px 12px 4px 8px;color:var(--text2);border-left:1px solid var(--border)">Déchargement</td>
-          <td style="padding:4px 8px 4px 0"><input type="number" id="t_unloadMin" value="60" min="0" step="5" oninput="updateManutTotal()" style="width:60px;padding:4px 6px;border:1px solid var(--border);border-radius:4px;text-align:center;font-family:inherit;font-size:13px"></td>
-          <td style="padding:4px 16px 4px 0;color:var(--text2);font-size:12px">min</td>
-          <td style="padding:4px 12px 4px 8px;border-left:1px solid var(--border);font-weight:600">Total</td>
-          <td style="padding:4px 0"><span id="t_manutTotalDisplay" style="display:inline-block;min-width:60px;padding:4px 8px;background:white;border:1px solid var(--accent);border-radius:4px;font-weight:700;color:var(--accent);text-align:center">2h00</span></td>
-        </tr>
-      </table>
+      <div class="tripcells" style="display:flex;gap:12px;flex-wrap:wrap;align-items:stretch">
+        <div class="field" style="flex:1;min-width:150px">
+          <label>Chargement</label>
+          <div class="input-with-unit">
+            <input type="number" id="t_loadMin" value="60" min="0" step="5" oninput="updateManutTotal()">
+            <span class="unit">min</span>
+          </div>
+        </div>
+        <div class="field" style="flex:1;min-width:150px">
+          <label>Déchargement</label>
+          <div class="input-with-unit">
+            <input type="number" id="t_unloadMin" value="60" min="0" step="5" oninput="updateManutTotal()">
+            <span class="unit">min</span>
+          </div>
+        </div>
+        <div class="field" style="flex:1;min-width:150px;justify-content:center">
+          <label>Total</label>
+          <span id="t_manutTotalDisplay" style="font-weight:700;color:var(--accent);font-size:16px">2h00</span>
+        </div>
+      </div>
     </div>
 
-    <div class="card" style="background:#f8fafc">
+    <div class="card" style="background:#ffffff">
       <h2 style="font-size:16px">💧 Coûts variables au km (modifiables pour ce trajet)</h2>
-      <div class="grid-3" style="align-items:end">
+      <div class="tripcells grid-3" style="align-items:start">
         <div class="field">
           <label>Consommation gazole
             <span style="display:inline-block;cursor:help;color:var(--text2);font-size:12px;font-weight:400;margin-left:4px"
@@ -2448,7 +2627,7 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
               <input type="number" id="t_dieselPrice" value="1.42" min="0.5" max="3" step="0.01">
               <span class="unit">€/L</span>
             </div>
-            <button type="button" class="btn btn-secondary btn-sm" onclick="refreshDieselPriceFromAPI()" title="Actualiser via data.gouv" style="padding:6px 8px;font-size:11px;white-space:nowrap">🔄</button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="refreshDieselPriceFromAPI()" title="Actualiser via data.gouv" style="padding:0 7px;height:21px;min-height:0;font-size:11px;white-space:nowrap;line-height:1;flex-shrink:0">🔄</button>
           </div>
           <span class="hint" id="t_dieselHint" style="display:none"></span>
         </div>
@@ -2880,14 +3059,7 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
           <span class="unit">€</span>
         </div>
       </div>
-      <div class="field">
-        <label>Taux de charges patronales</label>
-        <div class="input-with-unit">
-          <input type="number" id="d_chargeRate" placeholder="42" min="0" max="100" step="1">
-          <span class="unit">%</span>
-        </div>
-        <span class="hint">URSSAF + autres</span>
-      </div>
+      <input type="hidden" id="d_chargeRate" value="">
       <div class="field">
         <label>13ème mois & primes annuelles</label>
         <div class="input-with-unit">
@@ -2916,33 +3088,13 @@ h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--text);
       </div>
     </div>
 
-    <div class="section-divider">Charges sociales (selon paramètres entreprise)</div>
-    <div class="grid-3">
-      <div class="field">
-        <label>Application DFS</label>
-        <select id="d_applyDFS" onchange="recalcDriverCost()">
-          <option value="default">Selon entreprise (par défaut)</option>
-          <option value="yes">Oui (forcer)</option>
-          <option value="no">Non (sédentaire ou sans accord)</option>
-        </select>
-        <span class="hint">Surcharge le paramètre entreprise</span>
-      </div>
-      <div class="field">
-        <label>Application réduction RGDU</label>
-        <select id="d_applyFillon" onchange="recalcDriverCost()">
-          <option value="yes">Oui</option>
-          <option value="no">Non</option>
-        </select>
-        <span class="hint">≤ 3 SMIC (auto si applicable)</span>
-      </div>
-      <div class="field">
-        <label>&nbsp;</label>
-        <button class="btn btn-secondary btn-sm" onclick="recalcDriverCost()" style="margin-top:4px">🔄 Recalculer le coût employeur</button>
-      </div>
-    </div>
+    <div class="section-divider">Coût employeur</div>
+    <p class="hint" style="margin:-4px 0 8px;color:var(--text2)">DFS et réduction RGDU appliquées automatiquement selon les paramètres de l'entreprise.</p>
+    <input type="hidden" id="d_applyDFS" value="default">
+    <input type="hidden" id="d_applyFillon" value="yes">
 
     <!-- Bloc DFS conditionnel : visible uniquement si DFS appliquée -->
-    <div id="driverCostBreakdown" style="margin-top:16px"></div>
+    <div id="driverCostBreakdown" style="margin-top:8px"></div>
 
     <div class="section-divider">Indemnités spécifiques (non chargées)</div>
     <div class="grid-3">
@@ -4224,13 +4376,13 @@ function recalcDriverCost() {
               <div style="text-align:right;font-size:12px;color:var(--text2)">${fmt2(rag.montantAnnuel)}</div>
             ` : (coefCode ? `<div style="grid-column:1/-1;padding:6px 12px;font-size:11px;color:var(--text2);font-style:italic">RAG conventionnelle non disponible pour ce coefficient/volume</div>` : '')}
             ${r.dfsApplicable ? `
-              <div>− Abattement DFS (${r.dfsTaux}%)</div><div style="text-align:right;color:var(--success)">−${fmt2(r.abattementDFS)}</div>
+              <div>− Abattement DFS (${r.dfsTaux}%) <span style="cursor:help;color:var(--text2)" title="En fonction des paramètres entreprise">ⓘ</span></div><div style="text-align:right;color:var(--success)">−${fmt2(r.abattementDFS)}</div>
               ${r.abattementDFS === 7600 ? `<div style="font-size:11px;color:var(--text2);grid-column:1/-1;font-style:italic;padding-left:12px">Plafond annuel URSSAF de 7 600 € appliqué</div>` : ''}
               <div>= Assiette de cotisations</div><div style="text-align:right;font-weight:500">${fmt2(r.assietteCotisations)}</div>
             ` : ''}
             <div>Charges patronales brutes</div><div style="text-align:right">${fmt2(r.chargesPatronalesBrutes)}</div>
             ${r.fillonApplicable ? `
-              <div>− Réduction RGDU</div><div style="text-align:right;color:var(--success)">−${fmt2(r.reductionFillon)}</div>
+              <div>− Réduction RGDU <span style="cursor:help;color:var(--text2)" title="En fonction des paramètres entreprise">ⓘ</span></div><div style="text-align:right;color:var(--success)">−${fmt2(r.reductionFillon)}</div>
               ${r.dfsApplicable ? `<div style="font-size:11px;color:var(--text2);grid-column:1/-1;font-style:italic">(plafonnée à 130% de la RGDU sans DFS = ${fmt2(r.reductionFillonSansDFS * 1.3)})</div>` : ''}
             ` : ''}
             <div>= Charges patronales nettes</div><div style="text-align:right;font-weight:500">${fmt2(r.chargesPatronalesNettes)}</div>
@@ -4248,6 +4400,33 @@ function recalcDriverCost() {
 // CONDUCTEURS
 // ═══════════════════════════════════════════════
 const STORAGE_DRIVERS = 'coutrevient_drivers_v1';
+
+// ─────── Absences conducteurs ───────
+const STORAGE_ABSENCES = 'coutrevient_absences_v1';
+const ABSENCE_MOTIFS = {
+  CP:        { label: 'Congés payés', icon: '🌴', color: '#0ea5e9' },
+  maladie:   { label: 'Maladie',      icon: '🤒', color: '#e11d48' },
+  formation: { label: 'Formation',    icon: '📚', color: '#7c3aed' },
+  autre:     { label: 'Autre',        icon: '📌', color: '#64748b' },
+};
+function loadAbsences() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_ABSENCES) || '[]'); }
+  catch (e) { return []; }
+}
+function saveAbsences(list) { localStorage.setItem(STORAGE_ABSENCES, JSON.stringify(list)); }
+function getAbsence(driverId, dateISO) {
+  return loadAbsences().find(a => a.driverId === driverId && a.date === dateISO) || null;
+}
+function setAbsence(driverId, dateISO, motif, note) {
+  const list = loadAbsences();
+  const i = list.findIndex(a => a.driverId === driverId && a.date === dateISO);
+  const rec = { driverId, date: dateISO, motif, note: note || '' };
+  if (i >= 0) list[i] = rec; else list.push(rec);
+  saveAbsences(list);
+}
+function removeAbsence(driverId, dateISO) {
+  saveAbsences(loadAbsences().filter(a => !(a.driverId === driverId && a.date === dateISO)));
+}
 
 function loadDrivers() {
   try {
@@ -5005,6 +5184,12 @@ function switchTab(tab) {
   if (tab === 'reporting') {
     if (typeof renderReporting === 'function') renderReporting();
   }
+  if (tab === 'salarySim') {
+    if (typeof initSalarySim === 'function') initSalarySim();
+  }
+  if (tab === 'demo') {
+    if (typeof renderDemoEditor === 'function') renderDemoEditor();
+  }
 }
 
 // ═══════════════════════════════════════════════
@@ -5466,21 +5651,45 @@ function loadHistory() {
 }
 function saveHistory(list) { localStorage.setItem(STORAGE_HISTORY, JSON.stringify(list)); }
 
-function openSaveTripModal() {
+let _saveTripMode = 'save';
+function openSaveTripModal(mode) {
   if (!_lastTripResult) {
     alert('Aucun trajet à sauvegarder. Calculez d\'abord un trajet.');
     return;
   }
-  
+  _saveTripMode = (mode === 'devis') ? 'devis' : 'save';
+
   // Afficher le résumé du trajet (juste les villes pour rester lisible)
   const r = _lastTripResult;
-  // Adapter le formulaire selon split ou non
-  const splitFlows = r.hasReturnFreight && r.differentClient;
+  // Section "2 clients" si fret retour client différent OU fret groupé (A/B)
+  const isGroupe = !!(r.hasGroupedFreight && r.flowDistribution);
+  const isReturnSplit = !!(r.hasReturnFreight && r.differentClient);
+  const splitFlows = isGroupe || isReturnSplit;
   const singleSection = document.getElementById('saveTripSingleSection');
   const splitSection = document.getElementById('saveTripSplitSection');
   if (singleSection) singleSection.style.display = splitFlows ? 'none' : 'block';
   if (splitSection) splitSection.style.display = splitFlows ? 'block' : 'none';
-  
+
+  // Libellés de la section "2 clients" : Client A / Client B en groupage, Aller / Retour sinon
+  if (splitFlows) {
+    const notice = document.getElementById('saveTripSplitNotice');
+    const titleA = document.getElementById('saveTripFluxATitle');
+    const titleB = document.getElementById('saveTripFluxBTitle');
+    if (isGroupe) {
+      if (notice) notice.innerHTML = 'ℹ️ Fret groupé : 2 devis distincts (Client A et Client B), chacun avec sa part de coût selon la répartition.';
+      if (titleA) titleA.textContent = '📦 Client A' + (r.clientA ? ' — ' + r.clientA : '');
+      if (titleB) titleB.textContent = '📦 Client B' + (r.clientB ? ' — ' + r.clientB : '');
+      const cA = document.getElementById('saveTrip_client_aller');
+      const cB = document.getElementById('saveTrip_client_retour');
+      if (cA) { cA.value = r.clientA || ''; cA.placeholder = 'Client A'; }
+      if (cB) { cB.value = r.clientB || ''; cB.placeholder = 'Client B'; }
+    } else {
+      if (notice) notice.innerHTML = 'ℹ️ Le fret retour a un autre client : 2 devis distincts seront créés (Flux aller + Flux retour).';
+      if (titleA) titleA.textContent = '📦 Flux aller';
+      if (titleB) titleB.textContent = '🔄 Flux retour';
+    }
+  }
+
   const routeDiv = document.getElementById('saveTrip_route');
   // Helper : extraire le nom de ville d'une adresse complète (premier élément avant la virgule)
   const cityOnly = addr => {
@@ -5496,15 +5705,51 @@ function openSaveTripModal() {
   if (routeDiv) {
     let html = '';
     if (r.depotAddr) html += `<div>📍 <strong>Départ :</strong> ${cityOnly(r.depotAddr)}</div>`;
-    if (r.loadingAddr) html += `<div>📦 <strong>Chargement :</strong> ${cityOnly(r.loadingAddr)}</div>`;
-    if (r.deliveryAddr) html += `<div>🏁 <strong>Livraison :</strong> ${cityOnly(r.deliveryAddr)}</div>`;
+    if (isGroupe) {
+      html += `<div>📦 <strong>Chargement A :</strong> ${cityOnly(r.loadingAddr)}</div>`;
+      if (r.groupedLoadingAddr) html += `<div>📦 <strong>Chargement B :</strong> ${cityOnly(r.groupedLoadingAddr)}</div>`;
+      html += `<div>🏁 <strong>Livraison A :</strong> ${cityOnly(r.deliveryAddr)}</div>`;
+      if (r.groupedDeliveryAddr) html += `<div>🏁 <strong>Livraison B :</strong> ${cityOnly(r.groupedDeliveryAddr)}</div>`;
+    } else {
+      if (r.loadingAddr) html += `<div>📦 <strong>Chargement :</strong> ${cityOnly(r.loadingAddr)}</div>`;
+      if (r.deliveryAddr) html += `<div>🏁 <strong>Livraison :</strong> ${cityOnly(r.deliveryAddr)}</div>`;
+    }
     routeDiv.innerHTML = html;
   }
-  
+
+  // Bouton : "Générer le devis et enregistrer" en mode devis, "Enregistrer" sinon
+  const confirmBtn = document.getElementById('saveTripConfirmBtn');
+  if (confirmBtn) confirmBtn.innerHTML = (_saveTripMode === 'devis')
+    ? '📄 Générer le devis et enregistrer'
+    : '💾 Enregistrer';
+
   document.getElementById('saveTrip_client').value = '';
   document.getElementById('saveTrip_notes').value = '';
   document.getElementById('saveTripModal').classList.add('show');
-  setTimeout(() => document.getElementById('saveTrip_client').focus(), 100);
+  setTimeout(() => { const el = document.getElementById(splitFlows ? 'saveTrip_client_aller' : 'saveTrip_client'); if (el) el.focus(); }, 100);
+}
+
+// Confirme la fenêtre : en mode "devis", génère le(s) PDF puis enregistre ; sinon enregistre seulement.
+function confirmSaveTrip() {
+  const r = _lastTripResult;
+  if (!r) return;
+  if (_saveTripMode === 'devis') {
+    if (r.hasGroupedFreight && r.flowDistribution) {
+      const cA = document.getElementById('saveTrip_client_aller').value.trim() || null;
+      const cB = document.getElementById('saveTrip_client_retour').value.trim() || null;
+      generateSinglePDF(r, 'groupeA', cA);
+      setTimeout(() => generateSinglePDF(r, 'groupeB', cB), 500);
+    } else if (r.hasReturnFreight && r.differentClient && r.flowDistribution) {
+      const cA = document.getElementById('saveTrip_client_aller').value.trim() || null;
+      const cB = document.getElementById('saveTrip_client_retour').value.trim() || null;
+      generateSinglePDF(r, 'aller', cA);
+      setTimeout(() => generateSinglePDF(r, 'retour', cB), 500);
+    } else {
+      const c = document.getElementById('saveTrip_client').value.trim() || null;
+      generateSinglePDF(r, null, c);
+    }
+  }
+  saveTripFromModal();
 }
 
 function closeSaveTripModal() {
@@ -5521,10 +5766,48 @@ function saveTripFromModal() {
   const list = loadHistory();
   const baseId = 'trip_' + Date.now();
   
-  // Si fret retour avec "autre client" coché → 2 sauvegardes séparées
-  const splitFlows = r.hasReturnFreight && r.differentClient && r.flowDistribution;
-  
-  if (splitFlows) {
+  // Fret groupé → 2 sauvegardes séparées (Client A / Client B)
+  const isGroupeSplit = r.hasGroupedFreight && r.flowDistribution;
+  // Fret retour avec "autre client" coché → 2 sauvegardes séparées (aller / retour)
+  const isReturnSplit = r.hasReturnFreight && r.differentClient && r.flowDistribution;
+
+  if (isGroupeSplit) {
+    const clientA = document.getElementById('saveTrip_client_aller').value.trim();
+    const clientB = document.getElementById('saveTrip_client_retour').value.trim();
+    const notesA = document.getElementById('saveTrip_notes_aller').value.trim();
+    const notesB = document.getElementById('saveTrip_notes_retour').value.trim();
+    const f = r.flowDistribution;
+    const margeRate = r.margeCible || 0;
+    const margeFrac = Math.min(0.99, margeRate / 100);
+    const coutA = f.fluxAller?.total || 0;
+    const coutB = f.fluxRetour?.total || 0;
+    const tripA = {
+      id: baseId + '_grpA', client: clientA || null, notes: notesA || null,
+      flowType: 'groupeA', createdAt: new Date().toISOString(), ...r,
+      depotAddr: null,
+      coutTotal: coutA, prixVente: coutA / (1 - margeFrac), margeEuros: coutA / (1 - margeFrac) - coutA,
+      carburant: f.fluxAller?.carburant || 0, peages: f.fluxAller?.peages || 0,
+      coutConducteur: f.fluxAller?.coutConducteur || 0, amortVehicule: f.fluxAller?.amortVehicule || 0,
+      maintenance: f.fluxAller?.maintenance || 0, pneus: f.fluxAller?.pneus || 0,
+      lubrifiants: f.fluxAller?.lubrifiants || 0, fraisStructure: f.fluxAller?.fraisStructure || 0,
+      durMin: (f.fluxAller && f.fluxAller.durDirect) || r.durMin,
+      distKm: (f.fluxAller && f.fluxAller.kmDirect) || f.fluxAller?.km || 0, distKm1: 0, distKm2: (f.fluxAller && f.fluxAller.kmDirect) || 0, distKm3: 0, distKm4: 0, distKm5: 0,
+    };
+    const tripB = {
+      id: baseId + '_grpB', client: clientB || null, notes: notesB || null,
+      flowType: 'groupeB', createdAt: new Date().toISOString(), ...r,
+      loadingAddr: r.groupedLoadingAddr, deliveryAddr: r.groupedDeliveryAddr, depotAddr: null,
+      coutTotal: coutB, prixVente: coutB / (1 - margeFrac), margeEuros: coutB / (1 - margeFrac) - coutB,
+      carburant: f.fluxRetour?.carburant || 0, peages: f.fluxRetour?.peages || 0,
+      coutConducteur: f.fluxRetour?.coutConducteur || 0, amortVehicule: f.fluxRetour?.amortVehicule || 0,
+      maintenance: f.fluxRetour?.maintenance || 0, pneus: f.fluxRetour?.pneus || 0,
+      lubrifiants: f.fluxRetour?.lubrifiants || 0, fraisStructure: f.fluxRetour?.fraisStructure || 0,
+      durMin: (f.fluxRetour && f.fluxRetour.durDirect) || r.durMin,
+      distKm: (f.fluxRetour && f.fluxRetour.kmDirect) || f.fluxRetour?.km || 0, distKm1: 0, distKm2: (f.fluxRetour && f.fluxRetour.kmDirect) || 0, distKm3: 0, distKm4: 0, distKm5: 0,
+    };
+    list.unshift(tripB);
+    list.unshift(tripA);
+  } else if (isReturnSplit) {
     const clientAller = document.getElementById('saveTrip_client_aller').value.trim();
     const clientRetour = document.getElementById('saveTrip_client_retour').value.trim();
     const notesAller = document.getElementById('saveTrip_notes_aller').value.trim();
@@ -5603,19 +5886,27 @@ function saveTripFromModal() {
   saveHistory(list);
   closeSaveTripModal();
   renderHistoryList();
-  
-  // Petit feedback visuel
-  const btn = document.querySelector('button[onclick="openSaveTripModal()"]');
-  if (btn) {
-    const original = btn.innerHTML;
-    btn.innerHTML = '✓ Trajet sauvegardé';
-    btn.style.background = '#10b981';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.innerHTML = original;
-      btn.style.background = '';
-      btn.disabled = false;
-    }, 2500);
+
+  // Anti-doublon : une fois la proposition enregistrée, les deux actions de cette page ne
+  // sont plus cliquables (évite un second enregistrement). Le devis reste téléchargeable
+  // depuis l'Historique. Réinitialisées au prochain calcul de trajet.
+  const saveOnly = document.getElementById('saveOnlyCell');
+  if (saveOnly) {
+    saveOnly.disabled = true;
+    saveOnly.title = 'Proposition déjà enregistrée';
+    const t = saveOnly.querySelector('.ac-title');
+    const s = saveOnly.querySelector('.ac-sub');
+    if (t) t.textContent = '✓ Proposition enregistrée';
+    if (s) s.textContent = 'Déjà sauvegardée — recalculez pour un nouvel enregistrement';
+  }
+  const devisSave = document.getElementById('devisSaveCell');
+  if (devisSave) {
+    devisSave.disabled = true;
+    devisSave.title = 'Proposition déjà enregistrée';
+    const t = devisSave.querySelector('.ac-title');
+    const s = devisSave.querySelector('.ac-sub');
+    if (t) t.textContent = '✓ Proposition enregistrée';
+    if (s) s.textContent = 'Devis téléchargeable depuis l\'Historique';
   }
 }
 
@@ -5881,8 +6172,8 @@ function renderReporting() {
   html += `
       </tbody>
       <tfoot>
-        <tr style="background:#ecfeff;font-weight:700;border-top:2px solid var(--accent)">
-          <td style="padding:9px 10px;position:sticky;left:0;background:#ecfeff">TOTAL (${rows.length} véhic.)</td>
+        <tr style="background:#EAF0F5;font-weight:700;border-top:2px solid var(--accent)">
+          <td style="padding:9px 10px;position:sticky;left:0;background:#EAF0F5">TOTAL (${rows.length} véhic.)</td>
           <td style="padding:9px 6px;text-align:right">${tot.nbTrips}</td>
           <td style="padding:9px 6px;text-align:right">${km(tot.kms)}</td>
           <td style="padding:9px 6px;text-align:right">${eur(tot.caBrut)}</td>
@@ -6065,13 +6356,9 @@ function generateTripPDF(id) {
   doc.setFont('helvetica', 'normal');
   
   const lineH = 5;
-  const fmt = v => (v || 0).toLocaleString('fr-FR', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + ' EUR';
+  const fmt = v => (v || 0).toLocaleString('fr-FR', {minimumFractionDigits: 2, maximumFractionDigits: 2}).replace(/[\u202f\u00a0]/g, ' ') + ' EUR';
   
   doc.text('Distance totale : ' + (t.distKm || 0).toFixed(0) + ' km', margin, y); y += lineH;
-  if (t.distKm1) { doc.text('  -> dont ' + t.distKm1 + ' km a vide (depart -> chargement)', margin, y); y += lineH; }
-  if (t.distKm2) { doc.text('  -> dont ' + t.distKm2 + ' km en charge (chargement -> livraison)', margin, y); y += lineH; }
-  if (t.distKm3) { doc.text('  -> dont ' + t.distKm3 + ' km a vide (livraison -> depart)', margin, y); y += lineH; }
-  doc.text('Duree : ' + Math.floor((t.durMin || 0)/60) + 'h' + Math.round((t.durMin || 0) % 60).toString().padStart(2, '0'), margin, y); y += lineH;
   if (t.vehicleNames) { doc.text('Vehicule(s) : ' + t.vehicleNames, margin, y); y += lineH; }
   if (t.driverName) { doc.text('Conducteur : ' + t.driverName, margin, y); y += lineH; }
   doc.text('Charge utile : ' + (t.charge || 0) + ' tonnes', margin, y); y += lineH;
@@ -6124,18 +6411,43 @@ function generateTripPDF(id) {
   doc.line(margin, y - 1, pageWidth - margin, y - 1);
   y += 4;
   
-  // Prix de vente
+  // Prix de vente HT
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(12);
   doc.setTextColor(16, 185, 129); // vert
-  doc.text('PRIX DE VENTE HT CONSEILLE', margin + 3, y);
+  doc.text('PRIX DE VENTE HT', margin + 3, y);
   doc.text(fmt(t.prixVente), pageWidth - margin - 3, y, { align: 'right' });
-  y += 6;
-  doc.setTextColor(0, 0, 0);
+  y += 5;
+  doc.setTextColor(90, 111, 130);
   doc.setFontSize(8);
   doc.setFont('helvetica', 'normal');
-  doc.text('Soit ' + ((t.prixVente || 0) / (t.distKm || 1)).toFixed(3) + ' EUR/km', pageWidth - margin - 3, y, { align: 'right' });
+  doc.text('Soit ' + ((t.prixVente || 0) / (t.distKm || 1)).toFixed(3) + ' EUR/km HT', pageWidth - margin - 3, y, { align: 'right' });
+  y += 6;
+
+  // TVA 20 %
+  const _ht = t.prixVente || 0;
+  const _tva = _ht * 0.20;
+  const _ttc = _ht * 1.20;
+  doc.setTextColor(0, 0, 0);
+  doc.setFontSize(9);
+  doc.setFont('helvetica', 'normal');
+  doc.text('TVA 20 %', margin + 3, y);
+  doc.text(fmt(_tva), pageWidth - margin - 3, y, { align: 'right' });
+  y += 4;
+
+  // Trait avant le total TTC
+  doc.setLineWidth(0.5);
+  doc.line(margin, y, pageWidth - margin, y);
+  y += 5;
+
+  // Prix de vente TTC (montant à régler)
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(12);
+  doc.setTextColor(20, 47, 71); // navy
+  doc.text('PRIX DE VENTE TTC', margin + 3, y);
+  doc.text(fmt(_ttc), pageWidth - margin - 3, y, { align: 'right' });
   y += 10;
+  doc.setTextColor(0, 0, 0);
   
   // ─── Bloc CO2 ADEME (mention obligatoire décret 2022-1310) ───
   if (typeof t.co2Total === 'number' && t.co2Total > 0) {
@@ -6192,7 +6504,7 @@ function generateTripPDF(id) {
   // Footer
   doc.setFontSize(8);
   doc.setTextColor(120, 120, 120);
-  doc.text('Devis estimatif genere le ' + new Date().toLocaleDateString('fr-FR') + ' - Tarifs susceptibles de modification', pageWidth / 2, doc.internal.pageSize.getHeight() - 10, { align: 'center' });
+  doc.text('Devis estimatif généré par MarginGo le ' + new Date().toLocaleDateString('fr-FR') + ' - Tarifs susceptibles de modification', pageWidth / 2, doc.internal.pageSize.getHeight() - 10, { align: 'center' });
   
   // Nom du fichier
   const filename = `devis_${(t.client || 'trajet').replace(/[^a-z0-9]/gi, '_')}_${new Date(t.createdAt).toISOString().slice(0,10)}.pdf`;
@@ -6226,8 +6538,17 @@ function generatePDFFromCurrent() {
     return;
   }
   
-  // Mode classique : un seul PDF
-  generateSinglePDF(r, null, null);
+  // Mode classique : un seul PDF, complété avec le nom du prospect saisi
+  const prospect = (document.getElementById('t_prospect')?.value || '').trim() || null;
+  generateSinglePDF(r, null, prospect);
+}
+
+// Génère le devis PDF puis ouvre la sauvegarde de la proposition
+function generateDevisAndSave() {
+  if (!_lastTripResult) { alert('Aucun trajet. Calculez d\'abord un trajet.'); return; }
+  generatePDFFromCurrent();
+  // Laisse le téléchargement se déclencher avant d'ouvrir la fenêtre de sauvegarde
+  setTimeout(() => { if (typeof openSaveTripModal === 'function') openSaveTripModal(); }, 350);
 }
 
 // Modal pour saisir les noms de clients en mode split
@@ -6311,6 +6632,60 @@ function generateSinglePDF(r, flowType, clientName) {
       fraisStructure: f.fluxRetour?.fraisStructure || 0,
       distKm: f.fluxRetour?.km || 0,
       distKm1: 0, distKm2: r.distKm5 || 0, distKm3: 0, distKm4: 0, distKm5: 0,
+    };
+  } else if (flowType === 'groupeA' && f) {
+    // Fret groupé — Client A : chargement A → livraison A, part de coût du flux A
+    const fluxCout = f.fluxAller?.total || 0;
+    trip = {
+      id: '__temp_pdf_groupeA__',
+      client: clientName,
+      notes: null,
+      flowType: 'groupeA',
+      createdAt: new Date().toISOString(),
+      ...r,
+      depotAddr: null,
+      coutTotal: fluxCout,
+      prixVente: fluxCout / (1 - margeFracPdf),
+      margeEuros: fluxCout / (1 - margeFracPdf) - fluxCout,
+      carburant: f.fluxAller?.carburant || 0,
+      peages: f.fluxAller?.peages || 0,
+      coutConducteur: f.fluxAller?.coutConducteur || 0,
+      amortVehicule: f.fluxAller?.amortVehicule || 0,
+      maintenance: f.fluxAller?.maintenance || 0,
+      pneus: f.fluxAller?.pneus || 0,
+      lubrifiants: f.fluxAller?.lubrifiants || 0,
+      fraisStructure: f.fluxAller?.fraisStructure || 0,
+      durMin: (f.fluxAller && f.fluxAller.durDirect) || r.durMin,
+      distKm: (f.fluxAller && f.fluxAller.kmDirect) || f.fluxAller?.km || 0,
+      distKm1: 0, distKm2: (f.fluxAller && f.fluxAller.kmDirect) || 0, distKm3: 0, distKm4: 0, distKm5: 0,
+    };
+  } else if (flowType === 'groupeB' && f) {
+    // Fret groupé — Client B : chargement B → livraison B, part de coût du flux B
+    const fluxCout = f.fluxRetour?.total || 0;
+    trip = {
+      id: '__temp_pdf_groupeB__',
+      client: clientName,
+      notes: null,
+      flowType: 'groupeB',
+      createdAt: new Date().toISOString(),
+      ...r,
+      loadingAddr: r.groupedLoadingAddr,
+      deliveryAddr: r.groupedDeliveryAddr,
+      depotAddr: null,
+      coutTotal: fluxCout,
+      prixVente: fluxCout / (1 - margeFracPdf),
+      margeEuros: fluxCout / (1 - margeFracPdf) - fluxCout,
+      carburant: f.fluxRetour?.carburant || 0,
+      peages: f.fluxRetour?.peages || 0,
+      coutConducteur: f.fluxRetour?.coutConducteur || 0,
+      amortVehicule: f.fluxRetour?.amortVehicule || 0,
+      maintenance: f.fluxRetour?.maintenance || 0,
+      pneus: f.fluxRetour?.pneus || 0,
+      lubrifiants: f.fluxRetour?.lubrifiants || 0,
+      fraisStructure: f.fluxRetour?.fraisStructure || 0,
+      durMin: (f.fluxRetour && f.fluxRetour.durDirect) || r.durMin,
+      distKm: (f.fluxRetour && f.fluxRetour.kmDirect) || f.fluxRetour?.km || 0,
+      distKm1: 0, distKm2: (f.fluxRetour && f.fluxRetour.kmDirect) || 0, distKm3: 0, distKm4: 0, distKm5: 0,
     };
   } else {
     // Mode global (pas de split)
@@ -6818,6 +7193,7 @@ function ensureDemoDriversInBase() {
     // ID stable basé sur le prénom + nom (pas l'index, qui pourrait changer)
     const id = 'demo_' + demo.prenom.toLowerCase().replace(/[^a-z]/g, '') 
              + '_' + demo.nom.toLowerCase().replace(/[^a-z]/g, '');
+    demo.id = id; // lien direct : l'entrée démo porte l'id réel (scoring ↔ planning ↔ absences)
     const fullName = demo.prenom + ' ' + demo.nom;
     
     // Profil conducteur conventionnel : tous les champs nécessaires pour le calculateur
@@ -6909,18 +7285,18 @@ const DECISION_DEMO_DRIVERS = [
   //            tempsServiceSemaineH, conduiteSemaineH, conduiteBiHebdoH, heuresSupCumuleesH, 
   //            rapportRAGEuros (positif = au-dessus), localisation }
   { prenom:'Jean',     nom:'Dupont',     coef:'150M', anc:12, cat:'grandRoutier',  status:'conduite', conduiteJour:285, conduiteContinue:155, tsSemaine:38, conduiteSemaine:32, conduiteBihebdo:62, hSupCumul:42,  ragEcart:+1850, loc:'A6 — Mâcon' },
-  { prenom:'Marc',     nom:'Bernard',    coef:'138M', anc:8,  cat:'autresRoulants',status:'dispo',    conduiteJour:0,   conduiteContinue:0,   tsSemaine:24, conduiteSemaine:18, conduiteBihebdo:36, hSupCumul:18,  ragEcart:+650,  loc:'Dépôt Lyon' },
+  { prenom:'Marc',     nom:'Bernard',    coef:'138M', anc:8,  cat:'autresRoulants',status:'dispo',    conduiteJour:0,   conduiteContinue:0,   tsSemaine:24, conduiteSemaine:18, conduiteBihebdo:36, hSupCumul:18,  ragEcart:+650,  loc:'Dépôt Lyon', absence:'CP' },
   { prenom:'Paul',     nom:'Martin',     coef:'150M', anc:18, cat:'grandRoutier',  status:'conduite', conduiteJour:512, conduiteContinue:240, tsSemaine:52, conduiteSemaine:48, conduiteBihebdo:88, hSupCumul:78,  ragEcart:+3200, loc:'A1 — Compiègne' },
   { prenom:'Sophie',   nom:'Lambert',    coef:'128M', anc:3,  cat:'autresRoulants',status:'pause',    conduiteJour:267, conduiteContinue:0,   tsSemaine:31, conduiteSemaine:24, conduiteBihebdo:48, hSupCumul:22,  ragEcart:-280,  loc:'Aire A7 Valence' },
   { prenom:'Karim',    nom:'Benali',     coef:'138M', anc:6,  cat:'grandRoutier',  status:'repos',    conduiteJour:0,   conduiteContinue:0,   tsSemaine:45, conduiteSemaine:42, conduiteBihebdo:80, hSupCumul:55,  ragEcart:+1100, loc:'Repos hebdo' },
   { prenom:'Manuel',   nom:'Pereira',    coef:'150M', anc:22, cat:'grandRoutier',  status:'conduite', conduiteJour:198, conduiteContinue:185, tsSemaine:42, conduiteSemaine:38, conduiteBihebdo:71, hSupCumul:48,  ragEcart:+2800, loc:'A10 — Tours' },
   { prenom:'Pierre',   nom:'Garnier',    coef:'120M', anc:1,  cat:'messagerie',    status:'travail',  conduiteJour:120, conduiteContinue:0,   tsSemaine:28, conduiteSemaine:18, conduiteBihebdo:35, hSupCumul:12,  ragEcart:-150,  loc:'Tournée Paris 11e' },
-  { prenom:'Mohamed',  nom:'Diallo',     coef:'138M', anc:4,  cat:'autresRoulants',status:'dispo',    conduiteJour:0,   conduiteContinue:0,   tsSemaine:19, conduiteSemaine:12, conduiteBihebdo:28, hSupCumul:8,   ragEcart:+420,  loc:'Dépôt Marseille' },
+  { prenom:'Mohamed',  nom:'Diallo',     coef:'138M', anc:4,  cat:'autresRoulants',status:'dispo',    conduiteJour:0,   conduiteContinue:0,   tsSemaine:19, conduiteSemaine:12, conduiteBihebdo:28, hSupCumul:8,   ragEcart:+420,  loc:'Dépôt Marseille', absence:'formation' },
   { prenom:'Luc',      nom:'Rousseau',   coef:'150M', anc:15, cat:'grandRoutier',  status:'conduite', conduiteJour:342, conduiteContinue:78,  tsSemaine:48, conduiteSemaine:44, conduiteBihebdo:84, hSupCumul:68,  ragEcart:+2100, loc:'A35 — Strasbourg' },
   { prenom:'Patrick',  nom:'Moreau',     coef:'128M', anc:5,  cat:'autresRoulants',status:'pause',    conduiteJour:270, conduiteContinue:0,   tsSemaine:35, conduiteSemaine:28, conduiteBihebdo:55, hSupCumul:28,  ragEcart:+320,  loc:'Aire A4 Reims' },
   { prenom:'Christian',nom:'Faure',      coef:'138M', anc:11, cat:'grandRoutier',  status:'conduite', conduiteJour:455, conduiteContinue:202, tsSemaine:50, conduiteSemaine:46, conduiteBihebdo:86, hSupCumul:72,  ragEcart:+1450, loc:'A75 — Issoire' },
   { prenom:'Sébastien',nom:'Roux',       coef:'150M', anc:9,  cat:'grandRoutier',  status:'repos',    conduiteJour:0,   conduiteContinue:0,   tsSemaine:43, conduiteSemaine:40, conduiteBihebdo:75, hSupCumul:50,  ragEcart:+1700, loc:'Repos jour. Avignon' },
-  { prenom:'Hassan',   nom:'Tazi',       coef:'138M', anc:2,  cat:'autresRoulants',status:'travail',  conduiteJour:215, conduiteContinue:0,   tsSemaine:30, conduiteSemaine:24, conduiteBihebdo:42, hSupCumul:16,  ragEcart:-95,   loc:'Chargement Rungis' },
+  { prenom:'Hassan',   nom:'Tazi',       coef:'138M', anc:2,  cat:'autresRoulants',status:'travail',  conduiteJour:215, conduiteContinue:0,   tsSemaine:30, conduiteSemaine:24, conduiteBihebdo:42, hSupCumul:16,  ragEcart:-95,   loc:'Chargement Rungis', joursDepuisRepos:6 },
   { prenom:'Mickaël',  nom:'Vincent',    coef:'150M', anc:7,  cat:'grandRoutier',  status:'conduite', conduiteJour:528, conduiteContinue:268, tsSemaine:53, conduiteSemaine:50, conduiteBihebdo:89, hSupCumul:85,  ragEcart:+2900, loc:'A6 — Beaune' },
   { prenom:'Frédéric', nom:'Petit',      coef:'128M', anc:4,  cat:'autresRoulants',status:'dispo',    conduiteJour:0,   conduiteContinue:0,   tsSemaine:22, conduiteSemaine:16, conduiteBihebdo:34, hSupCumul:14,  ragEcart:+180,  loc:'Dépôt Nantes' },
   { prenom:'Boris',    nom:'Kowalski',   coef:'150M', anc:13, cat:'grandRoutier',  status:'conduite', conduiteJour:172, conduiteContinue:128, tsSemaine:41, conduiteSemaine:36, conduiteBihebdo:68, hSupCumul:38,  ragEcart:+2400, loc:'A89 — Limoges' },
@@ -6932,6 +7308,86 @@ const DECISION_DEMO_DRIVERS = [
 
 let currentDecisionFilter = 'all';
 
+// ─────── Bac à sable Démo : édition des conducteurs fictifs ───────
+const STORAGE_DEMO_OVERRIDES = 'coutrevient_demo_overrides_v1';
+function saveDemoOverrides() {
+  try {
+    const data = DECISION_DEMO_DRIVERS.map(d => ({
+      status: d.status, absence: d.absence || '',
+      conduiteSemaine: d.conduiteSemaine, conduiteBihebdo: d.conduiteBihebdo, hSupCumul: d.hSupCumul,
+      joursDepuisRepos: d.joursDepuisRepos || 0
+    }));
+    localStorage.setItem(STORAGE_DEMO_OVERRIDES, JSON.stringify(data));
+  } catch (e) {}
+}
+function loadDemoOverrides() {
+  try {
+    const data = JSON.parse(localStorage.getItem(STORAGE_DEMO_OVERRIDES) || 'null');
+    if (!Array.isArray(data)) return;
+    data.forEach((o, i) => {
+      const d = DECISION_DEMO_DRIVERS[i];
+      if (!d) return;
+      if (o.status !== undefined) d.status = o.status;
+      d.absence = o.absence || undefined;
+      if (o.conduiteSemaine !== undefined) d.conduiteSemaine = o.conduiteSemaine;
+      if (o.conduiteBihebdo !== undefined) d.conduiteBihebdo = o.conduiteBihebdo;
+      if (o.hSupCumul !== undefined) d.hSupCumul = o.hSupCumul;
+      if (o.joursDepuisRepos !== undefined) d.joursDepuisRepos = o.joursDepuisRepos;
+    });
+  } catch (e) {}
+}
+function updateDemoDriver(i, field, value) {
+  const d = DECISION_DEMO_DRIVERS[i];
+  if (!d) return;
+  if (field === 'status') d.status = value;
+  else if (field === 'absence') d.absence = value || undefined;
+  else d[field] = parseFloat(value) || 0;
+  saveDemoOverrides();
+  renderDemoEditor();
+  // Si le panneau décision est ouvert, le rafraîchir en direct
+  const dm = document.getElementById('decisionModal');
+  if (dm && dm.classList.contains('show')) {
+    if (typeof renderDecisionFilters === 'function') renderDecisionFilters();
+    if (typeof renderDecisionGrid === 'function') renderDecisionGrid();
+  }
+}
+function resetDemoDrivers() {
+  if (!confirm('Réinitialiser les conducteurs de démo à leurs valeurs par défaut ?')) return;
+  try { localStorage.removeItem(STORAGE_DEMO_OVERRIDES); } catch (e) {}
+  location.reload();
+}
+function renderDemoEditor() {
+  const box = document.getElementById('demoEditorTable');
+  if (!box) return;
+  // Lien démo ↔ planning : s'assurer que ces conducteurs existent dans la base (ids posés)
+  if (typeof ensureDemoDriversInBase === 'function') ensureDemoDriversInBase();
+  const statusOpts = [['dispo','Disponible'],['conduite','Conduite'],['pause','Pause'],['repos','Repos hebdo'],['travail','Autre travail']];
+  const absOpts = [['','—'],['CP','Congés payés'],['maladie','Maladie'],['formation','Formation'],['autre','Autre']];
+  const catLabel = c => c === 'grandRoutier' ? 'Grand routier' : c === 'autresRoulants' ? 'Autre roulant' : 'Messagerie';
+  let html = '<table class="demo-table"><thead><tr>'
+    + '<th>Conducteur</th><th>Statut</th><th>Absence</th><th>Conduite / sem (h)</th><th>Conduite / 2 sem (h)</th><th>H. sup. (h)</th><th>Jours depuis repos</th><th>Disponibilité (live)</th>'
+    + '</tr></thead><tbody>';
+  DECISION_DEMO_DRIVERS.forEach((d, i) => {
+    const dispo = calcDisponibilite(d);
+    html += `<tr>
+      <td style="white-space:nowrap"><span style="font-weight:600">${d.prenom} ${d.nom}</span><div style="font-size:11px;color:var(--text2)">${d.coef} · ${catLabel(d.cat)} · ${d.anc} ans</div></td>
+      <td><select onchange="updateDemoDriver(${i},'status',this.value)" ${d.absence ? 'disabled title="Absence prioritaire sur le statut"' : ''}>${statusOpts.map(([v,l]) => `<option value="${v}" ${d.status === v ? 'selected' : ''}>${l}</option>`).join('')}</select></td>
+      <td><select onchange="updateDemoDriver(${i},'absence',this.value)">${absOpts.map(([v,l]) => `<option value="${v}" ${(d.absence || '') === v ? 'selected' : ''}>${l}</option>`).join('')}</select></td>
+      <td><input type="number" min="0" max="60" step="1" value="${d.conduiteSemaine}" onchange="updateDemoDriver(${i},'conduiteSemaine',this.value)"></td>
+      <td><input type="number" min="0" max="100" step="1" value="${d.conduiteBihebdo}" onchange="updateDemoDriver(${i},'conduiteBihebdo',this.value)"></td>
+      <td><input type="number" min="0" max="250" step="1" value="${d.hSupCumul}" onchange="updateDemoDriver(${i},'hSupCumul',this.value)"></td>
+      <td><input type="number" min="0" max="14" step="1" value="${d.joursDepuisRepos || 0}" onchange="updateDemoDriver(${i},'joursDepuisRepos',this.value)" title="Jours travaillés consécutifs depuis le dernier repos hebdo (alerte à 6)"></td>
+      <td id="demoDispo-${i}" class="demo-dispo ${dispo.cls}">${dispo.txt}</td>
+    </tr>`;
+  });
+  html += '</tbody></table>';
+  box.innerHTML = html;
+}
+function openDecisionModalFromDemo() {
+  if (typeof clearDecisionContext === 'function') clearDecisionContext();
+  if (typeof openDecisionModal === 'function') openDecisionModal();
+}
+
 // Limites réglementaires (561/2006 + 2002/15/CE) en minutes / heures
 const LIMITES = {
   conduiteJourMax: 9 * 60,             // 9h max (10h extensible 2×/sem)
@@ -6940,6 +7396,13 @@ const LIMITES = {
   conduiteBihebdoMax: 90,              // 90h sur 2 semaines
   tempsServiceSemaineMax: 48,          // 48h/semaine (moyenne 4 mois)
 };
+
+// Règle des 6 jours : un repos hebdomadaire doit débuter après 6 périodes de 24h
+// de travail depuis le dernier repos hebdo. `joursDepuisRepos` : démo (éditable),
+// réel = à dériver du planning / des .DDD.
+function mustTakeWeeklyRest(d) {
+  return d && typeof d.joursDepuisRepos === 'number' && d.joursDepuisRepos >= 6;
+}
 
 function statusInfo(status) {
   const map = {
@@ -6960,6 +7423,15 @@ function formatHmin(min) {
 
 // Calcule la disponibilité opérationnelle (texte + classe CSS) selon les compteurs
 function calcDisponibilite(d) {
+  // Règle des 6 jours : repos hebdomadaire obligatoire (alerte prioritaire)
+  if (typeof mustTakeWeeklyRest === 'function' && mustTakeWeeklyRest(d)) {
+    return { txt: 'Doit prendre son repos hebdomadaire', cls: 'indispo' };
+  }
+  // Absence déclarée (démo : champ `absence` ; réel : à brancher sur le planning)
+  if (d.absence) {
+    const mo = (typeof ABSENCE_MOTIFS !== 'undefined' && ABSENCE_MOTIFS[d.absence]) ? ABSENCE_MOTIFS[d.absence].label : d.absence;
+    return { txt: 'Absent — ' + mo, cls: 'indispo' };
+  }
   // Repos hebdo en cours
   if (d.status === 'repos') {
     return { txt: 'En repos — non sollicitable', cls: 'indispo' };
@@ -7009,7 +7481,11 @@ function barClass(cumul, max) {
 
 function renderDriverCard(d, ctx) {
   const initiales = (d.prenom[0] + (d.nom[0] || '')).toUpperCase();
-  const st = statusInfo(d.status);
+  const st = (typeof mustTakeWeeklyRest === 'function' && mustTakeWeeklyRest(d))
+    ? { label: '🛑 Repos hebdo requis', cls: 'repos' }
+    : d.absence
+    ? { label: ((typeof ABSENCE_MOTIFS !== 'undefined' && ABSENCE_MOTIFS[d.absence]) ? ABSENCE_MOTIFS[d.absence].icon + ' ' + ABSENCE_MOTIFS[d.absence].label : d.absence), cls: 'repos' }
+    : statusInfo(d.status);
   const dispo = calcDisponibilite(d);
   
   // ─── Projection des heures de conduite hebdo / bi-hebdo ───
@@ -7072,8 +7548,8 @@ function renderDriverCard(d, ctx) {
   const pctBihebdo = Math.min(100, bihebdoDisplay / LIMITES.conduiteBihebdoMax * 100);
   const pctBihebdoBefore = projConduite ? Math.min(100, d.conduiteBihebdo / LIMITES.conduiteBihebdoMax * 100) : pctBihebdo;
   
-  // Cartes en alerte si dispo.cls === 'indispo' ; warn si 'limite'
-  const cardCls = dispo.cls === 'indispo' ? 'alert' : (dispo.cls === 'limite' ? 'warn' : '');
+  // Option A : cadre navy uniforme ; le score (plafonné par la conformité) porte le code couleur
+  const cardCls = '';
   
   const catLabel = d.cat === 'grandRoutier' ? 'Grand routier' : (d.cat === 'autresRoulants' ? 'Autre roulant' : 'Messagerie');
   
@@ -7177,7 +7653,6 @@ function renderDecisionFilters() {
     { key: 'all',     label: 'Tous',                count: all.length },
     { key: 'dispo',   label: '✅ Disponibles',     count: dispo.length },
     { key: 'alertes', label: '⚠️ Alertes / Limites', count: alertes.length },
-    { key: 'sousRAG', label: '⚠ Sous RAG',         count: sousRAG.length },
   ];
   
   filtersDiv.innerHTML = filters.map(f => `
@@ -8540,13 +9015,22 @@ function refreshTripSelects() {
   }
   
   if (dSel) {
+    const tripDateForAbs = document.getElementById('t_tripDate')?.value || null;
     if (drivers.length === 0) {
       dSel.innerHTML = '<option value="">— Aucun conducteur disponible —</option>';
     } else {
       dSel.innerHTML = '<option value="">— Choisir un conducteur —</option>' + drivers.map(d => {
         const display = d.name || ('Conducteur ' + (d.coefficient || ''));
-        return `<option value="${d.id}">👷 ${display}${d.coefficient ? ' (Coef. '+d.coefficient+')' : ''}</option>`;
+        const absent = (tripDateForAbs && typeof getAbsence === 'function') ? getAbsence(d.id, tripDateForAbs) : null;
+        const moLabel = absent ? ((typeof ABSENCE_MOTIFS !== 'undefined' && ABSENCE_MOTIFS[absent.motif]) ? ABSENCE_MOTIFS[absent.motif].label : absent.motif) : '';
+        const dis = absent ? 'disabled' : '';
+        const suffix = absent ? ` — absent (${moLabel})` : (d.coefficient ? ' (Coef. ' + d.coefficient + ')' : '');
+        return `<option value="${d.id}" ${dis}>👷 ${display}${suffix}</option>`;
       }).join('');
+      // Si le conducteur déjà sélectionné est absent à cette date, on le désélectionne
+      if (dSel.value && tripDateForAbs && typeof getAbsence === 'function' && getAbsence(dSel.value, tripDateForAbs)) {
+        dSel.value = '';
+      }
     }
   }
   
@@ -8651,6 +9135,7 @@ function initTripDate() {
 
 function onTripDateChange() {
   updateTripDateLabel();
+  if (typeof refreshTripSelects === 'function') refreshTripSelects();
 }
 
 function updateTripDateLabel() {
@@ -8768,7 +9253,7 @@ async function openDecisionForTrip() {
       ? `<span style="color:var(--success);font-size:11px">📍 chargement géolocalisé</span>` 
       : (loading ? `<span style="color:var(--warning);font-size:11px">⚠ position non géocodée</span>` : '');
     const tripTypeBadge = hasGrouped 
-      ? '<span style="background:#a5f3fc;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;color:#0e7490">🔀 GROUPAGE</span>'
+      ? '<span style="background:#C3D2E0;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;color:#142F47">🔀 GROUPAGE</span>'
       : hasReturn 
       ? '<span style="background:#fde68a;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;color:#92400e">↔ ALLER-RETOUR</span>'
       : '';
@@ -8931,7 +9416,21 @@ function assignDriverToTrip(driverFullName) {
             dSel2.value = match.id;
             if (typeof updateRessourcesChips === 'function') updateRessourcesChips();
           }
-          showAssignmentToast(`✓ ${driverFullName} assigné au trajet`);
+          // Si le conducteur rentre chez lui avec le véhicule → le départ part de son domicile
+          let extraMsg = '';
+          if (match.returnsWithVehicle && match.homeAddress) {
+            const depotInput = document.getElementById('t_depot');
+            if (depotInput) {
+              depotInput.value = match.homeAddress;
+              if (typeof match.homeLat === 'number' && typeof match.homeLng === 'number') {
+                tripCoords.depot = { lat: match.homeLat, lon: match.homeLng };
+              } else {
+                tripCoords.depot = null; // géocodage à la volée au calcul
+              }
+              extraMsg = `\n📍 Départ ramené au domicile de ${driverFullName} (rentre avec le véhicule)`;
+            }
+          }
+          showAssignmentToast(`✓ ${driverFullName} assigné au trajet` + extraMsg);
         }, 50);
       }
     }, 150);
@@ -8942,7 +9441,7 @@ function assignDriverToTrip(driverFullName) {
 
 function showAssignmentToast(msg, duration) {
   const toast = document.createElement('div');
-  toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#0e7490;color:white;padding:14px 20px;border-radius:8px;box-shadow:0 8px 24px rgba(15,40,80,0.25);z-index:99999;font-size:13px;max-width:480px;line-height:1.5;white-space:pre-line';
+  toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#142F47;color:white;padding:14px 20px;border-radius:8px;box-shadow:0 8px 24px rgba(15,40,80,0.25);z-index:99999;font-size:13px;max-width:480px;line-height:1.5;white-space:pre-line';
   toast.textContent = msg;
   document.body.appendChild(toast);
   setTimeout(() => toast.remove(), duration || 2500);
@@ -8954,6 +9453,67 @@ function showAssignmentToast(msg, duration) {
 
 let _currentWeekStart = null;  // Date du lundi de la semaine affichée
 let _currentCellContext = null; // { vehicleId, dateISO, tripId? } pour la popup d'édition
+let _planningMode = 'conducteur'; // 'conducteur' | 'moteur'
+
+function setPlanningMode(mode) {
+  _planningMode = mode;
+  const cb = document.getElementById('planSub-conducteur');
+  const mb = document.getElementById('planSub-moteur');
+  if (cb) cb.classList.toggle('active', mode === 'conducteur');
+  if (mb) mb.classList.toggle('active', mode === 'moteur');
+  // Le filtre par type de véhicule n'a de sens qu'en mode moteur
+  const f = document.querySelector('.planning-filter');
+  if (f) f.style.display = (mode === 'moteur') ? '' : 'none';
+  renderPlanning();
+}
+
+// ─────── Modale d'absence conducteur ───────
+let _absenceCtx = null;
+function openAbsenceModal(driverId, dateISO) {
+  const drivers = (typeof loadDrivers === 'function') ? loadDrivers() : [];
+  const d = drivers.find(x => x.id === driverId);
+  const existing = getAbsence(driverId, dateISO);
+  _absenceCtx = { driverId, dateISO, motif: existing ? existing.motif : 'CP' };
+  const [y, m, dd] = dateISO.split('-');
+  const dObj = new Date(parseInt(y), parseInt(m) - 1, parseInt(dd));
+  const dayNames = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+  const monthNames = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+  document.getElementById('absenceModalWho').innerHTML =
+    `<strong>👤 ${d ? (d.name || 'Conducteur') : 'Conducteur'}</strong> — ${dayNames[dObj.getDay()]} ${parseInt(dd)} ${monthNames[parseInt(m) - 1]}`;
+  document.getElementById('absenceNote').value = existing ? (existing.note || '') : '';
+  document.getElementById('absenceRemoveBtn').style.display = existing ? '' : 'none';
+  renderAbsenceMotifs();
+  document.getElementById('absenceModal').classList.add('show');
+}
+function renderAbsenceMotifs() {
+  const box = document.getElementById('absenceMotifs');
+  if (!box || !_absenceCtx) return;
+  box.innerHTML = Object.entries(ABSENCE_MOTIFS).map(([key, mo]) => {
+    const active = _absenceCtx.motif === key;
+    return `<button type="button" onclick="_absenceCtx.motif='${key}';renderAbsenceMotifs()"
+      style="display:flex;align-items:center;gap:8px;padding:10px 12px;border:1.5px solid ${active ? mo.color : 'var(--border)'};background:${active ? mo.color + '18' : 'white'};border-radius:8px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;color:var(--text)">
+      <span style="font-size:18px">${mo.icon}</span> ${mo.label}
+    </button>`;
+  }).join('');
+}
+function saveAbsenceFromModal() {
+  if (!_absenceCtx) return;
+  const note = (document.getElementById('absenceNote').value || '').trim();
+  setAbsence(_absenceCtx.driverId, _absenceCtx.dateISO, _absenceCtx.motif, note);
+  closeAbsenceModal();
+  renderPlanning();
+}
+function removeAbsenceFromModal() {
+  if (!_absenceCtx) return;
+  removeAbsence(_absenceCtx.driverId, _absenceCtx.dateISO);
+  closeAbsenceModal();
+  renderPlanning();
+}
+function closeAbsenceModal() {
+  const m = document.getElementById('absenceModal');
+  if (m) m.classList.remove('show');
+  _absenceCtx = null;
+}
 
 // Renvoie le lundi de la semaine d'une date (en respectant le fuseau local)
 function getMondayOf(date) {
@@ -8976,9 +9536,11 @@ function dateToISO(date) {
 function openPlanningModal() {
   const modal = document.getElementById('planningModal');
   if (!modal) return;
+  // S'assurer que les conducteurs démo existent dans la base (lien démo ↔ planning)
+  if (typeof ensureDemoDriversInBase === 'function') ensureDemoDriversInBase();
   _currentWeekStart = getMondayOf(new Date());
   modal.classList.add('show');
-  renderPlanning();
+  setPlanningMode(_planningMode || 'conducteur');
   // Fermer le menu home si ouvert
   const homeMenu = document.getElementById('homeMenuPanel');
   if (homeMenu) homeMenu.style.display = 'none';
@@ -9019,56 +9581,60 @@ function renderPlanning() {
   const labelEnd = fmt(days[6]) + ' ' + days[6].getFullYear();
   weekLabel.textContent = `Semaine du ${labelStart} au ${labelEnd}`;
   
-  // 2. Récupérer les véhicules moteurs (selon filtre)
+  // 2. Mode d'affichage (conducteur | moteur)
+  const _mode = (typeof _planningMode !== 'undefined') ? _planningMode : 'conducteur';
   const filterType = document.getElementById('planningVehicleTypeFilter')?.value || 'all';
   const allVehicles = (typeof loadVehicles === 'function') ? loadVehicles() : [];
+  const allDrivers = (typeof loadDrivers === 'function') ? loadDrivers() : [];
+  const driverById = new Map(allDrivers.map(d => [d.id, d]));
+  const vehicleById = new Map(allVehicles.map(v => [v.id, v]));
   const motorTypes = ['tracteur', 'porteur', 'vul'];
-  let vehicles = allVehicles.filter(v => motorTypes.includes(v.type));
-  if (filterType !== 'all') {
-    vehicles = vehicles.filter(v => v.type === filterType);
+  const vehLabel = v => v.name || v.plate || ((v.brand || '') + ' ' + (v.model || '')).trim() || 'Véhicule';
+  const vehBadge = v => v.type === 'tracteur' ? 'TRACT' : v.type === 'porteur' ? 'PORT' : 'VUL';
+  const drvBadge = d => d.category === 'grandRoutier' ? 'GR' : d.category === 'autresRoulants' ? 'AR' : d.category === 'messagerie' ? 'MSG' : 'CDR';
+
+  // Lignes selon le mode
+  let rows;
+  if (_mode === 'conducteur') {
+    rows = allDrivers.map(d => ({ id: d.id, label: d.name || ('Coef. ' + (d.coefficient || '')), badge: drvBadge(d) }));
+  } else {
+    let vehicles = allVehicles.filter(v => motorTypes.includes(v.type));
+    if (filterType !== 'all') vehicles = vehicles.filter(v => v.type === filterType);
+    rows = vehicles.map(v => ({ id: v.id, label: vehLabel(v), badge: vehBadge(v) }));
   }
-  
-  if (vehicles.length === 0) {
+
+  if (rows.length === 0) {
     container.innerHTML = `
       <div class="planning-empty-state">
-        <div style="font-size:32px;margin-bottom:8px">🚛</div>
-        <div style="font-weight:600;color:var(--text);margin-bottom:4px">Aucun véhicule moteur</div>
-        <div>Ajoutez d'abord des véhicules dans l'onglet Véhicules pour afficher le planning.</div>
+        <div style="font-size:32px;margin-bottom:8px">${_mode === 'conducteur' ? '👤' : '🚛'}</div>
+        <div style="font-weight:600;color:var(--text);margin-bottom:4px">${_mode === 'conducteur' ? 'Aucun conducteur' : 'Aucun véhicule moteur'}</div>
+        <div>Ajoutez d'abord des ${_mode === 'conducteur' ? 'conducteurs' : 'véhicules'} pour afficher le planning.</div>
       </div>`;
     return;
   }
-  
-  // 3. Récupérer les trajets de la semaine
+
+  // 3. Trajets de la semaine
   const trips = (typeof loadHistory === 'function') ? loadHistory() : [];
   const weekStartISO = dateToISO(days[0]);
   const weekEndISO = dateToISO(days[6]);
-  const tripsThisWeek = trips.filter(t => 
-    t.tripDate && t.tripDate >= weekStartISO && t.tripDate <= weekEndISO
-  );
-  
-  // 4. Index : par véhicule moteur → par date → liste de trajets
+  const tripsThisWeek = trips.filter(t => t.tripDate && t.tripDate >= weekStartISO && t.tripDate <= weekEndISO);
+
+  // 4. Index par clé de ligne (conducteur → driverId ; moteur → vehicleMoteurId)
+  const rowKeyOf = t => _mode === 'conducteur' ? t.driverId : t.vehicleMoteurId;
   const index = {};
   tripsThisWeek.forEach(t => {
-    if (!t.vehicleMoteurId || !t.tripDate) return;
-    if (!index[t.vehicleMoteurId]) index[t.vehicleMoteurId] = {};
-    if (!index[t.vehicleMoteurId][t.tripDate]) index[t.vehicleMoteurId][t.tripDate] = [];
-    index[t.vehicleMoteurId][t.tripDate].push(t);
+    const rk = rowKeyOf(t);
+    if (!rk || !t.tripDate) return;
+    if (!index[rk]) index[rk] = {};
+    if (!index[rk][t.tripDate]) index[rk][t.tripDate] = [];
+    index[rk][t.tripDate].push(t);
   });
-  
-  // 5. Récupérer les conducteurs pour les noms
-  const allDrivers = (typeof loadDrivers === 'function') ? loadDrivers() : [];
-  const driverById = new Map(allDrivers.map(d => [d.id, d]));
-  
-  // 6. Construire la grille HTML
+
+  // 5. Construire la grille
   const todayISO = dateToISO(new Date());
   const dayNames = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
-  
   let gridHTML = '<div class="planning-grid">';
-  
-  // Coin haut-gauche (vide)
-  gridHTML += '<div class="planning-cell header" style="background:#e2e8f0">Véhicule</div>';
-  
-  // En-têtes de colonnes (jours)
+  gridHTML += `<div class="planning-cell header" style="background:#e2e8f0">${_mode === 'conducteur' ? 'Conducteur' : 'Véhicule'}</div>`;
   days.forEach((d, i) => {
     const isToday = dateToISO(d) === todayISO;
     gridHTML += `<div class="planning-cell header ${isToday ? 'is-today' : ''}">
@@ -9076,41 +9642,54 @@ function renderPlanning() {
       <div class="date-num">${d.getDate()}</div>
     </div>`;
   });
-  
-  // Une ligne par véhicule
-  vehicles.forEach(v => {
-    const vLabel = v.name || v.plate || ((v.brand || '') + ' ' + (v.model || '')).trim() || 'Véhicule';
-    const typeLabel = v.type === 'tracteur' ? 'TRACT' : v.type === 'porteur' ? 'PORT' : 'VUL';
+
+  rows.forEach(row => {
     gridHTML += `<div class="planning-cell vehicle-name">
-      <span class="vehicle-type-badge">${typeLabel}</span>
-      <span>${vLabel}</span>
+      <span class="vehicle-type-badge">${row.badge}</span>
+      <span>${row.label}</span>
     </div>`;
-    
     days.forEach(d => {
       const dateISO = dateToISO(d);
-      const cellTrips = (index[v.id] && index[v.id][dateISO]) || [];
-      
+      const absence = (_mode === 'conducteur' && typeof getAbsence === 'function') ? getAbsence(row.id, dateISO) : null;
+      if (absence) {
+        const mo = (typeof ABSENCE_MOTIFS !== 'undefined' && ABSENCE_MOTIFS[absence.motif]) ? ABSENCE_MOTIFS[absence.motif] : { label: absence.motif, icon: '📌', color: '#64748b' };
+        gridHTML += `<div class="planning-cell absence" onclick="openAbsenceModal('${row.id}', '${dateISO}')" title="${mo.label}${absence.note ? ' — ' + absence.note : ''}" style="border-left:3px solid ${mo.color}">
+          <div class="absence-tag" style="color:${mo.color}">${mo.icon}<br>${mo.label}</div>
+        </div>`;
+        return;
+      }
+      const cellTrips = (index[row.id] && index[row.id][dateISO]) || [];
       if (cellTrips.length === 0) {
-        gridHTML += `<div class="planning-cell empty" 
-          onclick="openPlanningCell('${v.id}', '${dateISO}')"
-          data-vehicle="${v.id}" data-date="${dateISO}"></div>`;
+        if (_mode === 'moteur') {
+          gridHTML += `<div class="planning-cell empty" onclick="openPlanningCell('${row.id}', '${dateISO}')" data-vehicle="${row.id}" data-date="${dateISO}"></div>`;
+        } else {
+          gridHTML += `<div class="planning-cell empty conducteur-empty" onclick="openAbsenceModal('${row.id}', '${dateISO}')" title="Ajouter une absence" data-date="${dateISO}"><span class="add-absence">+</span></div>`;
+        }
       } else {
         const tripsHTML = cellTrips.map(t => {
-          const driver = driverById.get(t.driverId);
-          const driverName = driver ? driver.name : (t.driverName || 'Conducteur ?');
+          let primary, vehId;
+          if (_mode === 'conducteur') {
+            const veh = vehicleById.get(t.vehicleMoteurId);
+            primary = veh ? vehLabel(veh) : 'Véhicule ?';
+            vehId = t.vehicleMoteurId;
+          } else {
+            const driver = driverById.get(t.driverId);
+            primary = driver ? driver.name : (t.driverName || 'Conducteur ?');
+            vehId = row.id;
+          }
           const loadCity = (t.loadingAddr || '').split(',')[0].slice(0, 14);
           const deliveryCity = (t.deliveryAddr || '').split(',')[0].slice(0, 14);
-          return `<div class="planning-trip" onclick="event.stopPropagation();openPlanningCell('${v.id}', '${dateISO}', '${t.id}')">
-            <div class="driver">${driverName}</div>
+          return `<div class="planning-trip" onclick="event.stopPropagation();openPlanningCell('${vehId}', '${dateISO}', '${t.id}')">
+            <div class="driver">${primary}</div>
             ${loadCity || deliveryCity ? `<div class="route">${loadCity} → ${deliveryCity}</div>` : ''}
           </div>`;
         }).join('');
-        gridHTML += `<div class="planning-cell filled" 
-          onclick="openPlanningCell('${v.id}', '${dateISO}')">${tripsHTML}</div>`;
+        const cellClick = _mode === 'moteur' ? `onclick="openPlanningCell('${row.id}', '${dateISO}')"` : '';
+        gridHTML += `<div class="planning-cell filled" ${cellClick}>${tripsHTML}</div>`;
       }
     });
   });
-  
+
   gridHTML += '</div>';
   container.innerHTML = gridHTML;
 }
@@ -9146,7 +9725,11 @@ function openPlanningCell(vehicleId, dateISO, tripId) {
   const drivers = loadDrivers();
   const driverOptions = drivers.map(d => {
     const selected = (trip && trip.driverId === d.id) ? 'selected' : '';
-    return `<option value="${d.id}" ${selected}>${d.name || ('Coef. ' + d.coefficient)}</option>`;
+    const absent = (typeof getAbsence === 'function') ? getAbsence(d.id, dateISO) : null;
+    const moLabel = absent ? ((typeof ABSENCE_MOTIFS !== 'undefined' && ABSENCE_MOTIFS[absent.motif]) ? ABSENCE_MOTIFS[absent.motif].label : absent.motif) : '';
+    const dis = absent ? 'disabled' : '';
+    const suffix = absent ? ` — absent (${moLabel})` : '';
+    return `<option value="${d.id}" ${selected} ${dis}>${d.name || ('Coef. ' + d.coefficient)}${suffix}</option>`;
   }).join('');
   
   body.innerHTML = `
@@ -9164,7 +9747,7 @@ function openPlanningCell(vehicleId, dateISO, tripId) {
     </div>
     
     ${trip ? `
-      <div style="background:#ecfeff;padding:10px 12px;border-radius:6px;font-size:12px;line-height:1.5">
+      <div style="background:#EAF0F5;padding:10px 12px;border-radius:6px;font-size:12px;line-height:1.5">
         <div style="font-weight:600;color:var(--accent);margin-bottom:6px">📍 Trajet existant</div>
         <div>Origine : ${trip.loadingAddr || '?'}</div>
         <div>Destination : ${trip.deliveryAddr || '?'}</div>
@@ -9389,7 +9972,7 @@ function deletePlanningTrip() {
 
 function showPlanningToast(msg, duration) {
   const toast = document.createElement('div');
-  toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#0e7490;color:white;padding:14px 20px;border-radius:8px;box-shadow:0 8px 24px rgba(15,40,80,0.25);z-index:99999;font-size:13px;max-width:480px;line-height:1.5;white-space:pre-line';
+  toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#142F47;color:white;padding:14px 20px;border-radius:8px;box-shadow:0 8px 24px rgba(15,40,80,0.25);z-index:99999;font-size:13px;max-width:480px;line-height:1.5;white-space:pre-line';
   toast.textContent = msg;
   document.body.appendChild(toast);
   setTimeout(() => toast.remove(), duration || 2500);
@@ -9417,8 +10000,24 @@ function scoreDriverForTrip(driver, ctx) {
   const conduiteContinueMin = driver.conduiteContinue || 0;  // en minutes
   const conduiteSemH = driver.conduiteSemaine || 0;
   const conduiteBihebdoH = driver.conduiteBihebdo || 0;
-  
-  // 0. PROXIMITÉ GÉOGRAPHIQUE — critère majeur de faisabilité
+
+  // ── Horizon temporel déduit de la date du trajet ──
+  // live = aujourd'hui (critères instantanés) · semaine = même semaine ISO · planif = plus tard
+  let horizon = 'live';
+  if (ctx.tripDate) {
+    const _t0 = new Date(ctx.tripDate + 'T12:00:00');
+    const _now = new Date(); _now.setHours(12, 0, 0, 0);
+    if (!isNaN(_t0)) {
+      const _tISO = dateToISO(_t0), _nISO = dateToISO(_now);
+      if (_tISO === _nISO) horizon = 'live';
+      else if (typeof getMondayOf === 'function' && dateToISO(getMondayOf(_t0)) === dateToISO(getMondayOf(_now))) horizon = 'semaine';
+      else horizon = 'planif';
+    }
+  }
+  const isLive = (horizon === 'live');
+  let hardZero = false;
+
+  // 0. PROXIMITÉ GÉOGRAPHIQUE — critère majeur de faisabilité (live uniquement)
   // Logique métier :
   //  - Grand routier : on raisonne sur sa position GPS actuelle (peut découcher)
   //  - Autres roulants / messagerie : si "rentre avec véhicule" coché, on raisonne sur le domicile
@@ -9428,7 +10027,7 @@ function scoreDriverForTrip(driver, ctx) {
   let useHomeAddress = false;
   let positionUsed = null;
   
-  if (ctx.loadingCoords) {
+  if (isLive && ctx.loadingCoords) {
     // Récupérer la vraie fiche conducteur dans la base pour avoir returnsWithVehicle, homeLat, homeLng
     const realDrivers = (typeof loadDrivers === 'function') ? loadDrivers() : [];
     const realDriverId = getRealDriverIdFromDemoName(driver.prenom, driver.nom);
@@ -9488,46 +10087,56 @@ function scoreDriverForTrip(driver, ctx) {
     }
   }
   
-  // 1. Statut tachy actuel
-  if (driver.status === 'repos') { score -= 30; reasons.push('En repos hebdo'); }
-  else if (driver.status === 'pause') { score -= 5; reasons.push('En pause (reprend bientôt)'); }
-  else if (driver.status === 'conduite') { score -= 10; reasons.push('Déjà en conduite'); }
-  else if (driver.status === 'travail') { score -= 8; reasons.push('Autre travail en cours'); }
-  
-  // 2. Heures de conduite RESTANTES ce jour
-  const maxJourMin = 9 * 60;
-  const resteJourMin = Math.max(0, maxJourMin - conduiteJourMin);
-  if (resteJourMin < minutesNeeded) {
-    const deficit = minutesNeeded - resteJourMin;
-    const penalty = Math.min(60, Math.round(deficit / minutesNeeded * 80));
-    score -= penalty;
-    reasons.push(`${(deficit/60).toFixed(1)}h de conduite manquantes aujourd'hui`);
+  // 1. Statut tachy actuel (live uniquement — remis à zéro par le repos journalier)
+  if (isLive) {
+    if (driver.status === 'repos') { hardZero = true; reasons.push('\u26d4 En repos hebdomadaire \u2014 non affectable aujourd\'hui'); }
+    else if (driver.status === 'pause') { score -= 5; reasons.push('En pause (reprend bient\u00f4t)'); }
+    else if (driver.status === 'conduite') { score -= 10; reasons.push('D\u00e9j\u00e0 en conduite'); }
+    else if (driver.status === 'travail') { score -= 8; reasons.push('Autre travail en cours'); }
   }
   
-  // 3. Cumul semaine (max 56h)
-  const resteSemH = Math.max(0, 56 - conduiteSemH);
-  if (resteSemH < (ctx.estimatedHours || 8)) {
-    score -= 25;
-    reasons.push(`Quota hebdo presque épuisé (reste ${resteSemH.toFixed(1)}h)`);
-  } else if (resteSemH < (ctx.estimatedHours || 8) * 1.5) {
-    score -= 10;
-    reasons.push('Quota hebdo limite');
+  // 2. Heures de conduite RESTANTES ce jour (live uniquement)
+  if (isLive) {
+    const maxJourMin = 9 * 60;
+    const resteJourMin = Math.max(0, maxJourMin - conduiteJourMin);
+    if (resteJourMin < minutesNeeded) {
+      const deficit = minutesNeeded - resteJourMin;
+      const penalty = Math.min(60, Math.round(deficit / minutesNeeded * 80));
+      score -= penalty;
+      reasons.push(`${(deficit/60).toFixed(1)}h de conduite manquantes aujourd'hui`);
+    }
   }
   
-  // 4. Cumul bi-hebdo (max 90h)
-  const resteBihH = Math.max(0, 90 - conduiteBihebdoH);
-  if (resteBihH < (ctx.estimatedHours || 8)) {
-    score -= 25;
-    reasons.push(`Quota bi-hebdo presque épuisé (reste ${resteBihH.toFixed(1)}h)`);
+  // 3. Cumul semaine (max 56h) — live + semaine en cours
+  if (horizon !== 'planif') {
+    const resteSemH = Math.max(0, 56 - conduiteSemH);
+    if (resteSemH < (ctx.estimatedHours || 8)) {
+      score -= 25;
+      reasons.push(`Quota hebdo presque \u00e9puis\u00e9 (reste ${resteSemH.toFixed(1)}h)`);
+    } else if (resteSemH < (ctx.estimatedHours || 8) * 1.5) {
+      score -= 10;
+      reasons.push('Quota hebdo limite');
+    }
   }
   
-  // 5. Pause obligatoire imminente
-  if (conduiteContinueMin >= 270 && driver.status === 'conduite') {  // 4h30
-    score -= 15;
-    reasons.push('Pause 45 min obligatoire avant tout repart');
-  } else if (conduiteContinueMin >= 240) {  // 4h
-    score -= 5;
-    reasons.push('Pause 45 min dans <30 min');
+  // 4. Cumul bi-hebdo (max 90h) — live + semaine en cours
+  if (horizon !== 'planif') {
+    const resteBihH = Math.max(0, 90 - conduiteBihebdoH);
+    if (resteBihH < (ctx.estimatedHours || 8)) {
+      score -= 25;
+      reasons.push(`Quota bi-hebdo presque \u00e9puis\u00e9 (reste ${resteBihH.toFixed(1)}h)`);
+    }
+  }
+  
+  // 5. Pause obligatoire imminente (live uniquement)
+  if (isLive) {
+    if (conduiteContinueMin >= 270 && driver.status === 'conduite') {  // 4h30
+      score -= 15;
+      reasons.push('Pause 45 min obligatoire avant tout repart');
+    } else if (conduiteContinueMin >= 240) {  // 4h
+      score -= 5;
+      reasons.push('Pause 45 min dans <30 min');
+    }
   }
   
   // 6. RAG : bonus si en-dessous (= il faut lui donner des tours pour rattraper)
@@ -9540,16 +10149,49 @@ function scoreDriverForTrip(driver, ctx) {
     }
   }
   
-  // 7. Repos compensateur dû (rare dans les démos)
-  if (driver.reposCompensateurDu && driver.reposCompensateurDu >= 10) {
+  // 7. Repos compensateur dû — live + semaine
+  if (horizon !== 'planif' && driver.reposCompensateurDu && driver.reposCompensateurDu >= 10) {
     score -= 8;
-    reasons.push('Repos compensateur dû');
+    reasons.push('Repos compensateur d\u00fb');
+  }
+
+  // 8. Règle des 6 jours : repos hebdomadaire obligatoire après 6 périodes de 24h
+  if (typeof mustTakeWeeklyRest === 'function' && mustTakeWeeklyRest(driver) && horizon !== 'planif') {
+    if (isLive) { hardZero = true; }
+    else { score = Math.min(score, 20); }
+    reasons.push('\u26d4 Doit prendre son repos hebdomadaire (6 jours cons\u00e9cutifs travaill\u00e9s)');
   }
   
+  // Absence déclarée à la date du trajet → conducteur non affectable
+  // (réel : via le planning ; démo : champ `absence` intégré au conducteur fictif)
+  let _absent = null;
+  if (driver.absence) {
+    _absent = { motif: driver.absence };
+  } else if (ctx && ctx.tripDate && typeof getAbsence === 'function') {
+    _absent = getAbsence(driver.id, ctx.tripDate);
+  }
+  if (_absent) {
+    const moLabel = (typeof ABSENCE_MOTIFS !== 'undefined' && ABSENCE_MOTIFS[_absent.motif]) ? ABSENCE_MOTIFS[_absent.motif].label : _absent.motif;
+    hardZero = true;
+    reasons.push('\u26d4 Absent ce jour-l\u00e0 (' + moLabel + ')');
+  }
+
+  // Plafond par conformité réglementaire (cohérence score ↔ disponibilité) — live uniquement
+  if (isLive) {
+    const _conf = (typeof calcDisponibilite === 'function') ? calcDisponibilite(driver) : null;
+    if (_conf) {
+      if (_conf.cls === 'indispo') { score = Math.min(score, 30); reasons.push('\u26d4 Non conforme (repos / plafond atteint) \u2014 non sollicitable'); }
+      else if (_conf.cls === 'limite') { score = Math.min(score, 65); reasons.push('\u26a0\ufe0f Disponibilit\u00e9 limite \u2014 score plafonn\u00e9'); }
+    }
+  }
+
+  // Blocages absolus (repos live / absence / règle 6 jours)
+  if (hardZero) score = 0;
+
   // Bornage 0-100
   score = Math.max(0, Math.min(100, Math.round(score)));
-  
-  return { score, reasons };
+
+  return { score, reasons, horizon };
 }
 
 // Calcule automatiquement la charge utile à partir des véhicules sélectionnés.
@@ -10452,9 +11094,13 @@ async function calculateTrip() {
     const poidsA = parseFloat(document.getElementById('t_freightAWeight')?.value) || 0;
     const poidsB = parseFloat(document.getElementById('t_freightBWeight')?.value) || 0;
     const poidsTotal = poidsA + poidsB;
+    // Référence de remplissage = CHARGE UTILE (capacité du camion), pas le total transporté
+    // ce jour-là. Ainsi consoCharge = camion à pleine charge utile, et un fret partiel
+    // s'interpole correctement. Lu en direct → se met à jour si la charge utile est modifiée.
+    const chargeUtile = parseFloat(document.getElementById('t_cargo')?.value) || 0;
     const consoSurCharge = (poids) => {
-      if (poidsTotal <= 0) return consoCharge; // fallback si poids non saisis
-      const ratio = Math.max(0, Math.min(1, poids / poidsTotal));
+      if (chargeUtile <= 0) return consoCharge; // fallback si charge utile non saisie
+      const ratio = Math.max(0, Math.min(1, poids / chargeUtile)); // plafonné à 1 si surcharge
       return consoVide + (consoCharge - consoVide) * ratio;
     };
     
@@ -10720,7 +11366,50 @@ async function calculateTrip() {
     const rA = kmBackTotal2 > 0 ? kmBackA2 / kmBackTotal2 : 0.5;
     const rB = 1 - rA;
     console.log(`[Groupage] kmBack — Flux A (${loadingAddr}→${deliveryAddr}) = ${kmBackA2.toFixed(1)} km | Flux B (${groupedLoadingAddr}→${groupedDeliveryAddr}) = ${kmBackB2.toFixed(1)} km → ratioA=${(rA*100).toFixed(1)}% ratioB=${(rB*100).toFixed(1)}%`);
-    
+
+    // ── Clés d'imputation par poste (validées) ──
+    // Carburant → tonne·km · Conducteur → temps direct · Péages → trajet propre + surplus(km) · reste → km back.
+    const _loadsArr = (window._groupedBest && window._groupedBest.loads) ? window._groupedBest.loads : ['empty','empty','empty','empty','empty'];
+    const _segKm = [distKm1, distKm2, distKm3, distKm4, distKm5];
+    const _poidsA = parseFloat(document.getElementById('t_freightAWeight')?.value) || 0;
+    const _poidsB = parseFloat(document.getElementById('t_freightBWeight')?.value) || 0;
+    let _kmOnA = 0, _kmOnB = 0;
+    for (let i = 0; i < 5; i++) {
+      const st = _loadsArr[i];
+      if (st === 'A' || st === 'AB') _kmOnA += _segKm[i];
+      if (st === 'B' || st === 'AB') _kmOnB += _segKm[i];
+    }
+    const _tkmA = _poidsA * _kmOnA, _tkmB = _poidsB * _kmOnB, _tkmTot = _tkmA + _tkmB;
+    const rCarbA = _tkmTot > 0 ? _tkmA / _tkmTot : rA;   // fallback km back si poids non saisis
+    const rCarbB = 1 - rCarbA;
+    const _tBackA = backA ? (backA.durMin || 0) : 0;
+    const _tBackB = backB ? (backB.durMin || 0) : 0;
+    const _tBackTot = _tBackA + _tBackB;
+    const rCondA = _tBackTot > 0 ? _tBackA / _tBackTot : rA;   // fallback km back
+    const rCondB = 1 - rCondA;
+    // Mémoriser les km et durées DIRECTS de chaque fret (pour les devis A/B)
+    if (window._groupedBest) {
+      window._groupedBest.kmDirectA = kmBackA2; window._groupedBest.kmDirectB = kmBackB2;
+      window._groupedBest.durDirectA = _tBackA; window._groupedBest.durDirectB = _tBackB;
+    }
+    console.log(`[Groupage] tonne·km — A=${_tkmA.toFixed(0)} (${_poidsA}t×${_kmOnA.toFixed(0)}km) B=${_tkmB.toFixed(0)} (${_poidsB}t×${_kmOnB.toFixed(0)}km) → carbA=${(rCarbA*100).toFixed(1)}% | temps — A=${_tBackA.toFixed(0)}min B=${_tBackB.toFixed(0)}min → condA=${(rCondA*100).toFixed(1)}%`);
+    // Péage du trajet direct de chaque fret (règle propre + surplus)
+    const _pDirA = await getRouteAndPeage(loadingAddr, deliveryAddr, tripCoords.loading, tripCoords.delivery, tollClass).catch(() => null);
+    const _pDirB = await getRouteAndPeage(groupedLoadingAddr, groupedDeliveryAddr, tripCoords.groupedLoading, tripCoords.groupedDelivery, tollClass).catch(() => null);
+    const _pDirectA_HT = peageEff(_pDirA?.peageHT, kmBackA2);
+    const _pDirectB_HT = peageEff(_pDirB?.peageHT, kmBackB2);
+    const _pDirectA_TTC = peageEffTTC(_pDirA?.peageTTC, kmBackA2);
+    const _pDirectB_TTC = peageEffTTC(_pDirB?.peageTTC, kmBackB2);
+    function splitPeageProperPlusSurplus(totalP, dirA, dirB) {
+      const dSum = (dirA || 0) + (dirB || 0);
+      if (totalP >= dSum) {
+        const surplus = totalP - dSum;
+        return { fA: (dirA || 0) + surplus * rA, fB: (dirB || 0) + surplus * rB };
+      }
+      if (dSum > 0) return { fA: totalP * ((dirA||0) / dSum), fB: totalP * ((dirB||0) / dSum) };
+      return { fA: totalP * rA, fB: totalP * rB };
+    }
+
     const best = window._groupedBest;
     // (Pas besoin de loadFirst/deliverFirst ici : reparAB applique le prorata pur sur le total)
     
@@ -10733,34 +11422,25 @@ async function calculateTrip() {
       return { fA: total * rA, fB: total * rB };
     }
     
-    // Carburant
-    let r = reparAB(carburant1, carburant2, carburant3, carburant4, carburant5);
-    carbFluxAllerOv = r.fA; carbFluxRetourOv = r.fB; carbApprocheOv = 0;
+    // Carburant → clé tonne·km (poids × km réellement à bord)
+    let r;
+    carbFluxAllerOv = carburant * rCarbA; carbFluxRetourOv = carburant * rCarbB; carbApprocheOv = 0;
     
-    // Péages
+    // Péages → chaque fret paie le péage de son trajet direct + sa quote-part du surplus (km back)
     if (isPeageExact) {
-      const p1 = peageEff(seg1?.peageHT, distKm1);
-      const p2 = peageEff(seg2?.peageHT, distKm2);
-      const p3 = peageEff(seg3?.peageHT, distKm3);
-      const p4 = peageEff(seg4?.peageHT, distKm4);
-      const p5 = peageEff(seg5?.peageHT, distKm5);
-      r = reparAB(p1, p2, p3, p4, p5);
+      const totP = peageEff(seg1?.peageHT, distKm1) + peageEff(seg2?.peageHT, distKm2)
+                 + peageEff(seg3?.peageHT, distKm3) + peageEff(seg4?.peageHT, distKm4)
+                 + peageEff(seg5?.peageHT, distKm5);
+      r = splitPeageProperPlusSurplus(totP, _pDirectA_HT, _pDirectB_HT);
       peageFluxAllerOv = r.fA; peageFluxRetourOv = r.fB; peageApprocheOv = 0;
-      const t1 = peageEffTTC(seg1?.peageTTC, distKm1);
-      const t2 = peageEffTTC(seg2?.peageTTC, distKm2);
-      const t3 = peageEffTTC(seg3?.peageTTC, distKm3);
-      const t4 = peageEffTTC(seg4?.peageTTC, distKm4);
-      const t5 = peageEffTTC(seg5?.peageTTC, distKm5);
-      r = reparAB(t1, t2, t3, t4, t5);
+      const totT = peageEffTTC(seg1?.peageTTC, distKm1) + peageEffTTC(seg2?.peageTTC, distKm2)
+                 + peageEffTTC(seg3?.peageTTC, distKm3) + peageEffTTC(seg4?.peageTTC, distKm4)
+                 + peageEffTTC(seg5?.peageTTC, distKm5);
+      r = splitPeageProperPlusSurplus(totT, _pDirectA_TTC, _pDirectB_TTC);
       peageFluxAllerTTCOv = r.fA; peageFluxRetourTTCOv = r.fB; peageApprocheTTCOv = 0;
     } else {
-      // Forfait : on répartit le total au prorata kmA/kmB des km totaux du trajet
-      const p1 = distKm1 * tollPerKm;
-      const p2 = distKm2 * tollPerKm;
-      const p3 = distKm3 * tollPerKm;
-      const p4 = distKm4 * tollPerKm;
-      const p5 = distKm5 * tollPerKm;
-      r = reparAB(p1, p2, p3, p4, p5);
+      const totP = (distKm1 + distKm2 + distKm3 + distKm4 + distKm5) * tollPerKm;
+      r = splitPeageProperPlusSurplus(totP, kmBackA2 * tollPerKm, kmBackB2 * tollPerKm);
       peageFluxAllerOv = r.fA; peageFluxRetourOv = r.fB; peageApprocheOv = 0;
     }
     
@@ -10794,12 +11474,11 @@ async function calculateTrip() {
     // Hypothèse simple : la manut totale est répartie 50/50 entre A et B (un charg + une livr chacun).
     // À améliorer si on saisit des temps de manut par client.
     const coutHorVal = coutHoraire || 0;
-    const condSeg = [durMin1, durMin2, durMin3, durMin4, durMin5].map(m => (m/60) * coutHorVal);
-    r = reparAB(...condSeg);
+    const _condDriveTot = [durMin1, durMin2, durMin3, durMin4, durMin5].reduce((s, m) => s + (m/60) * coutHorVal, 0);
     const coutManutA = coutManut / 2;
     const coutManutB = coutManut / 2;
-    condFluxAllerOv = r.fA + coutManutA;
-    condFluxRetourOv = r.fB + coutManutB;
+    condFluxAllerOv = _condDriveTot * rCondA + coutManutA;   // conduite au prorata du TEMPS direct
+    condFluxRetourOv = _condDriveTot * rCondB + coutManutB;
     condApprocheOv = 0;
     
     // Frais de structure : prorata kmBack
@@ -10875,42 +11554,49 @@ async function calculateTrip() {
   const f = {
     fluxAller: {
       km: kmFluxAller,
-      carburant: carbFluxAller,
-      peages: peageFluxAller,
-      coutConducteur: condFluxAller,
-      amortVehicule: vehFluxAller,
-      maintenance: maintFluxAller,
-      pneus: pneusFluxAller,
-      lubrifiants: oilFluxAller,
-      fraisStructure: structFluxAller,
+      carburant: _fluxA_carb,
+      peages: _fluxA_peage,
+      coutConducteur: _fluxA_cond,
+      amortVehicule: _fluxA_veh,
+      maintenance: _fluxA_maint,
+      pneus: _fluxA_pneus,
+      lubrifiants: _fluxA_oil,
+      fraisStructure: _fluxA_struct,
       total: totalFluxAller,
     },
     fluxRetour: {
       km: kmFluxRetour,
-      carburant: carbFluxRetour,
-      peages: peageFluxRetour,
-      coutConducteur: condFluxRetour,
-      amortVehicule: vehFluxRetour,
-      maintenance: maintFluxRetour,
-      pneus: pneusFluxRetour,
-      lubrifiants: oilFluxRetour,
-      fraisStructure: structFluxRetour,
+      carburant: _fluxB_carb,
+      peages: _fluxB_peage,
+      coutConducteur: _fluxB_cond,
+      amortVehicule: _fluxB_veh,
+      maintenance: _fluxB_maint,
+      pneus: _fluxB_pneus,
+      lubrifiants: _fluxB_oil,
+      fraisStructure: _fluxB_struct,
       total: totalFluxRetour,
     },
     approche: {
       km: kmApproche,
-      carburant: carbApproche,
-      peages: peageApproche,
-      coutConducteur: condApproche,
-      amortVehicule: vehApproche,
-      maintenance: maintApproche,
-      pneus: pneusApproche,
-      lubrifiants: oilApproche,
-      fraisStructure: structApproche,
+      carburant: _appr_carb,
+      peages: _appr_peage,
+      coutConducteur: _appr_cond,
+      amortVehicule: _appr_veh,
+      maintenance: _appr_maint,
+      pneus: _appr_pneus,
+      lubrifiants: _appr_oil,
+      fraisStructure: _appr_struct,
       total: totalApproche,
     },
     totalKm: kmTotal,
   };
+  // Km et durée DIRECTS de chaque fret en groupage (devis A/B = trajet réel du client)
+  if (hasGroupedFreight && window._groupedBest) {
+    f.fluxAller.kmDirect = window._groupedBest.kmDirectA;
+    f.fluxAller.durDirect = window._groupedBest.durDirectA;
+    f.fluxRetour.kmDirect = window._groupedBest.kmDirectB;
+    f.fluxRetour.durDirect = window._groupedBest.durDirectB;
+  }
   
   const barSegments = postes.map(p => {
     // Pour les frais de structure, on affiche le ratio sur le CA (= prixVente) puisque c'est sa base de calcul réelle.
@@ -11169,10 +11855,18 @@ Affichage conforme au décret 2022-1310 (art. L.1431-3 Code des transports), obl
           ${ventilation}`;
       })()}
       
-      <!-- Boutons PDF + Sauvegarder (déplacés après le détail) -->
-      <div style="margin-top:18px;display:flex;gap:8px;justify-content:flex-end">
-        <button class="btn btn-secondary btn-sm" onclick="generatePDFFromCurrent()" style="padding:8px 16px">📄 Télécharger PDF</button>
-        <button class="btn btn-primary btn-sm" onclick="openSaveTripModal()" style="padding:8px 16px">💾 Sauvegarder ce trajet</button>
+      <!-- Devis : 2 cellules d'action (le nom client se saisit dans la fenêtre de sauvegarde) -->
+      <div style="margin-top:18px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px">
+          <button class="action-cell coral" id="devisSaveCell" onclick="openSaveTripModal('devis')">
+            <span class="ac-title">📄 Devis PDF + sauvegarder</span>
+            <span class="ac-sub">Saisir le client, puis générer le devis et enregistrer</span>
+          </button>
+          <button class="action-cell primary" id="saveOnlyCell" onclick="openSaveTripModal('save')">
+            <span class="ac-title">💾 Sauvegarder ce trajet</span>
+            <span class="ac-sub">Enregistre seulement la proposition à cette étape</span>
+          </button>
+        </div>
       </div>
       
       </div><!-- fin colonne gauche -->
@@ -11242,6 +11936,12 @@ Affichage conforme au décret 2022-1310 (art. L.1431-3 Code des transports), obl
     hasReturnFreight: hasReturnFlow,
     hasGroupedFreight,
     groupedOrder,
+    groupedLoadingAddr,
+    groupedDeliveryAddr,
+    clientA: document.getElementById('t_clientA')?.value.trim() || '',
+    clientB: document.getElementById('t_clientB')?.value.trim() || '',
+    poidsA: parseFloat(document.getElementById('t_freightAWeight')?.value) || 0,
+    poidsB: parseFloat(document.getElementById('t_freightBWeight')?.value) || 0,
     differentClient,
     flowDistribution: typeof f !== 'undefined' ? f : null,
     tripType,
@@ -11654,6 +12354,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Charger les paramètres entreprise (ou défauts)
   const company = loadCompany();
   fillCompanyForm(company || DEFAULT_COMPANY);
+  if (typeof loadDemoOverrides === 'function') loadDemoOverrides();
   
   renderVehicleList();
   renderDriverList();
@@ -11762,26 +12463,26 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="card">
         <h2>🗺️ Itinéraire rapide</h2>
         
-        <div class="field address-input" style="position:relative;margin-bottom:12px">
-          <label>📦 Lieu de chargement</label>
-          <input type="text" id="ts_loading" placeholder="Adresse, code postal ou ville" autocomplete="off">
-          <div class="suggestions" id="ts_loadingSugg"></div>
-        </div>
-        
-        <div class="field address-input" style="position:relative;margin-bottom:12px">
-          <label>🏁 Lieu de livraison</label>
-          <input type="text" id="ts_delivery" placeholder="Adresse, code postal ou ville" autocomplete="off">
-          <div class="suggestions" id="ts_deliverySugg"></div>
-        </div>
-        
-        <div class="field" style="margin-bottom:16px">
-          <label>🚛 Type de matériel</label>
-          <select id="ts_vehicleType">
-            <option value="tracteur">Tracteur + semi-remorque (44T, classe 4)</option>
-            <option value="porteur">Porteur 19T (classe 3)</option>
-            <option value="vul">VUL ≤ 3,5T (classe 1)</option>
-          </select>
-          <span class="hint">Le type détermine la classe de péage appliquée.</span>
+        <div class="tripcells" style="display:flex;flex-direction:column;gap:12px;margin-bottom:16px">
+          <div class="field address-input" style="position:relative">
+            <label>📦 Lieu de chargement</label>
+            <input type="text" id="ts_loading" placeholder="Adresse, code postal ou ville" autocomplete="off">
+            <div class="suggestions" id="ts_loadingSugg"></div>
+          </div>
+          <div class="field address-input" style="position:relative">
+            <label>🏁 Lieu de livraison</label>
+            <input type="text" id="ts_delivery" placeholder="Adresse, code postal ou ville" autocomplete="off">
+            <div class="suggestions" id="ts_deliverySugg"></div>
+          </div>
+          <div class="field">
+            <label>🚛 Type de matériel</label>
+            <span class="cell-info" title="Le type détermine la classe de péage appliquée.">ⓘ</span>
+            <select id="ts_vehicleType">
+              <option value="tracteur">Tracteur + semi-remorque (44T, classe 4)</option>
+              <option value="porteur">Porteur 19T (classe 3)</option>
+              <option value="vul">VUL ≤ 3,5T (classe 1)</option>
+            </select>
+          </div>
         </div>
         
         <button class="btn btn-primary" onclick="calculateSimpleTrip()" style="width:100%;padding:10px 16px;font-size:15px">
@@ -12066,6 +12767,105 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   
+  <!-- 💰 Simulateur salaire (basé sur le module Conducteur) -->
+  <div id="tab-salarySim" class="tab-content">
+    <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:20px;align-items:start" id="salarySimLayout">
+      <div>
+        <div class="card">
+          <h2 style="margin-bottom:14px">💰 Simulateur de salaire & coût employeur</h2>
+
+          <div class="section-divider" style="margin:4px 0 10px">Convention collective TRM</div>
+          <div class="tripcells grid-3" style="align-items:start">
+            <div class="field">
+              <label>Catégorie</label>
+              <select id="sim_category" onchange="simCategoryChange()">
+                <option value="">— Choisir —</option>
+                <option value="messagerie">Messagerie / Courte distance</option>
+                <option value="autresRoulants">Autre personnel roulant</option>
+                <option value="grandRoutier">Grand routier (longue distance)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Coefficient</label>
+              <select id="sim_coefficient" onchange="simCoefChange()">
+                <option value="">—</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Ancienneté</label>
+              <div class="input-with-unit"><input type="number" id="sim_seniority" value="0" min="0" max="50" step="1" oninput="simSeniorityChange()"><span class="unit">ans</span></div>
+            </div>
+          </div>
+          <div id="sim_capWrapper" style="display:none;margin-top:10px">
+            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;color:var(--text)">
+              <input type="checkbox" id="sim_hasCAP" onchange="simCoefChange()" style="width:auto">
+              <span>Titulaire du CAP conducteur routier <span style="color:var(--text2)">(+2 ans d'ancienneté — coef. 120M / 128M / 138M)</span></span>
+            </label>
+          </div>
+
+          <div class="section-divider" style="margin:16px 0 10px">Rémunération</div>
+          <div class="tripcells grid-3" style="align-items:start">
+            <div class="field">
+              <label>Salaire brut (base 151,67 h)</label>
+              <span class="cell-info" id="sim_salaryInfo" title="Calculé automatiquement : coefficient × majoration d'ancienneté (base 151,67 h).">ⓘ</span>
+              <div class="input-with-unit"><input type="number" id="sim_grossSalary" value="2050" min="0" step="50" oninput="recalcSalarySim()"><span class="unit">€</span></div>
+            </div>
+            <div class="field">
+              <label>Heures d'équivalence</label>
+              <span class="cell-info" id="sim_equivInfo" title="Forfait d'équivalence selon la catégorie (auto).">ⓘ</span>
+              <div class="input-with-unit"><input type="number" id="sim_overtimeHours" value="34.67" min="0" max="120" step="0.5" oninput="recalcSalarySim()"><span class="unit">h/mois</span></div>
+            </div>
+            <input type="hidden" id="sim_chargeRate" value="">
+            <div class="field">
+              <label>13ème mois & primes</label>
+              <div class="input-with-unit"><input type="number" id="sim_bonus" value="0" min="0" step="100" oninput="recalcSalarySim()"><span class="unit">€/an</span></div>
+            </div>
+            <input type="hidden" id="sim_applyDFS" value="default">
+            <input type="hidden" id="sim_applyFillon" value="yes">
+          </div>
+
+          <div class="section-divider" style="margin:16px 0 10px">Frais (non chargés)</div>
+          <div class="tripcells grid-2" style="align-items:start">
+            <div class="field"><label>Indemnité découcher</label><div class="input-with-unit"><input type="number" id="sim_sleepCost" value="62" min="0" step="1" oninput="recalcSalarySim()"><span class="unit">€/nuit</span></div></div>
+            <div class="field"><label>Nb découchers / mois</label><div class="input-with-unit"><input type="number" id="sim_sleepCount" value="0" min="0" max="30" step="1" oninput="recalcSalarySim()"><span class="unit">nuits</span></div></div>
+            <div class="field"><label>Indemnité repas</label><div class="input-with-unit"><input type="number" id="sim_mealCost" value="16.20" min="0" step="0.10" oninput="recalcSalarySim()"><span class="unit">€/repas</span></div></div>
+            <div class="field"><label>Nb repas / mois</label><div class="input-with-unit"><input type="number" id="sim_mealCount" min="0" max="31" step="1" oninput="recalcSalarySim()"><span class="unit">repas</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="trip-costs-preview" id="salarySimResult"></div>
+        <div style="margin-top:14px;display:flex;gap:10px;align-items:stretch">
+          <div class="tripcells" style="flex:1">
+            <div class="field" style="margin:0">
+              <label>Ajouter ce conducteur</label>
+              <input type="text" id="sim_newName" placeholder="Nom du conducteur" autocomplete="off">
+            </div>
+          </div>
+          <button onclick="addSimDriverToList()" title="Ajouter ce conducteur à la liste"
+            style="align-self:stretch;background:var(--action);color:#fff;border:none;border-radius:10px;padding:0 20px;font-size:24px;font-weight:700;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center">+</button>
+        </div>
+        <div id="sim_addMsg" style="margin-top:8px;font-size:13px;color:var(--action);font-weight:600;display:none"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ═══ DÉMO CONDUCTEURS (bac à sable décision) ═══ -->
+  <div id="tab-demo" class="tab-content">
+    <div class="card">
+      <h2>🧪 Démo conducteurs — simulation d'heures</h2>
+      <p class="hint" style="margin:6px 0 4px;color:var(--text2);line-height:1.5">Ajustez le statut, les absences et les compteurs d'heures de ces conducteurs fictifs. Ces valeurs alimentent <strong>directement</strong> le panneau « Qui peut prendre ce trajet ? » : disponibilité, plafonds réglementaires (56 h/sem, 90 h/2 sem) et score d'adéquation.</p>
+      <p class="hint" style="margin:4px 0 0;color:var(--text2);line-height:1.5">🔗 <strong>Lien planning :</strong> ces mêmes conducteurs apparaissent dans le <em>Planning conducteur</em>. Une absence posée un jour donné dans le planning bloque l'affectation et fait tomber le score à 0 pour un trajet à cette date.</p>
+      <div style="display:flex;gap:10px;margin:14px 0;flex-wrap:wrap">
+        <button class="btn btn-primary btn-sm" onclick="openDecisionModalFromDemo()">🎯 Qui peut prendre ce trajet ?</button>
+        <button class="btn btn-secondary btn-sm" onclick="openPlanningModal && (setPlanningMode('conducteur'), openPlanningModal())">📅 Planning conducteur</button>
+        <button class="btn btn-secondary btn-sm" onclick="resetDemoDrivers()">↺ Réinitialiser la démo</button>
+      </div>
+      <div id="demoEditorTable" style="overflow-x:auto"></div>
+    </div>
+  </div>
+
   <!-- ═══ MODAL SAUVEGARDE TRAJET ═══ -->
 <div class="modal-overlay" id="saveTripModal">
   <div class="modal" style="max-width:600px">
@@ -12093,12 +12893,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <!-- Mode SPLIT : 2 clients distincts (flux aller / flux retour) -->
     <div id="saveTripSplitSection" style="display:none">
-      <div class="notice" style="margin-top:12px;background:#dbeafe;border-color:#3b82f6;color:#1e40af">
+      <div class="notice" id="saveTripSplitNotice" style="margin-top:12px;background:#dbeafe;border-color:#3b82f6;color:#1e40af">
         ℹ️ Le fret retour a un autre client : 2 devis distincts seront créés (Flux aller + Flux retour).
       </div>
       
       <div style="background:#fef3c7;border:1px solid #fbbf24;border-radius:6px;padding:12px;margin-top:12px">
-        <strong style="color:#78350f;font-size:13px">📦 Flux aller</strong>
+        <strong id="saveTripFluxATitle" style="color:#78350f;font-size:13px">📦 Flux aller</strong>
         <div class="field" style="margin-top:8px">
           <label>Nom du client</label>
           <input type="text" id="saveTrip_client_aller" placeholder="Client du flux aller">
@@ -12110,7 +12910,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       
       <div style="background:#dcfce7;border:1px solid #4ade80;border-radius:6px;padding:12px;margin-top:12px">
-        <strong style="color:#166534;font-size:13px">🔄 Flux retour</strong>
+        <strong id="saveTripFluxBTitle" style="color:#166534;font-size:13px">🔄 Flux retour</strong>
         <div class="field" style="margin-top:8px">
           <label>Nom du client</label>
           <input type="text" id="saveTrip_client_retour" placeholder="Client du flux retour">
@@ -12124,7 +12924,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="toolbar">
       <button class="btn btn-secondary" onclick="closeSaveTripModal()">Annuler</button>
-      <button class="btn btn-primary" onclick="saveTripFromModal()">💾 Enregistrer</button>
+      <button class="btn btn-primary" id="saveTripConfirmBtn" onclick="confirmSaveTrip()">💾 Enregistrer</button>
     </div>
   </div>
 </div>
@@ -12690,12 +13490,12 @@ document.addEventListener('DOMContentLoaded', () => {
         </tbody>
       </table>
 
-      <p style="background:#ecfeff;border-left:4px solid #0e7490;padding:10px 12px;border-radius:4px;margin-bottom:14px;font-size:12px">
+      <p style="background:#EAF0F5;border-left:4px solid #142F47;padding:10px 12px;border-radius:4px;margin-bottom:14px;font-size:12px">
         📋 <strong>Décompte du temps de travail.</strong> Horaire de service (si horaires fixes) ou <strong>Livret Individuel de Contrôle</strong> (art. R. 3312-58 du Code des transports).
         Le temps de service inclut la conduite, l'attente, les travaux divers, le nettoyage, le déchargement, le double équipage — tout temps où le salarié est à disposition de l'employeur sans pouvoir vaquer à des occupations personnelles.
       </p>
 
-      <h3 style="color:#0e7490;margin-top:24px;border-bottom:2px solid #0e7490;padding-bottom:4px">📊 SYNTHÈSE — Temps de service par catégorie</h3>
+      <h3 style="color:#142F47;margin-top:24px;border-bottom:2px solid #142F47;padding-bottom:4px">📊 SYNTHÈSE — Temps de service par catégorie</h3>
       <p style="font-size:12px;color:var(--text2);margin-bottom:8px">
         Tableau synthétique des durées de service contractuelles selon la catégorie. Le temps de service correspond à la somme :
         temps de conduite + autres tâches (chargement/déchargement, administratif) + mise à disposition.
@@ -12703,7 +13503,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div style="overflow-x:auto">
       <table style="width:100%;border-collapse:collapse;margin-bottom:14px;font-size:12.5px;min-width:680px">
         <thead>
-          <tr style="background:#ecfeff">
+          <tr style="background:#EAF0F5">
             <th style="border:1px solid #cbd5e1;padding:8px;text-align:left">Période</th>
             <th style="border:1px solid #cbd5e1;padding:8px;text-align:left">Type</th>
             <th style="border:1px solid #cbd5e1;padding:8px;text-align:center">Longue distance (Grand routier)</th>
@@ -12797,7 +13597,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     
     <!-- Bandeau contextuel injecté quand on arrive depuis un trajet -->
-    <div id="decisionContextBanner" style="display:none;padding:12px 14px;background:#ecfeff;border:1px solid #a5f3fc;border-left:4px solid var(--accent);border-radius:6px;margin-bottom:14px;font-size:13px;color:var(--text)">
+    <div id="decisionContextBanner" style="display:none;padding:12px 14px;background:#EAF0F5;border:1px solid #C3D2E0;border-left:4px solid var(--accent);border-radius:6px;margin-bottom:14px;font-size:13px;color:var(--text)">
     </div>
     
     <div class="decision-filters" id="decisionFilters">
@@ -12921,6 +13721,11 @@ function doLogin(event) {
       <h2>📅 Planning hebdomadaire</h2>
       <button class="modal-close" onclick="closePlanningModal()">×</button>
     </div>
+
+    <div class="planning-subtabs">
+      <button class="planning-subtab active" id="planSub-conducteur" onclick="setPlanningMode('conducteur')">👤 Planning conducteur</button>
+      <button class="planning-subtab" id="planSub-moteur" onclick="setPlanningMode('moteur')">🚛 Planning moteur</button>
+    </div>
     
     <div class="planning-header">
       <div class="planning-nav">
@@ -12951,6 +13756,31 @@ function doLogin(event) {
   </div>
 </div>
 
+<!-- ═══ POPUP ABSENCE CONDUCTEUR ═══ -->
+<div class="modal-overlay" id="absenceModal">
+  <div class="modal" style="max-width:440px">
+    <div class="modal-header">
+      <h2>🗓️ Absence conducteur</h2>
+      <button class="modal-close" onclick="closeAbsenceModal()">×</button>
+    </div>
+    <div style="background:#f8fafc;padding:10px 12px;border-radius:6px;margin-bottom:14px;font-size:13px" id="absenceModalWho"></div>
+    <div class="field" style="margin-bottom:12px">
+      <label style="display:block;font-size:12px;color:var(--text2);margin-bottom:6px;font-weight:600">Motif d'absence</label>
+      <div id="absenceMotifs" style="display:grid;grid-template-columns:1fr 1fr;gap:8px"></div>
+    </div>
+    <div class="field" style="margin-bottom:14px">
+      <label style="display:block;font-size:12px;color:var(--text2);margin-bottom:4px;font-weight:600">Note (optionnel)</label>
+      <input type="text" id="absenceNote" placeholder="Précision…" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;font-family:inherit;font-size:13px;box-sizing:border-box">
+    </div>
+    <div class="toolbar" style="display:flex;align-items:center;gap:8px;border-top:1px solid var(--border);padding-top:12px">
+      <button class="btn btn-secondary btn-sm" id="absenceRemoveBtn" onclick="removeAbsenceFromModal()" style="display:none">🗑️ Retirer l'absence</button>
+      <span style="flex:1"></span>
+      <button class="btn btn-secondary btn-sm" onclick="closeAbsenceModal()">Annuler</button>
+      <button class="btn btn-primary btn-sm" onclick="saveAbsenceFromModal()">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
 <!-- ═══ POPUP CELLULE PLANNING ═══ -->
 <div class="modal-overlay" id="planningCellModal">
   <div class="modal" style="max-width:500px">
@@ -12972,6 +13802,164 @@ function doLogin(event) {
     </div>
   </div>
 </div>
+
+<script>
+(function(){
+  function eur(v){ return (v||0).toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+  function workingDaysCurrentMonth(){
+    var now=new Date(), y=now.getFullYear(), m=now.getMonth();
+    var days=new Date(y, m+1, 0).getDate(), count=0;
+    for(var d=1; d<=days; d++){ var wd=new Date(y,m,d).getDay(); if(wd>=1 && wd<=5) count++; }
+    return count;
+  }
+  window.initSalarySim = function(){
+    var mc=document.getElementById('sim_mealCount');
+    if(mc && (mc.value===''||mc.value==null)) mc.value = workingDaysCurrentMonth();
+    recalcSalarySim();
+  };
+
+  window.updateSimCAPVisibility = function(){
+    var code = (document.getElementById('sim_coefficient')||{}).value || '';
+    var wrap = document.getElementById('sim_capWrapper');
+    var cb = document.getElementById('sim_hasCAP');
+    if(!wrap) return;
+    var eligible = ['120M','128M','138M'].indexOf(code) !== -1;
+    wrap.style.display = eligible ? '' : 'none';
+    if(!eligible && cb && cb.checked) cb.checked = false;
+  };
+
+  window.simCategoryChange = function(){
+    var cat = document.getElementById('sim_category').value;
+    var coefSel = document.getElementById('sim_coefficient');
+    coefSel.innerHTML = '<option value="">\u2014 Choisir \u2014</option>';
+    if(cat && typeof DRIVER_COEFS!=='undefined' && DRIVER_COEFS[cat]){
+      DRIVER_COEFS[cat].forEach(function(c){ var o=document.createElement('option'); o.value=c.code; o.textContent=c.label; coefSel.appendChild(o); });
+    }
+    // Heures d'\u00e9quivalence selon la cat\u00e9gorie
+    var eq = document.getElementById('sim_overtimeHours');
+    var eqHint = document.getElementById('sim_equivInfo');
+    if(cat && typeof CATEGORY_HOURS!=='undefined' && CATEGORY_HOURS[cat]){
+      var conf = CATEGORY_HOURS[cat];
+      if(conf.equivMax === 0){ eq.value = 0; eq.disabled = true; eq.style.background='var(--bg)'; }
+      else { eq.disabled = false; eq.style.background=''; eq.value = conf.equivMax; }
+      if(eqHint) eqHint.title = conf.note;
+    }
+    updateSimCAPVisibility();
+    simCoefChange();
+  };
+
+  window.simCoefChange = function(){
+    updateSimCAPVisibility();
+    var cat = document.getElementById('sim_category').value;
+    var code = document.getElementById('sim_coefficient').value;
+    var hint = document.getElementById('sim_salaryInfo');
+    if(cat && code && typeof DRIVER_COEFS!=='undefined' && DRIVER_COEFS[cat]){
+      var coef = DRIVER_COEFS[cat].find(function(c){return c.code===code;});
+      if(coef){
+        var seniorityRaw = parseFloat(document.getElementById('sim_seniority').value)||0;
+        var hasCAP = (document.getElementById('sim_hasCAP')||{}).checked || false;
+        var senEff = (typeof adjustSeniorityForCAP==='function') ? adjustSeniorityForCAP(seniorityRaw, hasCAP) : (seniorityRaw + (hasCAP?2:0));
+        var maj = (typeof getSeniorityMajoration==='function') ? getSeniorityMajoration(senEff) : 0;
+        var salaire = Math.round(coef.baseSalary * (1 + maj/100));
+        document.getElementById('sim_grossSalary').value = salaire;
+        if(hint){
+          var th = (coef.baseSalary/151.67)*(1+maj/100);
+          hint.title = 'Calcul : '+th.toFixed(2)+' \u20ac/h \u00d7 151,67' + (maj>0 ? (' \u00b7 anc. '+senEff+' ans \u2192 +'+maj+'%') : '');
+        }
+      }
+    }
+    recalcSalarySim();
+  };
+
+  window.simSeniorityChange = function(){ simCoefChange(); };
+
+  window.addSimDriverToList = function(){
+    var nameEl = document.getElementById('sim_newName');
+    var msg = document.getElementById('sim_addMsg');
+    var name = (nameEl.value||'').trim();
+    var gross = parseFloat(document.getElementById('sim_grossSalary').value);
+    function showMsg(txt, ok){ if(!msg) return; msg.textContent = txt; msg.style.color = ok ? 'var(--action)' : 'var(--cta)'; msg.style.display='block'; }
+    if(!gross){ showMsg('\u26a0\ufe0f Choisissez une cat\u00e9gorie et un coefficient (salaire requis).', false); return; }
+    if(!name){ showMsg('\u26a0\ufe0f Donnez un nom au conducteur.', false); nameEl.focus(); return; }
+    var num = function(id){ var v=(document.getElementById(id)||{}).value; return (v===''||v==null)?null:parseFloat(v); };
+    var str = function(id){ return (document.getElementById(id)||{}).value || null; };
+    var driver = {
+      id: 'd_' + Date.now() + '_' + Math.random().toString(36).slice(2,8),
+      name: name,
+      category: str('sim_category'),
+      coefficient: str('sim_coefficient'),
+      seniority: num('sim_seniority'),
+      hasCAP: (document.getElementById('sim_hasCAP')||{}).checked || false,
+      grossSalary: gross,
+      chargeRate: num('sim_chargeRate'),
+      bonus: num('sim_bonus'),
+      overtimeHours: num('sim_overtimeHours'),
+      applyDFS: str('sim_applyDFS'),
+      applyFillon: str('sim_applyFillon'),
+      sleepCost: num('sim_sleepCost'),
+      sleepCount: num('sim_sleepCount'),
+      mealCost: num('sim_mealCost'),
+      mealCount: num('sim_mealCount')
+    };
+    var list = (typeof loadDrivers==='function') ? (loadDrivers()||[]) : [];
+    list.push(driver);
+    if(typeof saveDrivers==='function') saveDrivers(list);
+    if(typeof renderDriverList==='function'){ try{ renderDriverList(); }catch(e){} }
+    if(typeof refreshTripSelects==='function'){ try{ refreshTripSelects(); }catch(e){} }
+    nameEl.value='';
+    if(msg){ msg.style.display='block'; msg.style.color='var(--action)'; msg.innerHTML = '\u2705 ' + name + ' ajout\u00e9 \u00b7 <a onclick="switchTab(\'driver\'); if(typeof renderDriverList===\'function\') renderDriverList();" style="color:var(--action);text-decoration:underline;cursor:pointer">Voir dans Param\u00e9trage \u203a Conducteurs</a>'; }
+  };
+
+  window.recalcSalarySim = function(){
+    var box = document.getElementById('salarySimResult');
+    if(!box) return;
+    var company = (typeof loadCompany==='function' ? loadCompany() : null) || (typeof DEFAULT_COMPANY!=='undefined' ? DEFAULT_COMPANY : {});
+    function num(id){ var el=document.getElementById(id); if(!el) return null; var v=el.value; return (v===''||v==null)?null:parseFloat(v); }
+    function str(id){ var el=document.getElementById(id); return el?el.value:null; }
+    var driver = {
+      grossSalary: num('sim_grossSalary'),
+      chargeRate: num('sim_chargeRate'),
+      bonus: num('sim_bonus'),
+      overtimeHours: num('sim_overtimeHours'),
+      applyDFS: str('sim_applyDFS'),
+      applyFillon: str('sim_applyFillon'),
+      sleepCost: num('sim_sleepCost'),
+      sleepCount: num('sim_sleepCount'),
+      mealCost: num('sim_mealCost'),
+      mealCount: num('sim_mealCount')
+    };
+    if(!driver.grossSalary){ box.innerHTML = '<h3>\uD83D\uDCB0 Co\u00fbt employeur mensuel</h3><p style="color:var(--text2);font-style:italic;margin:0">Saisissez un salaire de base pour lancer le calcul.</p>'; return; }
+    if(typeof calculateDriverEmployerCost!=='function'){ box.innerHTML='<p>Moteur de calcul indisponible.</p>'; return; }
+    var r = calculateDriverEmployerCost(driver, company);
+    if(!r) return;
+    var totalHeures = 151.67 + (driver.overtimeHours||0);
+    var tauxCharges = (driver.chargeRate!=null && !isNaN(driver.chargeRate)) ? driver.chargeRate : (company.chargeRate || 42);
+    var coutHoraire = r.coutTotalMensuel / totalHeures;
+    var sousForfait = totalHeures < 186;
+    var palier = sousForfait ? '+25 % (\u00e9quivalence, absorb\u00e9e par le forfait)' : '+50 % (vraie heure sup)';
+    var resteAvant186 = Math.max(0, 186 - totalHeures);
+    var html = ''
+      + '<h3>\uD83D\uDCB0 Co\u00fbt employeur mensuel</h3>'
+      + '<table>'
+      + '<tr><td>Salaire base (151,67 h)</td><td style="text-align:right">'+eur(r.salaireMensuelBrut)+' \u20ac</td></tr>'
+      + (r.heuresA25>0 ? '<tr><td style="padding-left:14px;color:var(--text2)">+ '+r.heuresA25.toFixed(2)+' h \u00e0 +25 % (\u00e9quivalence)</td><td style="text-align:right">'+eur(r.montantA25)+' \u20ac</td></tr>' : '')
+      + (r.heuresA50>0 ? '<tr><td style="padding-left:14px;color:var(--warning)">+ '+r.heuresA50.toFixed(2)+' h \u00e0 +50 % (heures sup)</td><td style="text-align:right;color:var(--warning)">'+eur(r.montantA50)+' \u20ac</td></tr>' : '')
+      + '<tr class="subtotal"><td>Salaire brut forfait</td><td style="text-align:right">'+eur(r.salaireMensuelBrut + r.heuresSupMensuel)+' \u20ac</td></tr>'
+      + '<tr><td>Charges patronales nettes (taux '+tauxCharges+' %'+(r.dfsApplicable?', DFS '+r.dfsTaux+' %':'')+') <span style="cursor:help;color:var(--text2)" title="En fonction des param\u00e8tres entreprise">\u24d8</span></td><td style="text-align:right">'+eur(r.chargesPatronalesNettes/12)+' \u20ac</td></tr>'
+      + (r.reductionFillon>0 ? '<tr><td style="padding-left:14px;color:var(--action)">dont r\u00e9duction RGDU <span style="cursor:help;color:var(--text2)" title="En fonction des param\u00e8tres entreprise">\u24d8</span></td><td style="text-align:right;color:var(--action)">\u2212 '+eur(r.reductionFillon/12)+' \u20ac</td></tr>' : '')
+      + '<tr class="subtotal"><td>Co\u00fbt employeur charg\u00e9</td><td style="text-align:right">'+eur(r.coutEmployeurMensuel)+' \u20ac</td></tr>'
+      + (r.indemnitesMensuelles>0 ? '<tr><td>Frais non charg\u00e9s (d\u00e9coucher, repas)</td><td style="text-align:right">'+eur(r.indemnitesMensuelles)+' \u20ac</td></tr>' : '')
+      + '<tr class="total"><td>Co\u00fbt total mensuel</td><td style="text-align:right">'+eur(r.coutTotalMensuel)+' \u20ac</td></tr>'
+      + '</table>'
+      + '<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">'
+      +   '<div style="flex:1;min-width:130px;background:#EAF0F5;border:1px solid #142F47;border-radius:8px;padding:10px 12px"><div style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:.3px">Co\u00fbt horaire charg\u00e9</div><div style="font-size:18px;font-weight:700;color:#142F47">'+eur(coutHoraire)+' \u20ac/h</div></div>'
+      +   '<div style="flex:1;min-width:130px;background:#EAF0F5;border:1px solid #142F47;border-radius:8px;padding:10px 12px"><div style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:.3px">Co\u00fbt total annuel</div><div style="font-size:18px;font-weight:700;color:#142F47">'+eur(r.coutTotalAnnuel)+' \u20ac</div></div>'
+      + '</div>'
+      + '<div style="margin-top:12px;padding:10px 12px;background:#EAF7F2;border:1px solid #77C3AB;border-radius:8px;font-size:12px;line-height:1.5"><b>Heure marginale :</b> total actuel '+totalHeures.toFixed(2)+' h/mois \u2192 la prochaine heure est \u00e0 <b>'+palier+'</b>. '+(sousForfait ? 'Il reste <b>'+resteAvant186.toFixed(2)+' h</b> avant le seuil des 186 h o\u00f9 le co\u00fbt marginal passe \u00e0 +50 %.' : 'Au-del\u00e0 de 186 h, chaque heure est major\u00e9e \u00e0 +50 %.')+'</div>';
+    box.innerHTML = html;
+  };
+})();
+</script>
 
 </body>
 </html>
